@@ -1,0 +1,2663 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      An Phú Holdings - Văn Phòng Hạng A & A+ Chuẩn Quốc Tế | Đối Tác 300+ Tập
+      Đoàn FDI
+    </title>
+    <meta
+      name="description"
+      content="An Phú Holdings - Đỉnh cao văn phòng cho thuê TP.HCM 2025. 500+ tòa nhà hạng A-B, 15.000+ hợp đồng thành công, 300+ doanh nghiệp FDI tin chọn."
+    />
+
+    <!-- Google Fonts - Montserrat & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+
+    <!-- Local Styles -->
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: "#1e3a8a",
+              "navy-light": "#2563eb",
+              gold: "#a78b6a",
+              "gold-light": "#c9a876",
+            },
+            fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
+              inter: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      /* Hero Video Background */
+      .hero-video-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+      }
+
+      .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(30, 58, 138, 0.3) 0%,
+          rgba(37, 99, 235, 0.25) 100%
+        );
+        z-index: 1;
+      }
+
+      /* Counter Animation */
+      .counter {
+        font-variant-numeric: tabular-nums;
+      }
+
+      /* Autocomplete Dropdown */
+      .autocomplete-dropdown {
+        max-height: 400px;
+        overflow-y: auto;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      }
+
+      .autocomplete-item:hover {
+        background: linear-gradient(to right, #1e3a8a, #2563eb);
+        color: white;
+      }
+
+      /* Premium Card Hover */
+      .premium-card {
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .premium-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 60px rgba(167, 139, 106, 0.3);
+      }
+
+      /* Floating Action Button */
+      .floating-btn {
+        position: fixed;
+        z-index: 9999;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      /* Lead Magnet Popup */
+      .lead-popup {
+        animation: slideUp 0.5s ease-out;
+      }
+
+      @keyframes slideUp {
+        from {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Logo Carousel */
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .logo-scroll {
+        animation: scroll 30s linear infinite;
+      }
+
+      .logo-scroll:hover {
+        animation-play-state: paused;
+      }
+
+      /* Sticky Search Bar */
+      .sticky-search {
+        position: fixed;
+        top: -100px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        transition: top 0.3s ease;
+      }
+
+      .sticky-search.active {
+        top: 0;
+      }
+
+      /* Swiper Styles */
+      .user-reviews-swiper {
+        padding-bottom: 50px;
+      }
+
+      .reviews-swiper-pagination {
+        bottom: 0 !important;
+      }
+
+      .swiper-pagination-bullet {
+        background: rgba(255, 255, 255, 0.5);
+        width: 12px;
+        height: 12px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background: #a78b6a;
+        width: 32px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+
+  <body class="antialiased">
+    <!-- Global Navigation -->
+    <div id="headerContainer"></div>
+
+    <!-- Hero Section - Full Screen 100vh -->
+    <section id="hero" class="relative h-screen min-h-[600px] overflow-hidden">
+      <!-- Video Background -->
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        class="hero-video-bg"
+      >
+        <source src="./video/bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 h-full flex items-center">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+          <div class="max-w-5xl mx-auto text-center">
+            <!-- Logo -->
+            <div class="mb-8" data-aos="fade-down">
+              <img
+                src="assets/images/anphu-holdings-155-40.jpg"
+                alt="An Phú Holdings"
+                class="h-12 md:h-16 mx-auto"
+              />
+            </div>
+
+            <!-- Main Slogan -->
+            <h1
+              class="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 leading-tight"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              Tìm Thuê Văn Phòng Chuyên Nghiệp <br class="hidden md:block" />
+              <span class="text-gold">Tại TP. Hồ Chí Minh</span>
+            </h1>
+
+            <p
+              class="text-lg md:text-xl lg:text-2xl text-white/90 mb-12 font-light max-w-3xl mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              Hơn 500+ tòa nhà hạng A & A+ - Tư vấn miễn phí 24/7 - Đối tác của
+              300+ tập đoàn FDI
+            </p>
+
+            <!-- Smart Search Bar with Advanced Filter -->
+            <div
+              class="relative max-w-4xl mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="bg-white rounded-2xl shadow-2xl p-4 md:p-6">
+                <!-- Basic Filter: District Only -->
+                <div id="basicFilter">
+                  <div class="flex flex-col md:flex-row gap-3 mb-3">
+                    <!-- District Selector -->
+                    <select
+                      class="flex-1 px-6 py-4 text-lg border-2 border-gray-200 rounded-xl focus:border-navy focus:outline-none transition-all"
+                    >
+                      <option value="">Chọn quận...</option>
+                      <option value="quan1">Quận 1 - 343 tòa nhà</option>
+                      <option value="quan2">Quận 2 - 156 tòa nhà</option>
+                      <option value="quan3">Quận 3 - 198 tòa nhà</option>
+                      <option value="quan4">Quận 4 - 89 tòa nhà</option>
+                      <option value="quan5">Quận 5 - 127 tòa nhà</option>
+                      <option value="quan7">Quận 7 - 234 tòa nhà</option>
+                      <option value="quan10">Quận 10 - 145 tòa nhà</option>
+                      <option value="binhThanh">
+                        Bình Thạnh - 178 tòa nhà
+                      </option>
+                      <option value="tanBinh">Tân Bình - 201 tòa nhà</option>
+                    </select>
+
+                    <!-- Search Button -->
+                    <button
+                      class="bg-gradient-to-r from-navy to-navy-light text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-xl transition-all hover:scale-105 whitespace-nowrap"
+                    >
+                      <i class="fas fa-search mr-2"></i>Tìm Kiếm
+                    </button>
+                  </div>
+
+                  <!-- Toggle Advanced Filter Button -->
+                  <button
+                    id="toggleAdvancedFilter"
+                    class="text-navy hover:text-gold transition-colors text-sm font-semibold flex items-center gap-2"
+                  >
+                    <i class="fas fa-sliders-h"></i>
+                    <span>Bộ lọc nâng cao</span>
+                    <i
+                      class="fas fa-chevron-down transition-transform"
+                      id="toggleIcon"
+                    ></i>
+                  </button>
+                </div>
+
+                <!-- Advanced Filter: Hidden by default -->
+                <div
+                  id="advancedFilter"
+                  class="hidden mt-4 pt-4 border-t-2 border-gray-100"
+                >
+                  <div
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+                  >
+                    <!-- Area -->
+                    <div>
+                      <label class="block text-sm font-semibold text-navy mb-2"
+                        >Diện tích (m²)</label
+                      >
+                      <div class="flex gap-2">
+                        <input
+                          type="number"
+                          placeholder="Từ"
+                          class="w-1/2 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-navy focus:outline-none"
+                        />
+                        <input
+                          type="number"
+                          placeholder="Đến"
+                          class="w-1/2 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-navy focus:outline-none"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Price -->
+                    <div>
+                      <label class="block text-sm font-semibold text-navy mb-2"
+                        >Giá thuê ($/m²/tháng)</label
+                      >
+                      <div class="flex gap-2">
+                        <input
+                          type="number"
+                          placeholder="Từ"
+                          class="w-1/2 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-navy focus:outline-none"
+                        />
+                        <input
+                          type="number"
+                          placeholder="Đến"
+                          class="w-1/2 px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-navy focus:outline-none"
+                        />
+                      </div>
+                    </div>
+
+                    <!-- Grade -->
+                    <div>
+                      <label class="block text-sm font-semibold text-navy mb-2"
+                        >Hạng tòa nhà</label
+                      >
+                      <select
+                        class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-navy focus:outline-none"
+                      >
+                        <option value="">Tất cả</option>
+                        <option value="a-plus">Hạng A+</option>
+                        <option value="a">Hạng A</option>
+                        <option value="b-plus">Hạng B+</option>
+                        <option value="b">Hạng B</option>
+                      </select>
+                    </div>
+
+                    <!-- Features -->
+                    <div class="md:col-span-2 lg:col-span-3">
+                      <label class="block text-sm font-semibold text-navy mb-2"
+                        >Tiện ích</label
+                      >
+                      <div class="flex flex-wrap gap-2">
+                        <label
+                          class="inline-flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg cursor-pointer hover:bg-navy/10 transition"
+                        >
+                          <input
+                            type="checkbox"
+                            class="form-checkbox text-navy"
+                          />
+                          <span class="text-sm">View sông</span>
+                        </label>
+                        <label
+                          class="inline-flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg cursor-pointer hover:bg-navy/10 transition"
+                        >
+                          <input
+                            type="checkbox"
+                            class="form-checkbox text-navy"
+                          />
+                          <span class="text-sm">LEED/Green</span>
+                        </label>
+                        <label
+                          class="inline-flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg cursor-pointer hover:bg-navy/10 transition"
+                        >
+                          <input
+                            type="checkbox"
+                            class="form-checkbox text-navy"
+                          />
+                          <span class="text-sm">Gần Metro</span>
+                        </label>
+                        <label
+                          class="inline-flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg cursor-pointer hover:bg-navy/10 transition"
+                        >
+                          <input
+                            type="checkbox"
+                            class="form-checkbox text-navy"
+                          />
+                          <span class="text-sm">Parking</span>
+                        </label>
+                        <label
+                          class="inline-flex items-center gap-2 bg-gray-50 px-4 py-2 rounded-lg cursor-pointer hover:bg-navy/10 transition"
+                        >
+                          <input
+                            type="checkbox"
+                            class="form-checkbox text-navy"
+                          />
+                          <span class="text-sm">Food Court</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-3 mt-4">
+                    <button
+                      class="flex-1 bg-gradient-to-r from-navy to-navy-light text-white px-6 py-3 rounded-xl font-semibold hover:shadow-xl transition-all"
+                    >
+                      <i class="fas fa-search mr-2"></i>Tìm kiếm nâng cao
+                    </button>
+                    <button
+                      id="resetFilter"
+                      class="px-6 py-3 border-2 border-gray-200 rounded-xl font-semibold text-navy hover:bg-gray-50 transition-all"
+                    >
+                      <i class="fas fa-redo mr-2"></i>Đặt lại
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Popular Searches -->
+              <div class="mt-4 text-white/70 text-sm">
+                <span class="mr-3">Tìm kiếm phổ biến:</span>
+                <span
+                  class="inline-block bg-white/20 backdrop-blur px-3 py-1 rounded-full mr-2 hover:bg-white/30 cursor-pointer transition"
+                  >Hạng A+</span
+                >
+                <span
+                  class="inline-block bg-white/20 backdrop-blur px-3 py-1 rounded-full mr-2 hover:bg-white/30 cursor-pointer transition"
+                  >View Sông</span
+                >
+                <span
+                  class="inline-block bg-white/20 backdrop-blur px-3 py-1 rounded-full mr-2 hover:bg-white/30 cursor-pointer transition"
+                  >Quận 1</span
+                >
+                <span
+                  class="inline-block bg-white/20 backdrop-blur px-3 py-1 rounded-full hover:bg-white/30 cursor-pointer transition"
+                  >Giá Tốt</span
+                >
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-8" data-aos="fade-up" data-aos-delay="500">
+              <p class="text-white/80 text-sm mb-4">
+                <i class="fas fa-phone-alt mr-2"></i>Hotline 24/7:
+                <a
+                  href="tel:0987110011"
+                  class="text-gold-light font-semibold hover:underline"
+                  >0987 110 011</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div
+        class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce"
+      >
+        <i class="fas fa-chevron-down text-white text-2xl opacity-50"></i>
+      </div>
+    </section>
+
+    <!-- Sticky Search Bar (Mobile) -->
+    <div id="stickySearch" class="sticky-search">
+      <div class="container mx-auto px-4 py-3">
+        <div class="flex gap-2">
+          <input
+            type="text"
+            placeholder="Tìm văn phòng..."
+            class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-navy"
+          />
+          <button class="bg-navy text-white px-6 py-2 rounded-lg">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Counter Stats Section -->
+    <section
+      class="py-16 md:py-20 bg-gradient-to-br from-navy via-navy-light to-navy"
+    >
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div class="text-center" data-aos="fade-up">
+            <div
+              class="counter text-5xl md:text-6xl font-bold text-gold mb-3"
+              data-target="500"
+            >
+              0
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold text-white mb-2">
+              Tòa Nhà Hạng A-B
+            </h3>
+            <p class="text-white/70 text-sm">Phủ sóng toàn TP.HCM</p>
+          </div>
+          <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="counter text-5xl md:text-6xl font-bold text-gold mb-3"
+              data-target="15000"
+            >
+              0
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold text-white mb-2">
+              Hợp Đồng Thành Công
+            </h3>
+            <p class="text-white/70 text-sm">Tỷ lệ hài lòng 98%</p>
+          </div>
+          <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="counter text-5xl md:text-6xl font-bold text-gold mb-3"
+              data-target="300"
+            >
+              0
+            </div>
+            <h3 class="text-xl md:text-2xl font-semibold text-white mb-2">
+              Doanh Nghiệp FDI
+            </h3>
+            <p class="text-white/70 text-sm">Đối tác chiến lược</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Logos Section -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">
+            Hơn <span class="text-gold">5000+ Khách Hàng</span> Đã Tin Tưởng
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Được lựa chọn bởi các doanh nghiệp hàng đầu
+          </p>
+        </div>
+
+        <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=Samsung"
+              alt="Samsung"
+              class="h-12 object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=Microsoft"
+              alt="Microsoft"
+              class="h-12 object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=Intel"
+              alt="Intel"
+              class="h-12 object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=Coca+Cola"
+              alt="Coca Cola"
+              class="h-12 object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=Toyota"
+              alt="Toyota"
+              class="h-12 object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+            data-aos-delay="250"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=Unilever"
+              alt="Unilever"
+              class="h-12 object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=Nestlé"
+              alt="Nestlé"
+              class="h-12 object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+            data-aos-delay="350"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=P%26G"
+              alt="P&G"
+              class="h-12 object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=Nike"
+              alt="Nike"
+              class="h-12 object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+            data-aos-delay="450"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=Adidas"
+              alt="Adidas"
+              class="h-12 object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=LG"
+              alt="LG"
+              class="h-12 object-contain"
+            />
+          </div>
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all grayscale hover:grayscale-0"
+            data-aos="zoom-in"
+            data-aos-delay="550"
+          >
+            <img
+              src="https://placehold.co/120x60/1e3a8a/FFFFFF?text=Honda"
+              alt="Honda"
+              class="h-12 object-contain"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Top 4 Office Types Section -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">
+            Top 4 Dòng Văn Phòng
+            <span class="text-gold">Được Tìm Nhiều Nhất 2025</span>
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Lựa chọn hoàn hảo cho doanh nghiệp của bạn
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8"
+        >
+          <!-- Card 1: A+ Office -->
+          <div
+            class="premium-card bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 text-white shadow-2xl"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="text-6xl mb-6 text-gold">
+              <i class="fas fa-crown"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Văn Phòng Hạng A+</h3>
+            <p class="text-white/80 mb-4 text-sm">
+              Landmark 81, Bitexco Financial Tower, The Metropolis
+            </p>
+            <p class="text-white/70 mb-6 text-xs leading-relaxed">
+              Đẳng cấp quốc tế, tiêu chuẩn 5 sao. Lý tưởng cho văn phòng đại
+              diện tập đoàn đa quốc gia, công ty công nghệ hàng đầu.
+            </p>
+            <div class="flex items-baseline mb-4">
+              <span class="text-3xl font-bold text-gold">$50-80</span>
+              <span class="text-sm ml-2">/m²/tháng</span>
+            </div>
+            <ul class="space-y-2 text-sm mb-6">
+              <li>
+                <i class="fas fa-check-circle text-gold mr-2"></i>Chuẩn 5 sao
+                quốc tế
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-gold mr-2"></i>LEED Platinum
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-gold mr-2"></i>Smart Building
+              </li>
+            </ul>
+            <button
+              class="w-full bg-gold hover:bg-gold-light text-navy font-semibold py-3 rounded-xl transition-all hover:shadow-xl"
+            >
+              Xem Ngay <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+
+          <!-- Card 2: River View -->
+          <div
+            class="premium-card bg-white rounded-2xl p-8 shadow-xl border-2 border-gray-100"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="text-6xl mb-6 text-navy">
+              <i class="fas fa-water"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-navy">Hạng A View Sông</h3>
+            <p class="text-gray-600 mb-4 text-sm">
+              Vinhomes Central Park, The Metropole Thủ Thiêm
+            </p>
+            <p class="text-gray-500 mb-6 text-xs leading-relaxed">
+              Không gian làm việc sang trọng với tầm nhìn sông Sài Gòn. Phù hợp
+              cho các công ty thiết kế, tài chính, sáng tạo.
+            </p>
+            <div class="flex items-baseline mb-4">
+              <span class="text-3xl font-bold text-navy">$45-65</span>
+              <span class="text-sm ml-2 text-gray-600">/m²/tháng</span>
+            </div>
+            <ul class="space-y-2 text-sm mb-6 text-gray-700">
+              <li>
+                <i class="fas fa-check-circle text-gold mr-2"></i>View sông Sài
+                Gòn
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-gold mr-2"></i>Không gian
+                xanh
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-gold mr-2"></i>Tiện ích cao
+                cấp
+              </li>
+            </ul>
+            <button
+              class="w-full bg-navy hover:bg-navy-light text-white font-semibold py-3 rounded-xl transition-all hover:shadow-xl"
+            >
+              Xem Ngay <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+
+          <!-- Card 3: Serviced Office -->
+          <div
+            class="premium-card bg-white rounded-2xl p-8 shadow-xl border-2 border-gray-100"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="text-6xl mb-6 text-navy">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3 text-navy">
+              Văn Phòng Trọn Gói
+            </h3>
+            <p class="text-gray-600 mb-4 text-sm">
+              Regus, WeWork, IFC, Sunwah Tower
+            </p>
+            <p class="text-gray-500 mb-6 text-xs leading-relaxed">
+              Giải pháp toàn diện cho startup, chi nhánh mới. Nhận văn phòng đã
+              setup đầy đủ, chỉ việc mang laptop đến làm việc.
+            </p>
+            <div class="flex items-baseline mb-4">
+              <span class="text-3xl font-bold text-navy">$350</span>
+              <span class="text-sm ml-2 text-gray-600">/người/tháng</span>
+            </div>
+            <ul class="space-y-2 text-sm mb-6 text-gray-700">
+              <li>
+                <i class="fas fa-check-circle text-gold mr-2"></i>Nội thất đầy
+                đủ
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-gold mr-2"></i>Phòng họp miễn
+                phí
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-gold mr-2"></i>Linh hoạt hợp
+                đồng
+              </li>
+            </ul>
+            <button
+              class="w-full bg-navy hover:bg-navy-light text-white font-semibold py-3 rounded-xl transition-all hover:shadow-xl"
+            >
+              Xem Ngay <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+
+          <!-- Card 4: Budget Friendly -->
+          <div
+            class="premium-card bg-gradient-to-br from-gold to-gold-light rounded-2xl p-8 text-white shadow-2xl"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="text-6xl mb-6 text-navy">
+              <i class="fas fa-tag"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Giá Tốt Nhất</h3>
+            <p class="text-white/90 mb-4 text-sm">
+              Các tòa nhà B+, C tại Tân Bình, Bình Thạnh
+            </p>
+            <p class="text-white/70 mb-6 text-xs leading-relaxed">
+              Tối ưu ngân sách nhưng vẫn đảm bảo chất lượng. Lý tưởng cho doanh
+              nghiệp SME, công ty thương mại, dịch vụ.
+            </p>
+            <div class="flex items-baseline mb-4">
+              <span class="text-3xl font-bold text-navy">Dưới $30</span>
+              <span class="text-sm ml-2">/m²/tháng</span>
+            </div>
+            <ul class="space-y-2 text-sm mb-6">
+              <li>
+                <i class="fas fa-check-circle text-navy mr-2"></i>Tiết kiệm chi
+                phí
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-navy mr-2"></i>Vị trí thuận
+                lợi
+              </li>
+              <li>
+                <i class="fas fa-check-circle text-navy mr-2"></i>Đầy đủ tiện
+                ích
+              </li>
+            </ul>
+            <button
+              class="w-full bg-navy hover:bg-navy-light text-white font-semibold py-3 rounded-xl transition-all hover:shadow-xl"
+            >
+              Xem Ngay <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Premium Clients Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">
+            Khách Hàng <span class="text-gold">Tiêu Biểu</span>
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Được tin tùởng bởi các tập đoàn hàng đầu thế giới
+          </p>
+        </div>
+
+        <!-- Logo Carousel -->
+        <div
+          class="relative overflow-hidden py-8"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="flex space-x-12 logo-scroll">
+            <!-- Duplicate for seamless loop -->
+            <div class="flex space-x-12 min-w-max">
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Samsung</div>
+              </div>
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Microsoft</div>
+              </div>
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Intel</div>
+              </div>
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Coca-Cola</div>
+              </div>
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Toyota</div>
+              </div>
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Unilever</div>
+              </div>
+            </div>
+            <!-- Duplicate -->
+            <div class="flex space-x-12 min-w-max">
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Samsung</div>
+              </div>
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Microsoft</div>
+              </div>
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Intel</div>
+              </div>
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Coca-Cola</div>
+              </div>
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Toyota</div>
+              </div>
+              <div
+                class="bg-white rounded-xl p-6 shadow-lg w-48 h-32 flex items-center justify-center"
+              >
+                <div class="text-4xl font-bold text-navy/20">Unilever</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+          <div
+            class="bg-white rounded-2xl p-8 shadow-xl text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="text-5xl font-bold text-gold mb-2">95%</div>
+            <p class="text-gray-600">Tỷ lệ khách hàng hài lòng</p>
+          </div>
+          <div
+            class="bg-white rounded-2xl p-8 shadow-xl text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="text-5xl font-bold text-gold mb-2">24/7</div>
+            <p class="text-gray-600">Hỗ trợ khách hàng</p>
+          </div>
+          <div
+            class="bg-white rounded-2xl p-8 shadow-xl text-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="text-5xl font-bold text-gold mb-2">3 phút</div>
+            <p class="text-gray-600">Thời gian phản hồi</p>
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="text-center mt-12" data-aos="fade-up">
+          <a
+            href="tel:0987110011"
+            class="inline-flex items-center gap-3 bg-gradient-to-r from-navy to-navy-light text-white px-10 py-5 rounded-xl font-bold text-lg hover:shadow-2xl transition-all hover:scale-105"
+          >
+            <i class="fas fa-phone-alt text-xl"></i>
+            <span>Liên hệ ngay để được tư vấn miễn phí</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <p class="text-gray-500 text-sm mt-4">
+            Hoặc
+            <a href="#" class="text-gold hover:text-gold-light font-semibold"
+              >xem các văn phòng phù hợp với bạn →</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Place Section - Văn phòng tại TP.HCM -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <h2
+          data-aos="zoom-in-up"
+          class="mb-8 text-3xl md:text-4xl lg:text-5xl font-bold text-navy"
+        >
+          Văn phòng tại <span class="text-gold">TP. Hồ Chí Minh</span>
+        </h2>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
+        >
+          <!-- Card 1 - Quận 1 -->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            class="flex items-center gap-3 p-4 transition-all duration-300 bg-white border-2 border-gray-200 rounded-2xl hover:shadow-2xl hover:border-gold group hover:-translate-y-2"
+          >
+            <div
+              class="flex-shrink-0 w-16 h-16 overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="assets/images/image-9.png"
+                alt="Quận 1"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3
+                class="text-lg font-bold text-navy group-hover:text-gold transition-colors"
+              >
+                Quận 1
+              </h3>
+              <p class="text-sm text-gray-600">343+ tòa nhà</p>
+            </div>
+          </a>
+
+          <!-- Card 2 - Quận 5 -->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            class="flex items-center gap-3 p-4 transition-all duration-300 bg-white border-2 border-gray-200 rounded-2xl hover:shadow-2xl hover:border-gold group hover:-translate-y-2"
+          >
+            <div
+              class="flex-shrink-0 w-16 h-16 overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="assets/images/image-10.png"
+                alt="Quận 5"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3
+                class="text-lg font-bold text-navy group-hover:text-gold transition-colors"
+              >
+                Quận 5
+              </h3>
+              <p class="text-sm text-gray-600">32+ tòa nhà</p>
+            </div>
+          </a>
+
+          <!-- Card 3 - Quận 2 -->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            class="flex items-center gap-3 p-4 transition-all duration-300 bg-white border-2 border-gray-200 rounded-2xl hover:shadow-2xl hover:border-gold group hover:-translate-y-2"
+          >
+            <div
+              class="flex-shrink-0 w-16 h-16 overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="assets/images/image-11.png"
+                alt="Quận 2"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3
+                class="text-lg font-bold text-navy group-hover:text-gold transition-colors"
+              >
+                Quận 2
+              </h3>
+              <p class="text-sm text-gray-600">164+ tòa nhà</p>
+            </div>
+          </a>
+
+          <!-- Card 4 - Quận 7 -->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-delay="150"
+            class="flex items-center gap-3 p-4 transition-all duration-300 bg-white border-2 border-gray-200 rounded-2xl hover:shadow-2xl hover:border-gold group hover:-translate-y-2"
+          >
+            <div
+              class="flex-shrink-0 w-16 h-16 overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="assets/images/image-12.png"
+                alt="Quận 7"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3
+                class="text-lg font-bold text-navy group-hover:text-gold transition-colors"
+              >
+                Quận 7
+              </h3>
+              <p class="text-sm text-gray-600">70+ tòa nhà</p>
+            </div>
+          </a>
+
+          <!-- Card 5 - Quận 3 -->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            class="flex items-center gap-3 p-4 transition-all duration-300 bg-white border-2 border-gray-200 rounded-2xl hover:shadow-2xl hover:border-gold group hover:-translate-y-2"
+          >
+            <div
+              class="flex-shrink-0 w-16 h-16 overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="assets/images/image-13.png"
+                alt="Quận 3"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3
+                class="text-lg font-bold text-navy group-hover:text-gold transition-colors"
+              >
+                Quận 3
+              </h3>
+              <p class="text-sm text-gray-600">218+ tòa nhà</p>
+            </div>
+          </a>
+
+          <!-- Card 6 - Quận 8 -->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-delay="250"
+            class="flex items-center gap-3 p-4 transition-all duration-300 bg-white border-2 border-gray-200 rounded-2xl hover:shadow-2xl hover:border-gold group hover:-translate-y-2"
+          >
+            <div
+              class="flex-shrink-0 w-16 h-16 overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="assets/images/image-14.png"
+                alt="Quận 8"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3
+                class="text-lg font-bold text-navy group-hover:text-gold transition-colors"
+              >
+                Quận 8
+              </h3>
+              <p class="text-sm text-gray-600">07+ tòa nhà</p>
+            </div>
+          </a>
+
+          <!-- Card 7 - Quận 4 -->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            class="flex items-center gap-3 p-4 transition-all duration-300 bg-white border-2 border-gray-200 rounded-2xl hover:shadow-2xl hover:border-gold group hover:-translate-y-2"
+          >
+            <div
+              class="flex-shrink-0 w-16 h-16 overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="assets/images/image-15.png"
+                alt="Quận 4"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3
+                class="text-lg font-bold text-navy group-hover:text-gold transition-colors"
+              >
+                Quận 4
+              </h3>
+              <p class="text-sm text-gray-600">54+ tòa nhà</p>
+            </div>
+          </a>
+
+          <!-- Card 8 - Quận 10 -->
+          <a
+            href="#"
+            data-aos="fade-up"
+            data-aos-delay="350"
+            class="flex items-center gap-3 p-4 transition-all duration-300 bg-white border-2 border-gray-200 rounded-2xl hover:shadow-2xl hover:border-gold group hover:-translate-y-2"
+          >
+            <div
+              class="flex-shrink-0 w-16 h-16 overflow-hidden rounded-xl shadow-lg"
+            >
+              <img
+                src="assets/images/image-16.png"
+                alt="Quận 10"
+                class="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div class="flex-1 min-w-0">
+              <h3
+                class="text-lg font-bold text-navy group-hover:text-gold transition-colors"
+              >
+                Quận 10
+              </h3>
+              <p class="text-sm text-gray-600">102+ tòa nhà</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Buildings Gallery -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">
+            Tòa Nhà <span class="text-gold">Biểu Tượng</span>
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Các vị trí vàng tại trung tâm TP.HCM
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Bitexco -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="h-80 bg-gradient-to-br from-navy to-navy-light flex items-center justify-center"
+            >
+              <div class="text-center text-white">
+                <i class="fas fa-building text-6xl mb-4 text-gold"></i>
+                <p class="text-xl font-bold">Bitexco Tower</p>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent opacity-80"
+            ></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Bitexco Financial Tower</h3>
+              <p class="text-sm text-white/80 mb-3">
+                Quận 1 • Hạng A+ • LEED Platinum
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-gold font-bold text-xl">$65-75/m²</span>
+                <button
+                  class="bg-gold hover:bg-gold-light text-navy px-4 py-2 rounded-lg font-semibold transition"
+                >
+                  Chi tiết
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Landmark 81 -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="h-80 bg-gradient-to-br from-gold to-gold-light flex items-center justify-center"
+            >
+              <div class="text-center text-white">
+                <i class="fas fa-building text-6xl mb-4 text-navy"></i>
+                <p class="text-xl font-bold text-navy">Landmark 81</p>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent opacity-80"
+            ></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Landmark 81</h3>
+              <p class="text-sm text-white/80 mb-3">
+                Bình Thạnh • Hạng A+ • Cao nhất VN
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-gold font-bold text-xl">$70-85/m²</span>
+                <button
+                  class="bg-gold hover:bg-gold-light text-navy px-4 py-2 rounded-lg font-semibold transition"
+                >
+                  Chi tiết
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deutsches Haus -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="h-80 bg-gradient-to-br from-gray-700 to-gray-900 flex items-center justify-center"
+            >
+              <div class="text-center text-white">
+                <i class="fas fa-building text-6xl mb-4 text-gold"></i>
+                <p class="text-xl font-bold">Deutsches Haus</p>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent opacity-80"
+            ></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Deutsches Haus</h3>
+              <p class="text-sm text-white/80 mb-3">
+                Quận 1 • Hạng A • LEED Gold
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-gold font-bold text-xl">$55-65/m²</span>
+                <button
+                  class="bg-gold hover:bg-gold-light text-navy px-4 py-2 rounded-lg font-semibold transition"
+                >
+                  Chi tiết
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vietcombank Tower -->
+          <div
+            class="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="h-80 bg-gradient-to-br from-green-700 to-green-900 flex items-center justify-center"
+            >
+              <div class="text-center text-white">
+                <i class="fas fa-building text-6xl mb-4 text-gold"></i>
+                <p class="text-xl font-bold">Vietcombank Tower</p>
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent opacity-80"
+            ></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+              <h3 class="text-2xl font-bold mb-2">Vietcombank Tower</h3>
+              <p class="text-sm text-white/80 mb-3">
+                Quận 1 • Hạng A • Prime Location
+              </p>
+              <div class="flex items-center justify-between">
+                <span class="text-gold font-bold text-xl">$60-70/m²</span>
+                <button
+                  class="bg-gold hover:bg-gold-light text-navy px-4 py-2 rounded-lg font-semibold transition"
+                >
+                  Chi tiết
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-white to-gray-50">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-16" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">
+            Cách Thức <span class="text-gold">Hoạt Động</span>
+          </h2>
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+            Quy trình đơn giản 3 bước giúp bạn tìm được văn phòng lý tưởng
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row items-center justify-center gap-8 max-w-6xl mx-auto"
+        >
+          <!-- Card 1 -->
+          <div
+            data-aos="zoom-in-right"
+            class="flex-1 bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border-2 border-transparent hover:border-gold relative"
+          >
+            <div
+              class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-gradient-to-r from-navy to-navy-light rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg"
+            >
+              1
+            </div>
+            <div class="flex justify-center mb-6 mt-4">
+              <div
+                class="w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center text-gold group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-search text-4xl"></i>
+              </div>
+            </div>
+            <h4 class="text-xl font-bold text-navy mb-3 text-center">
+              Tìm Kiếm Bất Động Sản
+            </h4>
+            <p class="text-gray-600 text-center text-sm">
+              Bắt đầu nhanh chóng và dễ dàng bằng cách nhập thông tin tìm kiếm
+              vào biểu mẫu của chúng tôi
+            </p>
+          </div>
+
+          <!-- Line -->
+          <div
+            class="hidden md:block w-16 h-1 bg-gradient-to-r from-navy to-gold"
+            data-aos="fade-in"
+          ></div>
+
+          <!-- Card 2 -->
+          <div
+            data-aos="zoom-in"
+            class="flex-1 bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border-2 border-transparent hover:border-gold relative"
+          >
+            <div
+              class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-gradient-to-r from-navy to-navy-light rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg"
+            >
+              2
+            </div>
+            <div class="flex justify-center mb-6 mt-4">
+              <div
+                class="w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center text-gold group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-building text-4xl"></i>
+              </div>
+            </div>
+            <h4 class="text-xl font-bold text-navy mb-3 text-center">
+              Chọn Bất Động Sản
+            </h4>
+            <p class="text-gray-600 text-center text-sm">
+              Lựa chọn bất động sản phù hợp nhất từ danh sách các lựa chọn đa
+              dạng của chúng tôi
+            </p>
+          </div>
+
+          <!-- Line -->
+          <div
+            class="hidden md:block w-16 h-1 bg-gradient-to-r from-gold to-navy"
+            data-aos="fade-in"
+          ></div>
+
+          <!-- Card 3 -->
+          <div
+            data-aos="zoom-in-left"
+            class="flex-1 bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group border-2 border-transparent hover:border-gold relative"
+          >
+            <div
+              class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-gradient-to-r from-navy to-navy-light rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg"
+            >
+              3
+            </div>
+            <div class="flex justify-center mb-6 mt-4">
+              <div
+                class="w-20 h-20 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center text-gold group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-key text-4xl"></i>
+              </div>
+            </div>
+            <h4 class="text-xl font-bold text-navy mb-3 text-center">
+              Nhận Chìa Khóa
+            </h4>
+            <p class="text-gray-600 text-center text-sm">
+              Hoàn tất thủ tục và nhận chìa khóa văn phòng của bạn, sẵn sàng bắt
+              đầu công việc
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Reviews Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-navy to-navy-light">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+          >
+            Khách Hàng <span class="text-gold">Nói Gì Về Chúng Tôi</span>
+          </h2>
+          <p class="text-white/80 text-lg max-w-2xl mx-auto">
+            Trải nghiệm thực tế từ những khách hàng đã sử dụng dịch vụ
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Review 1 -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <img
+                src="https://placehold.co/80x80/1e3a8a/FFFFFF?text=NQ"
+                alt="Nguyan Quang"
+                class="w-16 h-16 rounded-full object-cover"
+              />
+              <div>
+                <h4 class="text-lg font-bold text-navy">Quang Minh</h4>
+                <p class="text-sm text-gray-500">CEO - Tech Startup</p>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              natus ducimus incidunt animi aut debitis ea a esse quis
+              voluptatem?
+            </p>
+            <div class="flex gap-1">
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <img
+                src="https://placehold.co/80x80/1e3a8a/FFFFFF?text=TH"
+                alt="Tr?n Huong"
+                class="w-16 h-16 rounded-full object-cover"
+              />
+              <div>
+                <h4 class="text-lg font-bold text-navy">Trn Huong Lan</h4>
+                <p class="text-sm text-gray-500">Giam doc - Cng ty TNHH ABC</p>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              natus ducimus incidunt animi aut debitis ea a esse quis
+              voluptatem?
+            </p>
+            <div class="flex gap-1">
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex items-center gap-4 mb-6">
+              <img
+                src="https://placehold.co/80x80/1e3a8a/FFFFFF?text=LV"
+                alt="L� Van"
+                class="w-16 h-16 rounded-full object-cover"
+              />
+              <div>
+                <h4 class="text-lg font-bold text-navy">Le Cao Thang</h4>
+                <p class="text-sm text-gray-500">
+                  Co-Founder - Fintech Company
+                </p>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloremque, perferendis dolore. Eligendi, sed modi magnam, maxime
+              natus quidem error cum sunt dolor ipsa optio exercitationem
+              molestias in voluptatum. Quibusdam, suscipit.
+            </p>
+            <div class="flex gap-1">
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+              <i class="fas fa-star text-gold text-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">
+            Giải Thưởng & <span class="text-gold">Thành Tựu</span>
+          </h2>
+          <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+            Được ghi nhận bởi các tổ chức uy tín trong và ngoài nước
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          <!-- Award 1 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-trophy text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">
+                Best Office 2024
+              </p>
+            </div>
+          </div>
+
+          <!-- Award 2 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-award text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">Top 100 VN</p>
+            </div>
+          </div>
+
+          <!-- Award 3 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-medal text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">Excellence 2023</p>
+            </div>
+          </div>
+
+          <!-- Award 4 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-star text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">Golden Star</p>
+            </div>
+          </div>
+
+          <!-- Award 5 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-certificate text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">ISO 9001</p>
+            </div>
+          </div>
+
+          <!-- Award 6 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-ribbon text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">Best Service</p>
+            </div>
+          </div>
+
+          <!-- Award 7 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-crown text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">Premium Brand</p>
+            </div>
+          </div>
+
+          <!-- Award 8 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+            data-aos-delay="700"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-gem text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">
+                Quality Excellence
+              </p>
+            </div>
+          </div>
+
+          <!-- Award 9 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+            data-aos-delay="800"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-shield-alt text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">Trusted Partner</p>
+            </div>
+          </div>
+
+          <!-- Award 10 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+            data-aos-delay="900"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-thumbs-up text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">Top Rated 2024</p>
+            </div>
+          </div>
+
+          <!-- Award 11 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-handshake text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">
+                Best Partnership
+              </p>
+            </div>
+          </div>
+
+          <!-- Award 12 -->
+          <div
+            class="bg-gray-50 rounded-xl p-6 flex items-center justify-center hover:shadow-lg transition-all group"
+            data-aos="zoom-in"
+            data-aos-delay="1100"
+          >
+            <div class="text-center">
+              <div
+                class="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-gold/20 to-gold/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform"
+              >
+                <i class="fas fa-chart-line text-3xl text-gold"></i>
+              </div>
+              <p class="text-xs text-gray-600 font-semibold">Growth Leader</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media/Press Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">
+            Tin Tức & <span class="text-gold">Báo Chí</span>
+          </h2>
+          <p class="text-gray-600 text-lg">
+            An Phú Holdings trên các phương tiện truyền thông
+          </p>
+        </div>
+
+        <div
+          class="flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-10"
+          data-aos="fade-up"
+        >
+          <div
+            class="grayscale hover:grayscale-0 transition-all hover:scale-110 duration-300"
+          >
+            <img
+              src="https://placehold.co/140x45/1e3a8a/FFFFFF?text=VnExpress"
+              alt="VnExpress"
+              class="h-10"
+            />
+          </div>
+          <div
+            class="grayscale hover:grayscale-0 transition-all hover:scale-110 duration-300"
+          >
+            <img
+              src="https://placehold.co/140x45/1e3a8a/FFFFFF?text=Cafebiz"
+              alt="Cafebiz"
+              class="h-10"
+            />
+          </div>
+          <div
+            class="grayscale hover:grayscale-0 transition-all hover:scale-110 duration-300"
+          >
+            <img
+              src="https://placehold.co/140x45/1e3a8a/FFFFFF?text=Tuổi+Trẻ"
+              alt="Tuổi Trẻ"
+              class="h-10"
+            />
+          </div>
+          <div
+            class="grayscale hover:grayscale-0 transition-all hover:scale-110 duration-300"
+          >
+            <img
+              src="https://placehold.co/140x45/1e3a8a/FFFFFF?text=Thanh+Niên"
+              alt="Thanh Niên"
+              class="h-10"
+            />
+          </div>
+          <div
+            class="grayscale hover:grayscale-0 transition-all hover:scale-110 duration-300"
+          >
+            <img
+              src="https://placehold.co/140x45/1e3a8a/FFFFFF?text=Dân+Trí"
+              alt="Dân Trí"
+              class="h-10"
+            />
+          </div>
+          <div
+            class="grayscale hover:grayscale-0 transition-all hover:scale-110 duration-300"
+          >
+            <img
+              src="https://placehold.co/140x45/1e3a8a/FFFFFF?text=Forbes+VN"
+              alt="Forbes"
+              class="h-10"
+            />
+          </div>
+          <div
+            class="grayscale hover:grayscale-0 transition-all hover:scale-110 duration-300"
+          >
+            <img
+              src="https://placehold.co/140x45/1e3a8a/FFFFFF?text=Zing+News"
+              alt="Zing News"
+              class="h-10"
+            />
+          </div>
+          <div
+            class="grayscale hover:grayscale-0 transition-all hover:scale-110 duration-300"
+          >
+            <img
+              src="https://placehold.co/140x45/1e3a8a/FFFFFF?text=24h"
+              alt="24h"
+              class="h-10"
+            />
+          </div>
+          <div
+            class="grayscale hover:grayscale-0 transition-all hover:scale-110 duration-300"
+          >
+            <img
+              src="https://placehold.co/140x45/1e3a8a/FFFFFF?text=VietnamNet"
+              alt="VietnamNet"
+              class="h-10"
+            />
+          </div>
+          <div
+            class="grayscale hover:grayscale-0 transition-all hover:scale-110 duration-300"
+          >
+            <img
+              src="https://placehold.co/140x45/1e3a8a/FFFFFF?text=Nhịp+Sống"
+              alt="Nhịp Sống"
+              class="h-10"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12" data-aos="fade-up">
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4"
+            >
+              Câu Hỏi <span class="text-gold">Thường Gặp</span>
+            </h2>
+            <p class="text-gray-600 text-lg">
+              Giải đáp các thắc mắc phổ biến về dịch vụ của chúng tôi
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <details
+              class="group bg-gray-50 border border-gray-200 rounded-xl overflow-hidden"
+              data-aos="fade-up"
+            >
+              <summary
+                class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-gray-100 transition-colors"
+              >
+                <h3 class="text-base md:text-lg font-semibold text-navy">
+                  An Phú Holdings cung cấp những loại văn phòng nào?
+                </h3>
+                <i
+                  class="fas fa-chevron-down text-gold transition-transform group-open:rotate-180"
+                ></i>
+              </summary>
+              <div class="px-6 pb-4 pt-2 text-gray-600 leading-relaxed">
+                <p>
+                  Chúng tôi cung cấp đa dạng các loại văn phòng bao gồm: Văn
+                  phòng hạng A, A+, văn phòng trọn gói (serviced office),
+                  coworking space, và văn phòng ảo. Tất cả đều được trang bị đầy
+                  đủ tiện nghi hiện đại và đáp ứng chuẩn quốc tế.
+                </p>
+              </div>
+            </details>
+
+            <!-- FAQ 2 -->
+            <details
+              class="group bg-gray-50 border border-gray-200 rounded-xl overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <summary
+                class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-gray-100 transition-colors"
+              >
+                <h3 class="text-base md:text-lg font-semibold text-navy">
+                  Diện tích văn phòng tối thiểu có thể thuê là bao nhiêu?
+                </h3>
+                <i
+                  class="fas fa-chevron-down text-gold transition-transform group-open:rotate-180"
+                ></i>
+              </summary>
+              <div class="px-6 pb-4 pt-2 text-gray-600 leading-relaxed">
+                <p>
+                  Diện tích tối thiểu dao động từ 20m² đến 50m² tùy theo từng
+                  tòa nhà và loại hình văn phòng. Đối với coworking space, bạn
+                  có thể thuê từng chỗ ngồi (desk). Chúng tôi có giải pháp linh
+                  hoạt cho mọi quy mô doanh nghiệp.
+                </p>
+              </div>
+            </details>
+
+            <!-- FAQ 3 -->
+            <details
+              class="group bg-gray-50 border border-gray-200 rounded-xl overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <summary
+                class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-gray-100 transition-colors"
+              >
+                <h3 class="text-base md:text-lg font-semibold text-navy">
+                  Chi phí thuê văn phòng đã bao gồm những gì?
+                </h3>
+                <i
+                  class="fas fa-chevron-down text-gold transition-transform group-open:rotate-180"
+                ></i>
+              </summary>
+              <div class="px-6 pb-4 pt-2 text-gray-600 leading-relaxed">
+                <p>
+                  Chi phí thuê thường bao gồm: Phí quản lý, điện lạnh, internet
+                  tốc độ cao, bảo vệ 24/7, vệ sinh hàng ngày. Một số gói còn bao
+                  gồm: sử dụng phòng họp, pantry, và các tiện ích khác. Vui lòng
+                  liên hệ để được tư vấn chi tiết.
+                </p>
+              </div>
+            </details>
+
+            <!-- FAQ 4 -->
+            <details
+              class="group bg-gray-50 border border-gray-200 rounded-xl overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <summary
+                class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-gray-100 transition-colors"
+              >
+                <h3 class="text-base md:text-lg font-semibold text-navy">
+                  Thời hạn hợp đồng tối thiểu là bao lâu?
+                </h3>
+                <i
+                  class="fas fa-chevron-down text-gold transition-transform group-open:rotate-180"
+                ></i>
+              </summary>
+              <div class="px-6 pb-4 pt-2 text-gray-600 leading-relaxed">
+                <p>
+                  Thời hạn hợp đồng tối thiểu thường là 12 tháng cho văn phòng
+                  truyền thống. Đối với văn phòng trọn gói và coworking space,
+                  bạn có thể thuê linh hoạt theo tháng hoặc theo quý. Chúng tôi
+                  luôn sẵn sàng tìm ra giải pháp phù hợp với nhu cầu của bạn.
+                </p>
+              </div>
+            </details>
+
+            <!-- FAQ 5 -->
+            <details
+              class="group bg-gray-50 border border-gray-200 rounded-xl overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <summary
+                class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-gray-100 transition-colors"
+              >
+                <h3 class="text-base md:text-lg font-semibold text-navy">
+                  Làm thế nào để đặt lịch xem văn phòng?
+                </h3>
+                <i
+                  class="fas fa-chevron-down text-gold transition-transform group-open:rotate-180"
+                ></i>
+              </summary>
+              <div class="px-6 pb-4 pt-2 text-gray-600 leading-relaxed">
+                <p>
+                  Bạn có thể đặt lịch xem văn phòng qua: (1) Hotline: 0987 110
+                  011, (2) Email: contact@anphuholdings.com, (3) Form đăng ký
+                  trên website. Đội ngũ của chúng tôi sẽ liên hệ và sắp xếp lịch
+                  xem trong vòng 24h.
+                </p>
+              </div>
+            </details>
+
+            <!-- FAQ 6 -->
+            <details
+              class="group bg-gray-50 border border-gray-200 rounded-xl overflow-hidden"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <summary
+                class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-gray-100 transition-colors"
+              >
+                <h3 class="text-base md:text-lg font-semibold text-navy">
+                  Có chính sách ưu đãi cho khách hàng thuê dài hạn không?
+                </h3>
+                <i
+                  class="fas fa-chevron-down text-gold transition-transform group-open:rotate-180"
+                ></i>
+              </summary>
+              <div class="px-6 pb-4 pt-2 text-gray-600 leading-relaxed">
+                <p>
+                  Có! Chúng tôi có các chính sách ưu đãi hấp dẫn cho khách hàng
+                  thuê dài hạn (từ 2 năm trở lên), bao gồm: giảm giá thuê, miễn
+                  phí nội thất, miễn phí tháng đầu, và nhiều ưu đãi khác. Liên
+                  hệ ngay để nhận báo giá tốt nhất!
+                </p>
+              </div>
+            </details>
+          </div>
+
+          <div class="text-center mt-12" data-aos="fade-up">
+            <p class="text-gray-600 mb-4">Vẫn còn thắc mắc khác?</p>
+            <a
+              href="tel:0987110011"
+              class="inline-flex items-center gap-2 bg-gradient-to-r from-navy to-navy-light text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl transition-all"
+            >
+              <i class="fas fa-phone-alt"></i>
+              <span>Liên hệ tư vấn ngay</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white">
+      <div class="container mx-auto px-4 md:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-navy mb-4">
+            Liên Hệ <span class="text-gold">Với Chúng Tôi</span>
+          </h2>
+          <p class="text-gray-600 text-lg">
+            Đội ngũ chuyên gia sẵn sàng tư vấn miễn phí 24/7
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <!-- Contact Info -->
+          <div data-aos="fade-right">
+            <div
+              class="bg-gradient-to-br from-navy to-navy-light rounded-2xl p-8 md:p-10 text-white h-full"
+            >
+              <h3 class="text-2xl md:text-3xl font-bold mb-8">
+                Thông Tin Liên Hệ
+              </h3>
+
+              <div class="space-y-6">
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 bg-gold rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <i class="fas fa-phone-alt text-navy text-xl"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg mb-1">+84 987 11 00 11</p>
+                    <span class="text-white/70 text-sm"
+                      >Hỗ trợ qua điện thoại</span
+                    >
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 bg-gold rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <i class="fas fa-envelope text-navy text-xl"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg mb-1">
+                      contact@anphuholdings.com
+                    </p>
+                    <span class="text-white/70 text-sm">Hỗ trợ qua email</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 bg-gold rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <i class="fas fa-map-marker-alt text-navy text-xl"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg mb-1">
+                      Deutsches Haus 33 - Lê Duẩn, Quận 1
+                    </p>
+                    <span class="text-white/70 text-sm"
+                      >TP. Hồ Chí Minh, Việt Nam</span
+                    >
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-12 h-12 bg-gold rounded-xl flex items-center justify-center flex-shrink-0"
+                  >
+                    <i class="fas fa-clock text-navy text-xl"></i>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-lg mb-1">24/7 - Cả tuần</p>
+                    <span class="text-white/70 text-sm"
+                      >Luôn sẵn sàng phục vụ</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-8 pt-8 border-t border-white/20">
+                <p class="text-white/70 text-sm mb-4">Kết nối với chúng tôi:</p>
+                <div class="flex gap-3">
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-white/10 hover:bg-gold rounded-lg flex items-center justify-center transition-all"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-white/10 hover:bg-gold rounded-lg flex items-center justify-center transition-all"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-white/10 hover:bg-gold rounded-lg flex items-center justify-center transition-all"
+                  >
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="w-10 h-10 bg-white/10 hover:bg-gold rounded-lg flex items-center justify-center transition-all"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact CTA -->
+          <div data-aos="fade-left">
+            <div
+              class="bg-gradient-to-br from-gold to-gold-light rounded-2xl p-12 md:p-16 shadow-2xl text-center h-full flex flex-col justify-center"
+            >
+              <div class="text-6xl mb-6 text-navy">
+                <i class="fas fa-comments"></i>
+              </div>
+              <h3 class="text-3xl md:text-4xl font-bold text-navy mb-4">
+                Cần Tư Vấn?
+              </h3>
+              <p class="text-navy/80 text-lg mb-8">
+                Để lại thông tin, chúng tôi sẽ liên hệ trong 15 phút
+              </p>
+              <button
+                id="openContactForm"
+                class="inline-flex items-center justify-center gap-3 bg-gradient-to-r from-navy to-navy-light text-white px-10 py-5 rounded-xl font-bold text-xl hover:shadow-2xl transition-all hover:scale-105 mx-auto"
+              >
+                <i class="fas fa-paper-plane"></i>
+                <span>Yêu Cầu Tư Vấn</span>
+              </button>
+              <p class="text-navy/60 text-sm mt-6">
+                <i class="fas fa-shield-alt mr-2"></i>Thông tin được bảo mật
+                100%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-[9998]">
+      <!-- Zalo Button -->
+      <a
+        href="https://zalo.me/0987110011"
+        target="_blank"
+        class="floating-btn bg-blue-500 hover:bg-blue-600 text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-2xl"
+      >
+        <i class="fab fa-facebook-messenger"></i>
+      </a>
+
+      <!-- Hotline Button -->
+      <a
+        href="tel:0987110011"
+        class="floating-btn bg-gold hover:bg-gold-light text-white w-16 h-16 rounded-full shadow-2xl flex items-center justify-center text-2xl"
+      >
+        <i class="fas fa-phone-alt"></i>
+      </a>
+
+      <!-- Scroll to Top -->
+      <button
+        id="scrollTop"
+        class="hidden floating-btn bg-navy hover:bg-navy-light text-white w-16 h-16 rounded-full shadow-2xl items-center justify-center text-2xl"
+      >
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+
+    <!-- Lead Magnet Popup -->
+    <div
+      id="leadPopup"
+      class="fixed inset-0 bg-black/50 backdrop-blur-sm z-[9999] hidden flex items-center justify-center p-4"
+    >
+      <div
+        class="lead-popup bg-white rounded-3xl shadow-2xl max-w-lg w-full overflow-hidden"
+      >
+        <div
+          class="bg-gradient-to-r from-navy to-navy-light p-8 text-white text-center relative"
+        >
+          <button
+            id="closePopup"
+            class="absolute top-4 right-4 text-white/80 hover:text-white text-2xl"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+          <div class="text-6xl mb-4">
+            <i class="fas fa-file-pdf text-gold"></i>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold mb-2">
+            Nhận Ngay File PDF
+          </h3>
+          <p class="text-white/90">
+            Top 30 Văn Phòng Hạng A Đẹp Nhất TP.HCM 2025
+          </p>
+        </div>
+
+        <div class="p-8">
+          <form id="leadForm" class="space-y-4">
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2"
+                >Họ và tên *</label
+              >
+              <input
+                type="text"
+                required
+                class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-navy focus:outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2"
+                >Số điện thoại *</label
+              >
+              <input
+                type="tel"
+                required
+                class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-navy focus:outline-none transition"
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-semibold text-gray-700 mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-navy focus:outline-none transition"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-gradient-to-r from-navy to-navy-light text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl transition-all"
+            >
+              <i class="fas fa-download mr-2"></i>Tải File PDF Miễn Phí
+            </button>
+
+            <p class="text-xs text-gray-500 text-center">
+              Chúng tôi cam kết bảo mật thông tin của bạn 100%
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="footerContainer"></div>
+    <script src="js/layout.js"></script>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script>
+      // Initialize AOS
+      AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100,
+      });
+
+      // Counter Animation
+      function animateCounter(element, target) {
+        let current = 0;
+        const increment = target / 100;
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          element.textContent = Math.floor(current) + "+";
+        }, 20);
+      }
+
+      // Start counters when in view
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const counters = entry.target.querySelectorAll(".counter");
+            counters.forEach((counter) => {
+              const target = parseInt(counter.dataset.target);
+              animateCounter(counter, target);
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      observer.observe(document.querySelector("#hero"));
+
+      // User Reviews Swiper
+      const reviewsSwiper = new Swiper(".user-reviews-swiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+          el: ".reviews-swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
+
+      // Toggle Advanced Filter
+      const toggleAdvancedFilter = document.getElementById(
+        "toggleAdvancedFilter"
+      );
+      const advancedFilter = document.getElementById("advancedFilter");
+      const toggleIcon = document.getElementById("toggleIcon");
+      const resetFilter = document.getElementById("resetFilter");
+
+      toggleAdvancedFilter.addEventListener("click", function () {
+        advancedFilter.classList.toggle("hidden");
+        toggleIcon.classList.toggle("rotate-180");
+      });
+
+      resetFilter.addEventListener("click", function () {
+        // Reset all filter inputs
+        advancedFilter.querySelectorAll("input").forEach((input) => {
+          if (input.type === "checkbox") {
+            input.checked = false;
+          } else {
+            input.value = "";
+          }
+        });
+        advancedFilter.querySelectorAll("select").forEach((select) => {
+          select.selectedIndex = 0;
+        });
+      });
+
+      // Smart Search Autocomplete
+      const buildings = [
+        "Bitexco Financial Tower",
+        "Landmark 81",
+        "Deutsches Haus",
+        "Vietcombank Tower",
+        "Empire City",
+        "Saigon Centre",
+        "The Metropole",
+        "Vincom Center",
+        "Saigon Times Square",
+        "Sunwah Tower",
+        "Diamond Plaza",
+        "The Hallmark",
+        "Capital Place",
+        "Sheraton Saigon",
+        "Itaxa Building",
+      ];
+
+      const searchInput = document.getElementById("smartSearch");
+      const autocompleteResults = document.getElementById(
+        "autocompleteResults"
+      );
+
+      searchInput.addEventListener("input", function (e) {
+        const query = e.target.value.toLowerCase();
+
+        if (query.length < 2) {
+          autocompleteResults.classList.add("hidden");
+          return;
+        }
+
+        const matches = buildings.filter((building) =>
+          building.toLowerCase().includes(query)
+        );
+
+        if (matches.length > 0) {
+          autocompleteResults.innerHTML = matches
+            .map(
+              (building) => `
+                    <div class="autocomplete-item px-6 py-4 hover:bg-navy hover:text-white cursor-pointer transition-all border-b border-gray-100 last:border-0">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-building text-gold"></i>
+                            <div>
+                                <div class="font-semibold">${building}</div>
+                                <div class="text-xs opacity-70">Văn phòng hạng A</div>
+                            </div>
+                        </div>
+                    </div>
+                `
+            )
+            .join("");
+          autocompleteResults.classList.remove("hidden");
+        } else {
+          autocompleteResults.classList.add("hidden");
+        }
+      });
+
+      // Close autocomplete when clicking outside
+      document.addEventListener("click", function (e) {
+        if (
+          !searchInput.contains(e.target) &&
+          !autocompleteResults.contains(e.target)
+        ) {
+          autocompleteResults.classList.add("hidden");
+        }
+      });
+
+      // Sticky Search Bar
+      let lastScroll = 0;
+      const stickySearch = document.getElementById("stickySearch");
+
+      window.addEventListener("scroll", function () {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > 600 && currentScroll > lastScroll) {
+          stickySearch.classList.add("active");
+        } else if (currentScroll < lastScroll) {
+          stickySearch.classList.remove("active");
+        }
+
+        lastScroll = currentScroll;
+
+        // Show scroll to top button
+        const scrollTop = document.getElementById("scrollTop");
+        if (currentScroll > 500) {
+          scrollTop.classList.remove("hidden");
+          scrollTop.classList.add("flex");
+        } else {
+          scrollTop.classList.add("hidden");
+          scrollTop.classList.remove("flex");
+        }
+      });
+
+      // Scroll to top
+      document
+        .getElementById("scrollTop")
+        .addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+      // Lead Magnet Popup (show ONLY once)
+      if (!localStorage.getItem("leadShown")) {
+        setTimeout(() => {
+          document.getElementById("leadPopup").classList.remove("hidden");
+          document.getElementById("leadPopup").classList.add("flex");
+          localStorage.setItem("leadShown", "true"); // mark as shown
+        }, 10000);
+      }
+
+      // Close popup
+      document
+        .getElementById("closePopup")
+        .addEventListener("click", function () {
+          document.getElementById("leadPopup").classList.add("hidden");
+          document.getElementById("leadPopup").classList.remove("flex");
+        });
+
+      // Open contact form popup
+      document
+        .getElementById("openContactForm")
+        .addEventListener("click", function () {
+          document.getElementById("leadPopup").classList.remove("hidden");
+          document.getElementById("leadPopup").classList.add("flex");
+        });
+
+      // Lead form submission
+      document
+        .getElementById("leadForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Cảm ơn bạn! File PDF đã được gửi đến email của bạn.");
+          document.getElementById("leadPopup").classList.add("hidden");
+          document.getElementById("leadPopup").classList.remove("flex");
+        });
+
+      // Mobile navigation
+      const mobileNavToggle = document.getElementById("mobileNavToggle");
+      const mobileNavClose = document.getElementById("mobileNavClose");
+      const mobileNav = document.getElementById("mobileNav");
+
+      const openMobileNav = () => {
+        mobileNav.classList.remove("hidden");
+        mobileNav.setAttribute("aria-hidden", "false");
+        document.body.classList.add("overflow-hidden");
+      };
+
+      const closeMobileNav = () => {
+        mobileNav.classList.add("hidden");
+        mobileNav.setAttribute("aria-hidden", "true");
+        document.body.classList.remove("overflow-hidden");
+      };
+
+      mobileNavToggle?.addEventListener("click", openMobileNav);
+      mobileNavClose?.addEventListener("click", closeMobileNav);
+      mobileNav?.addEventListener("click", (event) => {
+        if (event.target === mobileNav) {
+          closeMobileNav();
+        }
+      });
+
+      // Filter tabs
+      const filterTabs = document.querySelectorAll(".filter-tab");
+      filterTabs.forEach((tab) => {
+        tab.addEventListener("click", function () {
+          filterTabs.forEach((t) => {
+            t.classList.remove("bg-navy", "text-white");
+            t.classList.add("bg-white", "text-navy");
+          });
+          this.classList.remove("bg-white", "text-navy");
+          this.classList.add("bg-navy", "text-white");
+        });
+      });
+    </script>
+  </body>
+</html>
