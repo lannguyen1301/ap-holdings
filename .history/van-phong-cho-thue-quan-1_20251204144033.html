@@ -5,37 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
-  <!-- CSS noUiSlider -->
-  <link href="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.css" rel="stylesheet">
-
-  <!-- JS noUiSlider -->
-  <script src="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.js"></script>
-
   <link href="styles/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles/odometer-theme-default.css" />
   <link rel="stylesheet" href="styles/styles.css" />
   <title>Văn phòng cho thuê Quận 1</title>
-
-  <style>
-    .noUi-handle {
-      width: 12px;
-      height: 12px;
-      border-radius: 9999px;
-      border: 1px solid #1e3a8a;
-      background: white;
-      box-shadow: 0 0 0 2px #eff6ff;
-      transition: all 0.3s ease;
-    }
-
-    .noUi-handle:hover {
-      background: #e0f2fe;
-    }
-
-    .noUi-connect {
-      background: linear-gradient(to right, #1e3a8a, #2563eb);
-      border-radius: 9999px;
-    }
-  </style>
 </head>
 
 <body>
@@ -1256,26 +1229,38 @@
               </div>
             </div> -->
 
-            <!-- diện tích và giá thuê -->
-            <!-- Slider diện tích -->
+            <!-- Diện tích -->
             <div class="mb-6">
               <label class="block mb-2 text-sm font-medium text-gray-700">Diện tích (m²)</label>
-              <div id="areaSlider"></div>
+              <div class="relative w-full h-2 bg-gray-200 rounded-lg">
+                <!-- Track highlight -->
+                <div id="areaTrack" class="absolute h-2 bg-blue-400 rounded-lg"></div>
+                <!-- Min handle -->
+                <input type="range" id="areaMin" min="10" max="2000" value="100" step="10"
+                  class="absolute w-full h-2 appearance-none bg-transparent">
+                <!-- Max handle -->
+                <input type="range" id="areaMax" min="10" max="2000" value="1000" step="10"
+                  class="absolute w-full h-2 appearance-none bg-transparent">
+              </div>
               <div class="mt-2 text-sm text-gray-600">
                 Từ <span id="areaMinVal">100</span> m² đến <span id="areaMaxVal">1000</span> m²
               </div>
             </div>
 
-            <!-- Slider giá thuê -->
+            <!-- Giá thuê -->
             <div class="mb-6">
               <label class="block mb-2 text-sm font-medium text-gray-700">Giá thuê ($/m²/tháng)</label>
-              <div id="priceSlider"></div>
+              <div class="relative w-full h-2 bg-gray-200 rounded-lg">
+                <div id="priceTrack" class="absolute h-2 bg-green-400 rounded-lg"></div>
+                <input type="range" id="priceMin" min="8" max="65" value="20" step="1"
+                  class="absolute w-full h-2 appearance-none bg-transparent">
+                <input type="range" id="priceMax" min="8" max="65" value="50" step="1"
+                  class="absolute w-full h-2 appearance-none bg-transparent">
+              </div>
               <div class="mt-2 text-sm text-gray-600">
                 Từ $<span id="priceMinVal">20</span> đến $<span id="priceMaxVal">50</span>
               </div>
             </div>
-
-            <!-- diện tích và giá thuê -->
 
 
             <!-- Hạng văn phòng -->
@@ -2738,59 +2723,12 @@
   </script>
 
   <!-- filter slide range -->
-  <!-- noUiSlider CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.js"></script>
-
-  <script>
-    // Slider diện tích
-    const areaSlider = document.getElementById('areaSlider');
-    noUiSlider.create(areaSlider, {
-      start: [100, 1000], // giá trị mặc định
-      connect: true,
-      range: {
-        min: 10,
-        max: 2000
-      },
-      step: 10,
-      tooltips: true,
-      format: {
-        to: value => Math.round(value),
-        from: value => Number(value)
-      }
-    });
-
-    const areaMinVal = document.getElementById('areaMinVal');
-    const areaMaxVal = document.getElementById('areaMaxVal');
-    areaSlider.noUiSlider.on('update', (values) => {
-      areaMinVal.textContent = values[0];
-      areaMaxVal.textContent = values[1];
-    });
-
-    // Slider giá thuê
-    const priceSlider = document.getElementById('priceSlider');
-    noUiSlider.create(priceSlider, {
-      start: [20, 50], // giá trị mặc định
-      connect: true,
-      range: {
-        min: 8,
-        max: 65
-      },
-      step: 1,
-      tooltips: true,
-      format: {
-        to: value => Math.round(value),
-        from: value => Number(value)
-      }
-    });
-
-    const priceMinVal = document.getElementById('priceMinVal');
-    const priceMaxVal = document.getElementById('priceMaxVal');
-    priceSlider.noUiSlider.on('update', (values) => {
-      priceMinVal.textContent = values[0];
-      priceMaxVal.textContent = values[1];
-    });
-  </script>
-
+  input[type=range]::-webkit-slider-thumb {
+  @apply w-4 h-4 rounded-full bg-blue-500 cursor-pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+  @apply w-4 h-4 rounded-full bg-blue-500 cursor-pointer;
+  }
 
   <!-- filter slide range -->
 </body>

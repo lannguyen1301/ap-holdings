@@ -5,37 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
-  <!-- CSS noUiSlider -->
-  <link href="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.css" rel="stylesheet">
-
-  <!-- JS noUiSlider -->
-  <script src="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.js"></script>
-
   <link href="styles/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles/odometer-theme-default.css" />
   <link rel="stylesheet" href="styles/styles.css" />
   <title>Văn phòng cho thuê Quận 1</title>
-
-  <style>
-    .noUi-handle {
-      width: 12px;
-      height: 12px;
-      border-radius: 9999px;
-      border: 1px solid #1e3a8a;
-      background: white;
-      box-shadow: 0 0 0 2px #eff6ff;
-      transition: all 0.3s ease;
-    }
-
-    .noUi-handle:hover {
-      background: #e0f2fe;
-    }
-
-    .noUi-connect {
-      background: linear-gradient(to right, #1e3a8a, #2563eb);
-      border-radius: 9999px;
-    }
-  </style>
 </head>
 
 <body>
@@ -1204,131 +1177,41 @@
         </div>
 
         <!-- filter -->
-        <div class="lg:col-span-4">
-          <!-- Bộ lọc cố định khi scroll (có thể thêm sticky sau) -->
-          <div class="p-6 space-y-8 bg-white shadow-md rounded-2xl">
-
-            <!-- <div>
-              <h3 class="mb-4 text-lg font-bold">Tick giá Quận 1</h3>
-              <div class="grid grid-cols-2 gap-3 text-sm">
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  8-10$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  10-12$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  12-15$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  15-18$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  18-21$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  21-25$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  25-30$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  30-65$/m²</label>
-              </div>
-            </div> -->
-
-            <!-- <div>
-              <h3 class="mb-4 text-lg font-bold">Tick diện tích Quận 1</h3>
-              <div class="space-y-3 text-sm">
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  1-10m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  10-30m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  30-50m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  50-80m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  80-120m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  120-180m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  180-250m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  250-350m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
-                  350-500m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded"> Trên
-                  500m²</label>
-              </div>
-            </div> -->
-
-            <!-- diện tích và giá thuê -->
-            <!-- Slider diện tích -->
-            <div class="mb-6">
-              <label class="block mb-2 text-sm font-medium text-gray-700">Diện tích (m²)</label>
-              <div id="areaSlider"></div>
-              <div class="mt-2 text-sm text-gray-600">
-                Từ <span id="areaMinVal">100</span> m² đến <span id="areaMaxVal">1000</span> m²
-              </div>
-            </div>
-
-            <!-- Slider giá thuê -->
-            <div class="mb-6">
-              <label class="block mb-2 text-sm font-medium text-gray-700">Giá thuê ($/m²/tháng)</label>
-              <div id="priceSlider"></div>
-              <div class="mt-2 text-sm text-gray-600">
-                Từ $<span id="priceMinVal">20</span> đến $<span id="priceMaxVal">50</span>
-              </div>
-            </div>
-
-            <!-- diện tích và giá thuê -->
-
-
-            <!-- Hạng văn phòng -->
-            <div class="space-y-4">
-              <div>
-                <h3 class="mb-3 text-lg font-bold">Tick hạng văn phòng Quận 1</h3>
-                <div class="flex flex-wrap gap-3">
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng A</button>
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng B</button>
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng C</button>
-                </div>
-              </div>
-
-              <div>
-                <h3 class="mb-3 text-lg font-bold">Tick hướng Quận 1</h3>
-                <div class="flex flex-wrap gap-3">
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Đông</button>
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Tây</button>
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Nam</button>
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Bắc</button>
-                </div>
-              </div>
-
-              <div>
-                <h3 class="mb-3 text-lg font-bold">Tick phường mới Quận 1</h3>
-                <select
-                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
-                  <option>Chọn phường</option>
-                  <option>Phường Bến Nghé</option>
-                  <option>Phường Đa Kao</option>
-                  <!-- thêm các phường khác -->
-                </select>
-              </div>
-
-              <div>
-                <h3 class="mb-3 text-lg font-bold">Tick đường Quận 1</h3>
-                <select
-                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
-                  <option>Chọn đường</option>
-                  <option>Tôn Đức Thắng</option>
-                  <option>Lê Duẩn</option>
-                  <option>Hai Bà Trưng</option>
-                  <!-- thêm đường khác -->
-                </select>
-              </div>
-            </div>
-
-            <button
-              class="w-full py-4 font-bold text-white transition bg-blue-600 rounded-full rounded-xl hover:bg-blue-700">
-              Đặt lại
-            </button>
+        <!-- Diện tích -->
+        <div class="mb-6">
+          <label class="block mb-2 text-sm font-medium text-gray-700">Diện tích (m²)</label>
+          <div class="relative w-full h-2 bg-gray-200 rounded-lg">
+            <!-- Track highlight -->
+            <div id="areaTrack" class="absolute h-2 bg-blue-400 rounded-lg"></div>
+            <!-- Min handle -->
+            <input type="range" id="areaMin" min="10" max="2000" value="100" step="10"
+              class="absolute w-full h-2 appearance-none bg-transparent">
+            <!-- Max handle -->
+            <input type="range" id="areaMax" min="10" max="2000" value="1000" step="10"
+              class="absolute w-full h-2 appearance-none bg-transparent">
+          </div>
+          <div class="mt-2 text-sm text-gray-600">
+            Từ <span id="areaMinVal">100</span> m² đến <span id="areaMaxVal">1000</span> m²
           </div>
         </div>
+
+        <!-- Giá thuê -->
+        <div class="mb-6">
+          <label class="block mb-2 text-sm font-medium text-gray-700">Giá thuê ($/m²/tháng)</label>
+          <div class="relative w-full h-2 bg-gray-200 rounded-lg">
+            <div id="priceTrack" class="absolute h-2 bg-green-400 rounded-lg"></div>
+            <input type="range" id="priceMin" min="8" max="65" value="20" step="1"
+              class="absolute w-full h-2 appearance-none bg-transparent">
+            <input type="range" id="priceMax" min="8" max="65" value="50" step="1"
+              class="absolute w-full h-2 appearance-none bg-transparent">
+          </div>
+          <div class="mt-2 text-sm text-gray-600">
+            Từ $<span id="priceMinVal">20</span> đến $<span id="priceMaxVal">50</span>
+          </div>
+        </div>
+
+        <!-- filter -->
+
 
         <!-- Pagination -->
         <div class="flex justify-center mt-8 lg:col-span-8">
@@ -2738,59 +2621,40 @@
   </script>
 
   <!-- filter slide range -->
-  <!-- noUiSlider CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.js"></script>
-
   <script>
-    // Slider diện tích
-    const areaSlider = document.getElementById('areaSlider');
-    noUiSlider.create(areaSlider, {
-      start: [100, 1000], // giá trị mặc định
-      connect: true,
-      range: {
-        min: 10,
-        max: 2000
-      },
-      step: 10,
-      tooltips: true,
-      format: {
-        to: value => Math.round(value),
-        from: value => Number(value)
+    function dualRange(minInput, maxInput, track, minVal, maxVal) {
+      const min = document.getElementById(minInput);
+      const max = document.getElementById(maxInput);
+      const trackEl = document.getElementById(track);
+      const minOut = document.getElementById(minVal);
+      const maxOut = document.getElementById(maxVal);
+
+      function update() {
+        let minValNum = parseInt(min.value);
+        let maxValNum = parseInt(max.value);
+        if (minValNum > maxValNum) {
+          [min.value, max.value] = [maxValNum, minValNum]; // hoán đổi nếu kéo chéo
+          minValNum = parseInt(min.value);
+          maxValNum = parseInt(max.value);
+        }
+        minOut.textContent = minValNum;
+        maxOut.textContent = maxValNum;
+        const percentMin = (minValNum - min.min) / (min.max - min.min) * 100;
+        const percentMax = (maxValNum - max.min) / (max.max - max.min) * 100;
+        trackEl.style.left = percentMin + "%";
+        trackEl.style.right = (100 - percentMax) + "%";
       }
-    });
 
-    const areaMinVal = document.getElementById('areaMinVal');
-    const areaMaxVal = document.getElementById('areaMaxVal');
-    areaSlider.noUiSlider.on('update', (values) => {
-      areaMinVal.textContent = values[0];
-      areaMaxVal.textContent = values[1];
-    });
+      min.addEventListener("input", update);
+      max.addEventListener("input", update);
+      update();
+    }
 
-    // Slider giá thuê
-    const priceSlider = document.getElementById('priceSlider');
-    noUiSlider.create(priceSlider, {
-      start: [20, 50], // giá trị mặc định
-      connect: true,
-      range: {
-        min: 8,
-        max: 65
-      },
-      step: 1,
-      tooltips: true,
-      format: {
-        to: value => Math.round(value),
-        from: value => Number(value)
-      }
-    });
-
-    const priceMinVal = document.getElementById('priceMinVal');
-    const priceMaxVal = document.getElementById('priceMaxVal');
-    priceSlider.noUiSlider.on('update', (values) => {
-      priceMinVal.textContent = values[0];
-      priceMaxVal.textContent = values[1];
-    });
+    // Khởi tạo cho diện tích
+    dualRange("areaMin", "areaMax", "areaTrack", "areaMinVal", "areaMaxVal");
+    // Khởi tạo cho giá
+    dualRange("priceMin", "priceMax", "priceTrack", "priceMinVal", "priceMaxVal");
   </script>
-
 
   <!-- filter slide range -->
 </body>
