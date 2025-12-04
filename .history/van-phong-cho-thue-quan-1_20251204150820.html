@@ -1208,10 +1208,57 @@
           <!-- Bộ lọc cố định khi scroll (có thể thêm sticky sau) -->
           <div class="border border-gray-300 p-6 space-y-8 bg-white shadow-md rounded-2xl">
 
+            <!-- <div>
+              <h3 class="mb-4 text-lg font-bold">Tick giá Quận 1</h3>
+              <div class="grid grid-cols-2 gap-3 text-sm">
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  8-10$/m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  10-12$/m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  12-15$/m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  15-18$/m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  18-21$/m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  21-25$/m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  25-30$/m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  30-65$/m²</label>
+              </div>
+            </div> -->
+
+            <!-- <div>
+              <h3 class="mb-4 text-lg font-bold">Tick diện tích Quận 1</h3>
+              <div class="space-y-3 text-sm">
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  1-10m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  10-30m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  30-50m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  50-80m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  80-120m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  120-180m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  180-250m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  250-350m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded">
+                  350-500m²</label>
+                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded"> Trên
+                  500m²</label>
+              </div>
+            </div> -->
+
             <!-- diện tích và giá thuê -->
             <!-- Slider diện tích -->
             <div class="mb-6">
-              <h3 class="mb-3 text-lg font-bold">Diện tích Quận 1</h3>
               <label class="block mb-2 text-sm font-medium text-gray-700">Diện tích (m²)</label>
               <div id="areaSlider"></div>
               <div class="mt-2 text-sm text-gray-600">
@@ -1221,7 +1268,6 @@
 
             <!-- Slider giá thuê -->
             <div class="mb-6">
-              <h3 class="mb-3 text-lg font-bold">Giá thuê Quận 1</h3>
               <label class="block mb-2 text-sm font-medium text-gray-700">Giá thuê ($/m²/tháng)</label>
               <div id="priceSlider"></div>
               <div class="mt-2 text-sm text-gray-600">
@@ -1235,18 +1281,17 @@
             <!-- Hạng văn phòng -->
             <div class="space-y-4">
               <div>
-                <h3 class="mb-3 text-lg font-bold">Hạng văn phòng Quận 1</h3>
-                <div class="flex flex-wrap justify-between text-sm gap-2">
+                <h3 class="mb-3 text-lg font-bold">Tick hạng văn phòng Quận 1</h3>
+                <div class="flex flex-wrap gap-3">
                   <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng A</button>
                   <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng B</button>
                   <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng C</button>
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Giá rẻ</button>
                 </div>
               </div>
 
               <div>
-                <h3 class="mb-3 text-lg font-bold">Hướng Quận 1</h3>
-                <div class="flex flex-wrap justify-between text-sm gap-3">
+                <h3 class="mb-3 text-lg font-bold">Tick hướng Quận 1</h3>
+                <div class="flex flex-wrap gap-3">
                   <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Đông</button>
                   <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Tây</button>
                   <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Nam</button>
@@ -1255,9 +1300,9 @@
               </div>
 
               <div>
-                <h3 class="mb-3 text-lg font-bold">Phường mới Quận 1</h3>
+                <h3 class="mb-3 text-lg font-bold">Tick phường mới Quận 1</h3>
                 <select
-                  class="w-full px-4 text-sm py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
                   <option>Chọn phường</option>
                   <option>Phường Bến Nghé</option>
                   <option>Phường Đa Kao</option>
@@ -1266,9 +1311,9 @@
               </div>
 
               <div>
-                <h3 class="mb-3 text-lg font-bold">Đường Quận 1</h3>
+                <h3 class="mb-3 text-lg font-bold">Tick đường Quận 1</h3>
                 <select
-                  class="w-full px-4 text-sm py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
                   <option>Chọn đường</option>
                   <option>Tôn Đức Thắng</option>
                   <option>Lê Duẩn</option>
