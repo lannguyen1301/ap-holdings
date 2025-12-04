@@ -1262,7 +1262,7 @@
               </div>
             </div>
 
-            <!-- Hạng văn phòng -->
+
             <div class="space-y-4">
               <div>
                 <h3 class="mb-3 text-lg font-bold">Tick hạng văn phòng Quận 1</h3>
@@ -2720,44 +2720,6 @@
       },
     });
   </script>
-
-  <!-- filter slide range -->
-  <script>
-    function dualRange(minInput, maxInput, track, minVal, maxVal) {
-      const min = document.getElementById(minInput);
-      const max = document.getElementById(maxInput);
-      const trackEl = document.getElementById(track);
-      const minOut = document.getElementById(minVal);
-      const maxOut = document.getElementById(maxVal);
-
-      function update() {
-        let minValNum = parseInt(min.value);
-        let maxValNum = parseInt(max.value);
-        if (minValNum > maxValNum) {
-          [min.value, max.value] = [maxValNum, minValNum]; // hoán đổi nếu kéo chéo
-          minValNum = parseInt(min.value);
-          maxValNum = parseInt(max.value);
-        }
-        minOut.textContent = minValNum;
-        maxOut.textContent = maxValNum;
-        const percentMin = (minValNum - min.min) / (min.max - min.min) * 100;
-        const percentMax = (maxValNum - max.min) / (max.max - max.min) * 100;
-        trackEl.style.left = percentMin + "%";
-        trackEl.style.right = (100 - percentMax) + "%";
-      }
-
-      min.addEventListener("input", update);
-      max.addEventListener("input", update);
-      update();
-    }
-
-    // Khởi tạo cho diện tích
-    dualRange("areaMin", "areaMax", "areaTrack", "areaMinVal", "areaMaxVal");
-    // Khởi tạo cho giá
-    dualRange("priceMin", "priceMax", "priceTrack", "priceMinVal", "priceMaxVal");
-  </script>
-
-  <!-- filter slide range -->
 </body>
 
 </html>
