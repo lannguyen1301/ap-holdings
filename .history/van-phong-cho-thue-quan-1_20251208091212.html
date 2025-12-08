@@ -5,10 +5,37 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+  <!-- CSS noUiSlider -->
+  <link href="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.css" rel="stylesheet">
+
+  <!-- JS noUiSlider -->
+  <script src="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.js"></script>
+
   <link href="styles/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles/odometer-theme-default.css" />
   <link rel="stylesheet" href="styles/styles.css" />
-  <title>Văn phòng cho thuê Quận</title>
+  <title>Văn phòng cho thuê Quận 1</title>
+
+  <style>
+    .noUi-handle {
+      width: 12px;
+      height: 12px;
+      border-radius: 9999px;
+      border: 1px solid #1e3a8a;
+      background: white;
+      box-shadow: 0 0 0 2px #eff6ff;
+      transition: all 0.3s ease;
+    }
+
+    .noUi-handle:hover {
+      background: #e0f2fe;
+    }
+
+    .noUi-connect {
+      background: linear-gradient(to right, #1e3a8a, #2563eb);
+      border-radius: 9999px;
+    }
+  </style>
 </head>
 
 <body>
@@ -505,7 +532,7 @@
     <div class="w-full h-auto bg-center bg-no-repeat bg-cover" style="background-image: url('assets/images/layer.svg')">
       <div
         class="container flex h-[225px] flex-col items-center justify-center sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[450px]">
-        <h1 class="common-hero-heading">Properties</h1>
+        <h1 class="common-hero-heading">Văn phòng cho thuê quận 1</h1>
 
         <div class="flex" aria-label="Breadcrumb">
           <ol class="inline-flex items-center space-x-1 md:space-x-2">
@@ -520,7 +547,8 @@
             <li aria-current="page">
               <div class="flex items-center">
                 <i class="w-3 h-3 mx-1 text-gray-400 fa-solid fa-chevron-right"></i>
-                <span class="text-sm font-medium text-gray-500 ms-1 dark:text-gray-400 md:ms-2">Properties</span>
+                <span class="text-sm font-medium text-gray-500 ms-1 dark:text-gray-400 md:ms-2">Văn phòng cho thuê quận
+                  1</span>
               </div>
             </li>
           </ol>
@@ -528,10 +556,11 @@
       </div>
     </div>
   </section>
+
   <!-- Content Started -->
-  <div class="container px-4 section-padding-120 xl:px-0">
-    <section class="p-8">
-      <div class="mx-auto max-w-7xl">
+  <div class="container mx-auto max-w-screen-xl">
+    <section class="mb-8 mt-8">
+      <div class="mx-auto ">
         <div class="flex items-center justify-between mb-8">
           <h1 class="text-3xl font-bold text-navy">
             Các sản phẩm văn phòng Quận 1 nổi bật - 2025
@@ -554,13 +583,20 @@
           <div class="overflow-hidden transition bg-white shadow-md swiper-slide rounded-2xl hover:shadow-lg">
             <div class="swiper-sliderelative">
               <div class="flex items-center justify-center h-48 bg-slate-200">
-                <i class="text-5xl text-gray-400 fas fa-image"></i>
+                <img src="assets/images/detail/detail-28.jpg" alt="" class="block object-cover w-full h-full">
+                <!-- <i class="text-5xl text-gray-400 fas fa-image"></i> -->
               </div>
               <div class="absolute px-2 py-1 text-xs font-semibold text-white rounded left-3 top-2 bg-gold">
                 LEED PLATINUM
               </div>
               <button class="absolute p-2 transition bg-white rounded-lg shadow right-3 top-3 hover:bg-gray-50">
-                <i class="far fa-heart text-gold"></i>
+                <svg class="svg-inline--fa fa-heart text-gold" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                  data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z">
+                  </path>
+                </svg><!-- <i class="far fa-heart text-gold"></i> Font Awesome fontawesome.com -->
               </button>
             </div>
 
@@ -573,13 +609,25 @@
               </h3>
 
               <div class="flex items-center gap-2 mb-2">
-                <i class="text-sm fas fa-tag text-navy"></i>
+                <svg class="text-sm svg-inline--fa fa-tag text-navy" aria-hidden="true" focusable="false"
+                  data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                  data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M0 80L0 229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7L48 32C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z">
+                  </path>
+                </svg><!-- <i class="text-sm fas fa-tag text-navy"></i> Font Awesome fontawesome.com -->
                 <span class="font-semibold text-gold">43 - 46 USD/m2</span>
                 <span class="text-gray-600">/ M2</span>
               </div>
 
               <div class="flex items-start gap-2 mb-4 text-sm text-gray-600">
-                <i class="mt-1 fas fa-map-marker-alt text-navy"></i>
+                <svg class="mt-1 svg-inline--fa fa-location-dot text-navy" aria-hidden="true" focusable="false"
+                  data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z">
+                  </path>
+                </svg><!-- <i class="mt-1 fas fa-map-marker-alt text-navy"></i> Font Awesome fontawesome.com -->
                 <span>02 Ngô Đức Kế, Phường Sài Gòn, Quận 1</span>
               </div>
 
@@ -589,7 +637,13 @@
                   So sánh
                 </button>
                 <button class="p-2 transition border border-gray-300 rounded-xl hover:bg-gold/10">
-                  <i class="far fa-clone text-navy"></i>
+                  <svg class="svg-inline--fa fa-clone text-navy" aria-hidden="true" focusable="false" data-prefix="far"
+                    data-icon="clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M64 464l224 0c8.8 0 16-7.2 16-16l0-64 48 0 0 64c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 224c0-35.3 28.7-64 64-64l64 0 0 48-64 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16zM224 304l224 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16L224 48c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16zm-64-16l0-224c0-35.3 28.7-64 64-64L448 0c35.3 0 64 28.7 64 64l0 224c0 35.3-28.7 64-64 64l-224 0c-35.3 0-64-28.7-64-64z">
+                    </path>
+                  </svg><!-- <i class="far fa-clone text-navy"></i> Font Awesome fontawesome.com -->
                 </button>
               </div>
             </div>
@@ -599,13 +653,19 @@
           <div class="overflow-hidden transition bg-white shadow-md swiper-slide rounded-2xl hover:shadow-lg">
             <div class="relative">
               <div class="flex items-center justify-center h-48 bg-slate-200">
-                <i class="text-5xl text-gray-400 fas fa-image"></i>
+                <img src="assets/images/detail/detail-29.jpg" alt="" class="block object-cover w-full h-full">
               </div>
               <div class="absolute px-2 py-1 text-xs font-semibold text-white rounded left-3 top-3 bg-gold">
                 LEED PLATINUM
               </div>
               <button class="absolute p-2 transition bg-white rounded-lg shadow right-3 top-3 hover:bg-gray-50">
-                <i class="far fa-heart text-gold"></i>
+                <svg class="svg-inline--fa fa-heart text-gold" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                  data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z">
+                  </path>
+                </svg><!-- <i class="far fa-heart text-gold"></i> Font Awesome fontawesome.com -->
               </button>
             </div>
 
@@ -618,13 +678,25 @@
               </h3>
 
               <div class="flex items-center gap-2 mb-2">
-                <i class="text-sm fas fa-tag text-navy"></i>
+                <svg class="text-sm svg-inline--fa fa-tag text-navy" aria-hidden="true" focusable="false"
+                  data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                  data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M0 80L0 229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7L48 32C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z">
+                  </path>
+                </svg><!-- <i class="text-sm fas fa-tag text-navy"></i> Font Awesome fontawesome.com -->
                 <span class="font-semibold text-gold">53 - 55 USD/m2</span>
                 <span class="text-gray-600">/ M2</span>
               </div>
 
               <div class="flex items-start gap-2 mb-4 text-sm text-gray-600">
-                <i class="mt-1 fas fa-map-marker-alt text-navy"></i>
+                <svg class="mt-1 svg-inline--fa fa-location-dot text-navy" aria-hidden="true" focusable="false"
+                  data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z">
+                  </path>
+                </svg><!-- <i class="mt-1 fas fa-map-marker-alt text-navy"></i> Font Awesome fontawesome.com -->
                 <span>5 Công Trường Mê Linh, Quận 1</span>
               </div>
 
@@ -634,7 +706,13 @@
                   So sánh
                 </button>
                 <button class="p-2 transition border border-gray-300 rounded-xl hover:bg-gold/10">
-                  <i class="far fa-clone text-navy"></i>
+                  <svg class="svg-inline--fa fa-clone text-navy" aria-hidden="true" focusable="false" data-prefix="far"
+                    data-icon="clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M64 464l224 0c8.8 0 16-7.2 16-16l0-64 48 0 0 64c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 224c0-35.3 28.7-64 64-64l64 0 0 48-64 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16zM224 304l224 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16L224 48c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16zm-64-16l0-224c0-35.3 28.7-64 64-64L448 0c35.3 0 64 28.7 64 64l0 224c0 35.3-28.7 64-64 64l-224 0c-35.3 0-64-28.7-64-64z">
+                    </path>
+                  </svg><!-- <i class="far fa-clone text-navy"></i> Font Awesome fontawesome.com -->
                 </button>
               </div>
             </div>
@@ -644,13 +722,19 @@
           <div class="overflow-hidden transition bg-white shadow-md swiper-slide rounded-2xl hover:shadow-lg">
             <div class="relative">
               <div class="flex items-center justify-center h-48 bg-slate-200">
-                <i class="text-5xl text-gray-400 fas fa-image"></i>
+                <img src="assets/images/detail/detail-30.jpg" alt="" class="block object-cover w-full h-full">
               </div>
               <div class="absolute px-2 py-1 text-xs font-semibold text-white rounded left-3 top-3 bg-gold">
                 LEED PLATINUM
               </div>
               <button class="absolute p-2 transition bg-white rounded-lg shadow right-3 top-3 hover:bg-gray-50">
-                <i class="far fa-heart text-gold"></i>
+                <svg class="svg-inline--fa fa-heart text-gold" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                  data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z">
+                  </path>
+                </svg><!-- <i class="far fa-heart text-gold"></i> Font Awesome fontawesome.com -->
               </button>
             </div>
 
@@ -663,13 +747,25 @@
               </h3>
 
               <div class="flex items-center gap-2 mb-2">
-                <i class="text-sm fas fa-tag text-navy"></i>
+                <svg class="text-sm svg-inline--fa fa-tag text-navy" aria-hidden="true" focusable="false"
+                  data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                  data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M0 80L0 229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7L48 32C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z">
+                  </path>
+                </svg><!-- <i class="text-sm fas fa-tag text-navy"></i> Font Awesome fontawesome.com -->
                 <span class="font-semibold text-gold">43 - 45 USD/m2</span>
                 <span class="text-gray-600">/ M2</span>
               </div>
 
               <div class="flex items-start gap-2 mb-4 text-sm text-gray-600">
-                <i class="mt-1 fas fa-map-marker-alt text-navy"></i>
+                <svg class="mt-1 svg-inline--fa fa-location-dot text-navy" aria-hidden="true" focusable="false"
+                  data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z">
+                  </path>
+                </svg><!-- <i class="mt-1 fas fa-map-marker-alt text-navy"></i> Font Awesome fontawesome.com -->
                 <span>15 Lê Thánh Tôn, Quận 1</span>
               </div>
 
@@ -679,7 +775,13 @@
                   So sánh
                 </button>
                 <button class="p-2 transition border border-gray-300 rounded-xl hover:bg-gold/10">
-                  <i class="far fa-clone text-navy"></i>
+                  <svg class="svg-inline--fa fa-clone text-navy" aria-hidden="true" focusable="false" data-prefix="far"
+                    data-icon="clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M64 464l224 0c8.8 0 16-7.2 16-16l0-64 48 0 0 64c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 224c0-35.3 28.7-64 64-64l64 0 0 48-64 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16zM224 304l224 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16L224 48c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16zm-64-16l0-224c0-35.3 28.7-64 64-64L448 0c35.3 0 64 28.7 64 64l0 224c0 35.3-28.7 64-64 64l-224 0c-35.3 0-64-28.7-64-64z">
+                    </path>
+                  </svg><!-- <i class="far fa-clone text-navy"></i> Font Awesome fontawesome.com -->
                 </button>
               </div>
             </div>
@@ -689,13 +791,19 @@
           <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-lg">
             <div class="relative">
               <div class="flex items-center justify-center h-48 bg-slate-200">
-                <i class="text-5xl text-gray-400 fas fa-image"></i>
+                <img src="assets/images/detail/detail-31.jpg" alt="" class="block object-cover w-full h-full">
               </div>
               <div class="absolute px-2 py-1 text-xs font-semibold text-white rounded left-3 top-3 bg-gold">
                 LEED PLATINUM
               </div>
               <button class="absolute p-2 transition bg-white rounded-lg shadow right-3 top-3 hover:bg-gray-50">
-                <i class="far fa-heart text-gold"></i>
+                <svg class="svg-inline--fa fa-heart text-gold" aria-hidden="true" focusable="false" data-prefix="far"
+                  data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                  data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8l0-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5l0 3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20-.1-.1s0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5l0 3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2l0-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z">
+                  </path>
+                </svg><!-- <i class="far fa-heart text-gold"></i> Font Awesome fontawesome.com -->
               </button>
             </div>
 
@@ -708,13 +816,25 @@
               </h3>
 
               <div class="flex items-center gap-2 mb-2">
-                <i class="text-sm fas fa-tag text-navy"></i>
+                <svg class="text-sm svg-inline--fa fa-tag text-navy" aria-hidden="true" focusable="false"
+                  data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                  data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M0 80L0 229.5c0 17 6.7 33.3 18.7 45.3l176 176c25 25 65.5 25 90.5 0L418.7 317.3c25-25 25-65.5 0-90.5l-176-176c-12-12-28.3-18.7-45.3-18.7L48 32C21.5 32 0 53.5 0 80zm112 32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z">
+                  </path>
+                </svg><!-- <i class="text-sm fas fa-tag text-navy"></i> Font Awesome fontawesome.com -->
                 <span class="font-semibold text-gold">21 - 25 USD/m2</span>
                 <span class="text-gray-600">/ M2</span>
               </div>
 
               <div class="flex items-start gap-2 mb-4 text-sm text-gray-600">
-                <i class="mt-1 fas fa-map-marker-alt text-navy"></i>
+                <svg class="mt-1 svg-inline--fa fa-location-dot text-navy" aria-hidden="true" focusable="false"
+                  data-prefix="fas" data-icon="location-dot" role="img" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512" data-fa-i2svg="">
+                  <path fill="currentColor"
+                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z">
+                  </path>
+                </svg><!-- <i class="mt-1 fas fa-map-marker-alt text-navy"></i> Font Awesome fontawesome.com -->
                 <span>7 Nguyễn Thị Minh Khai, Quận 1</span>
               </div>
 
@@ -724,7 +844,13 @@
                   So sánh
                 </button>
                 <button class="p-2 transition border border-gray-300 rounded-xl hover:bg-gold/10">
-                  <i class="far fa-clone text-navy"></i>
+                  <svg class="svg-inline--fa fa-clone text-navy" aria-hidden="true" focusable="false" data-prefix="far"
+                    data-icon="clone" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    data-fa-i2svg="">
+                    <path fill="currentColor"
+                      d="M64 464l224 0c8.8 0 16-7.2 16-16l0-64 48 0 0 64c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 224c0-35.3 28.7-64 64-64l64 0 0 48-64 0c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16zM224 304l224 0c8.8 0 16-7.2 16-16l0-224c0-8.8-7.2-16-16-16L224 48c-8.8 0-16 7.2-16 16l0 224c0 8.8 7.2 16 16 16zm-64-16l0-224c0-35.3 28.7-64 64-64L448 0c35.3 0 64 28.7 64 64l0 224c0 35.3-28.7 64-64 64l-224 0c-35.3 0-64-28.7-64-64z">
+                    </path>
+                  </svg><!-- <i class="far fa-clone text-navy"></i> Font Awesome fontawesome.com -->
                 </button>
               </div>
             </div>
@@ -733,19 +859,19 @@
       </div>
     </section>
     <!-- content started -->
-    <div class="px-4 py-8 mx-auto max-w-screen-2xl">
+    <div class="py-8 mx-auto max-w-screen-2xl">
       <h1 class="mb-8 text-3xl font-bold text-gray-900">DANH SÁCH CÁC CAO ỐC VĂN PHÒNG QUẬN 1</h1>
 
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
         <div class="grid grid-cols-1 gap-6 lg:col-span-8 sm:grid-cols-2 xl:grid-cols-3">
 
-          <!-- Card mẫu 1 -->
+          <!-- Card 1 -->
           <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-xl h-fit">
             <div class="relative">
               <span
                 class="absolute z-10 px-3 py-1 text-xs font-bold text-white bg-yellow-500 rounded-full top-3 left-3">LEED
                 GOLD</span>
-              <img src="https://via.placeholder.com/400x300" alt="The Nexus" class="object-cover w-full h-48" />
+              <img src="assets/images/detail/detail-1.jpg" alt="The Nexus" class="object-cover w-full h-48" />
             </div>
             <div class="p-5">
               <h3 class="text-lg font-semibold text-gray-900">The Nexus</h3>
@@ -776,13 +902,13 @@
             </div>
           </div>
 
-          <!-- Card mẫu 2 -->
+          <!-- Card 2 -->
           <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-xl h-fit">
             <div class="relative">
               <span
                 class="absolute z-10 px-3 py-1 text-xs font-bold text-white bg-yellow-500 rounded-full top-3 left-3">LEED
                 GOLD</span>
-              <img src="https://via.placeholder.com/400x300" alt="Saigon Marina IFC Tower"
+              <img src="assets/images/detail/detail-2.jpg" alt="Saigon Marina IFC Tower"
                 class="object-cover w-full h-48" />
             </div>
             <div class="p-5">
@@ -814,13 +940,13 @@
             </div>
           </div>
 
-          <!-- Card mẫu 1 -->
+          <!-- Card 3 -->
           <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-xl h-fit">
             <div class="relative">
               <span
                 class="absolute z-10 px-3 py-1 text-xs font-bold text-white bg-yellow-500 rounded-full top-3 left-3">LEED
                 GOLD</span>
-              <img src="https://via.placeholder.com/400x300" alt="The Nexus" class="object-cover w-full h-48" />
+              <img src="assets/images/detail/detail-3.jpg" alt="The Nexus" class="object-cover w-full h-48" />
             </div>
             <div class="p-5">
               <h3 class="text-lg font-semibold text-gray-900">The Nexus</h3>
@@ -851,13 +977,13 @@
             </div>
           </div>
 
-          <!-- Card mẫu 2 -->
+          <!-- Card 4 -->
           <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-xl h-fit">
             <div class="relative">
               <span
                 class="absolute z-10 px-3 py-1 text-xs font-bold text-white bg-yellow-500 rounded-full top-3 left-3">LEED
                 GOLD</span>
-              <img src="https://via.placeholder.com/400x300" alt="Saigon Marina IFC Tower"
+              <img src="assets/images/detail/detail-4.jpg" alt="Saigon Marina IFC Tower"
                 class="object-cover w-full h-48" />
             </div>
             <div class="p-5">
@@ -888,13 +1014,13 @@
               </div>
             </div>
           </div>
-          <!-- Card mẫu 1 -->
+          <!-- Card 5 -->
           <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-xl h-fit">
             <div class="relative">
               <span
                 class="absolute z-10 px-3 py-1 text-xs font-bold text-white bg-yellow-500 rounded-full top-3 left-3">LEED
                 GOLD</span>
-              <img src="https://via.placeholder.com/400x300" alt="The Nexus" class="object-cover w-full h-48" />
+              <img src="assets/images/detail/detail-5.jpg" alt="The Nexus" class="object-cover w-full h-48" />
             </div>
             <div class="p-5">
               <h3 class="text-lg font-semibold text-gray-900">The Nexus</h3>
@@ -925,88 +1051,13 @@
             </div>
           </div>
 
-          <!-- Card mẫu 2 -->
+          <!-- Card 6 -->
           <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-xl h-fit">
             <div class="relative">
               <span
                 class="absolute z-10 px-3 py-1 text-xs font-bold text-white bg-yellow-500 rounded-full top-3 left-3">LEED
                 GOLD</span>
-              <img src="https://via.placeholder.com/400x300" alt="Saigon Marina IFC Tower"
-                class="object-cover w-full h-48" />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-semibold text-gray-900">Saigon Marina IFC Tower</h3>
-              <p class="mt-1 text-sm text-gray-600">2 Tôn Đức Thắng, Phường Sài Gòn, Quận 1</p>
-
-              <div class="flex items-center gap-4 mt-4 text-sm">
-                <div class="flex items-center gap-1">
-                  <i class="text-blue-600 fa-regular fa-building"></i>
-                  <span class="text-gray-700">66 - 66 USD/m²</span>
-                </div>
-                <div class="flex gap-2 ml-auto">
-                  <button class="flex items-center justify-center bg-gray-100 rounded-full w-9 h-9 hover:bg-gray-200">
-                    <i class="text-gray-600 fa-regular fa-heart"></i>
-                  </button>
-                  <button class="flex items-center justify-center text-white bg-blue-600 rounded-full w-9 h-9">
-                    <i class="fa-solid fa-360"></i>
-                  </button>
-                </div>
-              </div>
-
-              <div class="flex items-center justify-between mt-4 text-xs text-gray-500">
-                <span>Cập nhật ngày 02/12/2025</span>
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-blue-600 rounded" />
-                  <span>So sánh</span>
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card mẫu 1 -->
-          <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-xl h-fit">
-            <div class="relative">
-              <span
-                class="absolute z-10 px-3 py-1 text-xs font-bold text-white bg-yellow-500 rounded-full top-3 left-3">LEED
-                GOLD</span>
-              <img src="https://via.placeholder.com/400x300" alt="The Nexus" class="object-cover w-full h-48" />
-            </div>
-            <div class="p-5">
-              <h3 class="text-lg font-semibold text-gray-900">The Nexus</h3>
-              <p class="mt-1 text-sm text-gray-600">3A-3B Tôn Đức Thắng, Phường Sài Gòn, Quận 1</p>
-
-              <div class="flex items-center gap-4 mt-4 text-sm">
-                <div class="flex items-center gap-1">
-                  <i class="text-blue-600 fa-regular fa-building"></i>
-                  <span class="text-gray-700">60 - 66 USD/m²</span>
-                </div>
-                <div class="flex gap-2 ml-auto">
-                  <button class="flex items-center justify-center bg-gray-100 rounded-full w-9 h-9 hover:bg-gray-200">
-                    <i class="text-gray-600 fa-regular fa-heart"></i>
-                  </button>
-                  <button class="flex items-center justify-center text-white bg-blue-600 rounded-full w-9 h-9">
-                    <i class="fa-solid fa-360"></i>
-                  </button>
-                </div>
-              </div>
-
-              <div class="flex items-center justify-between mt-4 text-xs text-gray-500">
-                <span>Cập nhật ngày 02/12/2025</span>
-                <label class="flex items-center gap-2 cursor-pointer">
-                  <input type="checkbox" class="w-4 h-4 text-blue-600 rounded" />
-                  <span>So sánh</span>
-                </label>
-              </div>
-            </div>
-          </div>
-
-          <!-- Card mẫu 2 -->
-          <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-xl h-fit">
-            <div class="relative">
-              <span
-                class="absolute z-10 px-3 py-1 text-xs font-bold text-white bg-yellow-500 rounded-full top-3 left-3">LEED
-                GOLD</span>
-              <img src="https://via.placeholder.com/400x300" alt="Saigon Marina IFC Tower"
+              <img src="assets/images/detail/detail-6.jpg" alt="Saigon Marina IFC Tower"
                 class="object-cover w-full h-48" />
             </div>
             <div class="p-5">
@@ -1038,13 +1089,88 @@
             </div>
           </div>
 
-          <!-- Card mẫu 2 -->
+          <!-- Card 7 -->
           <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-xl h-fit">
             <div class="relative">
               <span
                 class="absolute z-10 px-3 py-1 text-xs font-bold text-white bg-yellow-500 rounded-full top-3 left-3">LEED
                 GOLD</span>
-              <img src="https://via.placeholder.com/400x300" alt="Saigon Marina IFC Tower"
+              <img src="assets/images/detail/detail-7.jpg" alt="The Nexus" class="object-cover w-full h-48" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-semibold text-gray-900">The Nexus</h3>
+              <p class="mt-1 text-sm text-gray-600">3A-3B Tôn Đức Thắng, Phường Sài Gòn, Quận 1</p>
+
+              <div class="flex items-center gap-4 mt-4 text-sm">
+                <div class="flex items-center gap-1">
+                  <i class="text-blue-600 fa-regular fa-building"></i>
+                  <span class="text-gray-700">60 - 66 USD/m²</span>
+                </div>
+                <div class="flex gap-2 ml-auto">
+                  <button class="flex items-center justify-center bg-gray-100 rounded-full w-9 h-9 hover:bg-gray-200">
+                    <i class="text-gray-600 fa-regular fa-heart"></i>
+                  </button>
+                  <button class="flex items-center justify-center text-white bg-blue-600 rounded-full w-9 h-9">
+                    <i class="fa-solid fa-360"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between mt-4 text-xs text-gray-500">
+                <span>Cập nhật ngày 02/12/2025</span>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" class="w-4 h-4 text-blue-600 rounded" />
+                  <span>So sánh</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-xl h-fit">
+            <div class="relative">
+              <span
+                class="absolute z-10 px-3 py-1 text-xs font-bold text-white bg-yellow-500 rounded-full top-3 left-3">LEED
+                GOLD</span>
+              <img src="assets/images/detail/detail-8.jpg" alt="Saigon Marina IFC Tower"
+                class="object-cover w-full h-48" />
+            </div>
+            <div class="p-5">
+              <h3 class="text-lg font-semibold text-gray-900">Saigon Marina IFC Tower</h3>
+              <p class="mt-1 text-sm text-gray-600">2 Tôn Đức Thắng, Phường Sài Gòn, Quận 1</p>
+
+              <div class="flex items-center gap-4 mt-4 text-sm">
+                <div class="flex items-center gap-1">
+                  <i class="text-blue-600 fa-regular fa-building"></i>
+                  <span class="text-gray-700">66 - 66 USD/m²</span>
+                </div>
+                <div class="flex gap-2 ml-auto">
+                  <button class="flex items-center justify-center bg-gray-100 rounded-full w-9 h-9 hover:bg-gray-200">
+                    <i class="text-gray-600 fa-regular fa-heart"></i>
+                  </button>
+                  <button class="flex items-center justify-center text-white bg-blue-600 rounded-full w-9 h-9">
+                    <i class="fa-solid fa-360"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between mt-4 text-xs text-gray-500">
+                <span>Cập nhật ngày 02/12/2025</span>
+                <label class="flex items-center gap-2 cursor-pointer">
+                  <input type="checkbox" class="w-4 h-4 text-blue-600 rounded" />
+                  <span>So sánh</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="overflow-hidden transition bg-white shadow-md rounded-2xl hover:shadow-xl h-fit">
+            <div class="relative">
+              <span
+                class="absolute z-10 px-3 py-1 text-xs font-bold text-white bg-yellow-500 rounded-full top-3 left-3">LEED
+                GOLD</span>
+              <img src="assets/images/detail/detail-9.jpg" alt="Saigon Marina IFC Tower"
                 class="object-cover w-full h-48" />
             </div>
             <div class="p-5">
@@ -1076,25 +1202,89 @@
             </div>
           </div>
         </div>
-        <!-- Bản đồ cho màn hình lớn -->
-        <div class="hidden lg:block lg:col-span-4">
-          <div class="sticky top-24">
-            <div class="relative w-full overflow-hidden bg-gray-100 rounded-2xl" style="height: 600px;">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15677.571942935826!2d106.69417!3d10.7756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f38f9ed887b%3A0x14aded5703768989!2zUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1234567890"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="shadow-lg rounded-2xl">
-              </iframe>
+
+        <!-- filter -->
+        <div class="lg:col-span-4">
+          <!-- Bộ lọc cố định khi scroll (có thể thêm sticky sau) -->
+          <div class="border border-gray-300 p-6 space-y-8 bg-white shadow-md rounded-2xl">
+
+            <!-- diện tích và giá thuê -->
+            <!-- Slider diện tích -->
+            <div class="mb-6">
+              <h3 class="mb-3 text-lg font-bold">Diện tích Quận 1</h3>
+              <label class="block mb-2 text-sm font-medium text-gray-700">Diện tích (m²)</label>
+              <div id="areaSlider"></div>
+              <div class="mt-2 text-sm text-gray-600">
+                Từ <span id="areaMinVal">100</span> m² đến <span id="areaMaxVal">1000</span> m²
+              </div>
             </div>
-            <p class="mt-3 text-sm text-center text-gray-600">
-              <strong>Bản đồ vị trí các cao ốc văn phòng Quận 1</strong><br>
-              <a href="https://www.google.com/maps/place/Qu%E1%BA%ADn+1,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh"
-                target="_blank" class="transition-colors text-navy hover:text-gold hover:underline">
-                Xem bản đồ trên Google Maps
-              </a>
-            </p>
+
+            <!-- Slider giá thuê -->
+            <div class="mb-6">
+              <h3 class="mb-3 text-lg font-bold">Giá thuê Quận 1</h3>
+              <label class="block mb-2 text-sm font-medium text-gray-700">Giá thuê ($/m²/tháng)</label>
+              <div id="priceSlider"></div>
+              <div class="mt-2 text-sm text-gray-600">
+                Từ $<span id="priceMinVal">20</span> đến $<span id="priceMaxVal">50</span>
+              </div>
+            </div>
+
+            <!-- diện tích và giá thuê -->
+
+
+            <!-- Hạng văn phòng -->
+            <div class="space-y-4">
+              <div>
+                <h3 class="mb-3 text-lg font-bold">Hạng văn phòng Quận 1</h3>
+                <div class="flex flex-wrap justify-between text-sm gap-2">
+                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng A</button>
+                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng B</button>
+                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng C</button>
+                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Giá rẻ</button>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="mb-3 text-lg font-bold">Hướng Quận 1</h3>
+                <div class="flex flex-wrap justify-between text-sm gap-3">
+                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Đông</button>
+                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Tây</button>
+                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Nam</button>
+                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Bắc</button>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="mb-3 text-lg font-bold">Phường mới Quận 1</h3>
+                <select
+                  class="w-full px-4 text-sm py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option>Chọn phường</option>
+                  <option>Phường Bến Nghé</option>
+                  <option>Phường Đa Kao</option>
+                  <!-- thêm các phường khác -->
+                </select>
+              </div>
+
+              <div>
+                <h3 class="mb-3 text-lg font-bold">Đường Quận 1</h3>
+                <select
+                  class="w-full px-4 text-sm py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
+                  <option>Chọn đường</option>
+                  <option>Tôn Đức Thắng</option>
+                  <option>Lê Duẩn</option>
+                  <option>Hai Bà Trưng</option>
+                  <!-- thêm đường khác -->
+                </select>
+              </div>
+            </div>
+
+            <button
+              class="w-full py-4 font-bold text-white transition bg-blue-600 rounded-full rounded-xl hover:bg-blue-700">
+              Đặt lại
+            </button>
           </div>
         </div>
+
         <!-- Pagination -->
         <div class="flex justify-center mt-8 lg:col-span-8">
           <nav class="inline-flex items-center gap-2" aria-label="Pagination">
@@ -1148,114 +1338,9 @@
           </nav>
         </div>
 
-
-
-        <!-- Bộ lọc cho màn hình nhỏ (ẩn trên lg) -->
-        <div class="lg:hidden lg:col-span-4">
-          <!-- Bộ lọc cố định khi scroll (có thể thêm sticky sau) -->
-          <div class="p-6 space-y-8 bg-white shadow-md rounded-2xl">
-
-            <div>
-              <h3 class="mb-4 text-lg font-bold">Tick giá Quận 1</h3>
-              <div class="grid grid-cols-2 gap-3 text-sm">
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  8-10$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  10-12$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  12-15$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  15-18$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  18-21$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  21-25$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  25-30$/m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  30-65$/m²</label>
-              </div>
-            </div>
-
-            <div>
-              <h3 class="mb-4 text-lg font-bold">Tick diện tích Quận 1</h3>
-              <div class="space-y-3 text-sm">
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  1-10m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  10-30m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  30-50m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  50-80m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  80-120m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  120-180m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  180-250m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  250-350m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" />
-                  350-500m²</label>
-                <label class="flex items-center gap-2"><input type="checkbox" class="text-blue-600 rounded" /> Trên
-                  500m²</label>
-              </div>
-            </div>
-
-            <div class="space-y-4">
-              <div>
-                <h3 class="mb-3 text-lg font-bold">Tick hạng văn phòng Quận 1</h3>
-                <div class="flex flex-wrap gap-3">
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng A</button>
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng B</button>
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Hạng C</button>
-                </div>
-              </div>
-
-              <div>
-                <h3 class="mb-3 text-lg font-bold">Tick hướng Quận 1</h3>
-                <div class="flex flex-wrap gap-3">
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Đông</button>
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Tây</button>
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Nam</button>
-                  <button class="px-4 py-2 border border-gray-300 rounded-full hover:bg-blue-50">Bắc</button>
-                </div>
-              </div>
-
-              <div>
-                <h3 class="mb-3 text-lg font-bold">Tick phường mới Quận 1</h3>
-                <select
-                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
-                  <option>Chọn phường</option>
-                  <option>Phường Bến Nghé</option>
-                  <option>Phường Đa Kao</option>
-                  <!-- thêm các phường khác -->
-                </select>
-              </div>
-
-              <div>
-                <h3 class="mb-3 text-lg font-bold">Tick đường Quận 1</h3>
-                <select
-                  class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500">
-                  <option>Chọn đường</option>
-                  <option>Tôn Đức Thắng</option>
-                  <option>Lê Duẩn</option>
-                  <option>Hai Bà Trưng</option>
-                  <!-- thêm đường khác -->
-                </select>
-              </div>
-            </div>
-
-            <button
-              class="w-full py-4 font-bold text-white transition bg-blue-600 rounded-full rounded-xl hover:bg-blue-700">
-              Đặt lại
-            </button>
-          </div>
-        </div>
       </div>
 
-      <div class="mt-10 lg:hidden">
+      <div class="mt-10">
         <div class="relative w-full overflow-hidden bg-gray-200 h-96 rounded-2xl">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15677.571942935826!2d106.69417!3d10.7756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f38f9ed887b%3A0x14aded5703768989!2zUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1234567890"
@@ -1265,310 +1350,278 @@
         </div>
       </div>
 
-      <!-- Thông tin chung về văn phòng cho thuê Quận 1 -->
-      <section class="py-16 mt-12 bg-white">
-        <div class="container px-4 mx-auto">
-          <!-- Header với Google Maps embed -->
-          <div class="mb-12">
-            <div class="relative w-full overflow-hidden bg-gray-100 rounded-2xl" style="height: 450px;">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15677.571942935826!2d106.69417!3d10.7756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f38f9ed887b%3A0x14aded5703768989!2zUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1234567890"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade" class="shadow-lg rounded-2xl">
-              </iframe>
-              <!-- Fallback nếu map không load -->
-              <div class="absolute inset-0 flex items-center justify-center bg-gray-100 opacity-0 pointer-events-none">
-                <div class="text-center">
-                  <i class="mb-3 text-4xl fas fa-map-marked-alt text-navy"></i>
-                  <p class="text-sm text-gray-600">Đang tải bản đồ...</p>
-                </div>
-              </div>
-            </div>
-            <div class="mt-4 text-center">
-              <p class="text-sm text-gray-600">
-                <strong class="text-navy">Bản đồ vị trí các cao ốc văn phòng Quận 1</strong><br>
-                <a href="https://www.google.com/maps/place/Qu%E1%BA%ADn+1,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh"
-                  target="_blank" class="transition-colors text-navy hover:text-gold hover:underline">
-                  Xem bản đồ trên Google Maps
-                </a>
-              </p>
-            </div>
-          </div>
+      <!-- Thông tin chung -->
+      <div class="max-w-5xl mx-auto">
+        <h2 class="mb-6 text-2xl font-bold text-center text-navy md:text-3xl" data-aos="fade-up">
+          THÔNG TIN CHUNG
+        </h2>
 
-          <!-- Thông tin chung -->
-          <div class="max-w-5xl mx-auto">
-            <h2 class="mb-6 text-2xl font-bold text-center text-navy md:text-3xl" data-aos="fade-up">
-              THÔNG TIN CHUNG
-            </h2>
-
-            <!-- Phần preview -->
-            <div id="info-preview" class="mx-auto prose prose-base max-w-none" data-aos="fade-up" data-aos-delay="100">
-              <p class="block mx-auto leading-relaxed text-gray-700">
-                <strong>Thị trường cho thuê văn phòng Quận 1</strong> luôn là điểm đến hàng đầu của các doanh nghiệp
-                trong nước và quốc tế với hơn
-                <strong>1.2 triệu m² sàn văn phòng</strong>, tỷ lệ lấp đầy đạt <strong>94%</strong> và giá thuê từ
-                <strong>10-70 USD/m²</strong>. Trong bối cảnh này, dưới góc nhìn của chuyên gia <strong>An Phú
-                  Holdings</strong>,
-                chúng tôi sẽ giúp doanh nghiệp phân tích và lựa chọn phân khúc văn phòng phù hợp với nhu cầu kinh doanh
-                năm 2025.
-              </p>
-            </div>
-
-            <!-- Nút Xem thêm -->
-            <div class="mt-6 text-center">
-              <button id="toggleInfoBtn" onclick="toggleFullInfo()"
-                class="px-8 py-3 font-semibold text-white transition-all rounded-lg shadow-md bg-navy hover:bg-navy-light hover:shadow-lg">
-                <span id="btnText">Xem thêm</span>
-                <i id="btnIcon" class="ml-2 fas fa-chevron-down"></i>
-              </button>
-            </div>
-
-            <!-- Phần full content (ẩn ban đầu) -->
-            <div id="info-full" class="hidden mx-auto mt-8 prose prose-base max-w-none">
-              <div class="p-6 my-6 border-l-4 bg-navy/5 border-navy rounded-r-xl">
-                <h3 class="mb-4 text-xl font-bold text-navy">Mục lục</h3>
-                <ol class="space-y-2 text-navy">
-                  <li class="transition-colors hover:text-gold">
-                    <a href="#nhu-cau-thue" class="flex items-center gap-2">
-                      <span class="font-semibold">1.</span> Nhu cầu thuê văn phòng tăng mạnh
-                    </a>
-                  </li>
-                  <li class="transition-colors hover:text-gold">
-                    <a href="#nguon-cung" class="flex items-center gap-2">
-                      <span class="font-semibold">2.</span> Nguồn cung văn phòng mới
-                    </a>
-                  </li>
-                  <li class="transition-colors hover:text-gold">
-                    <a href="#phan-khuc" class="flex items-center gap-2">
-                      <span class="font-semibold">3.</span> Phân khúc thích hợp cho doanh nghiệp
-                    </a>
-                  </li>
-                  <li class="transition-colors hover:text-gold">
-                    <a href="#khuyen-nghi" class="flex items-center gap-2">
-                      <span class="font-semibold">4.</span> Khuyến nghị từ An Phú Holdings
-                    </a>
-                  </li>
-                </ol>
-              </div>
-
-              <!-- Section 1 -->
-              <div id="nhu-cau-thue" class="mb-10" data-aos="fade-up">
-                <h3 class="mb-3 text-xl font-bold text-navy">
-                  1. Tổng quan thị trường văn phòng cho thuê Quận 1
-                </h3>
-                <p class="mb-3 text-gray-700">
-                  <strong>Thị trường cho thuê văn phòng Quận 1</strong> luôn là điểm đến hàng đầu của các doanh nghiệp
-                  trong nước và quốc tế.
-                  Theo báo cáo của <strong>An Phú Holdings</strong>, tỷ lệ lấp đầy tại Quận 1 đạt <strong>92%</strong>
-                  và giá thuê dao động
-                  từ <strong>8-65 USD/m²</strong>, tùy vào hạng văn phòng và vị trí.
-                </p>
-                <p class="text-gray-700">
-                  Dưới góc nhìn của chuyên gia tư vấn <strong>An Phú Holdings</strong>, chúng tôi nhận thấy nhu cầu thuê
-                  văn phòng tại khu vực này
-                  tăng mạnh nhờ vào:
-                </p>
-                <ul class="my-3 space-y-2 text-sm text-gray-700">
-                  <li class="flex items-start gap-2">
-                    <span class="text-gold mt-1.5">●</span>
-                    <span><strong>Hạ tầng giao thông hoàn thiện:</strong> Metro số 1, các tuyến xe buýt và hệ thống
-                      đường lớn kết nối toàn thành phố</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <span class="text-gold mt-1.5">●</span>
-                    <span><strong>Trung tâm tài chính:</strong> Tập trung các ngân hàng, tập đoàn lớn và doanh nghiệp
-                      FDI</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <span class="text-gold mt-1.5">●</span>
-                    <span><strong>Tiện ích đa dạng:</strong> Nhà hàng, khách sạn 5 sao, trung tâm thương mại và khu vui
-                      chơi giải trí</span>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Section 2 -->
-              <div id="nguon-cung" class="mb-10" data-aos="fade-up">
-                <h3 class="mb-3 text-xl font-bold text-navy">
-                  2. Nguồn cung văn phòng theo phường tại Quận 1
-                </h3>
-                <p class="mb-4 text-sm text-gray-700">
-                  Theo thống kê từ <strong>An Phú Holdings</strong>, các phường có nguồn cung văn phòng lớn nhất tại
-                  Quận 1 bao gồm:
-                </p>
-                <div class="grid grid-cols-1 gap-3 my-4 md:grid-cols-2">
-                  <div class="p-4 transition-all border rounded-lg border-navy/20 hover:border-navy hover:shadow-lg">
-                    <h4 class="mb-2 text-lg font-bold text-navy">Phường Bến Nghé</h4>
-                    <p class="text-sm text-gray-600">
-                      <strong>Diện tích:</strong> 280,000 m² | <strong>Giá:</strong> 25-65 USD/m²<br>
-                      <span class="text-gold">★</span> Trung tâm tài chính với các tòa nhà hạng A cao cấp
-                    </p>
-                  </div>
-                  <div class="p-4 transition-all border rounded-lg border-navy/20 hover:border-navy hover:shadow-lg">
-                    <h4 class="mb-2 text-lg font-bold text-navy">Phường Bến Thành</h4>
-                    <p class="text-sm text-gray-600">
-                      <strong>Diện tích:</strong> 210,000 m² | <strong>Giá:</strong> 18-45 USD/m²<br>
-                      <span class="text-gold">★</span> Khu vực thương mại sầm uất với nhiều lựa chọn
-                    </p>
-                  </div>
-                  <div class="p-4 transition-all border rounded-lg border-navy/20 hover:border-navy hover:shadow-lg">
-                    <h4 class="mb-2 text-lg font-bold text-navy">Phường Nguyễn Thái Bình</h4>
-                    <p class="text-sm text-gray-600">
-                      <strong>Diện tích:</strong> 180,000 m² | <strong>Giá:</strong> 15-38 USD/m²<br>
-                      <span class="text-gold">★</span> Khu vực văn phòng truyền thống, giá cả hợp lý
-                    </p>
-                  </div>
-                  <div class="p-4 transition-all border rounded-lg border-navy/20 hover:border-navy hover:shadow-lg">
-                    <h4 class="mb-2 text-lg font-bold text-navy">Phường Đa Kao</h4>
-                    <p class="text-sm text-gray-600">
-                      <strong>Diện tích:</strong> 150,000 m² | <strong>Giá:</strong> 12-30 USD/m²<br>
-                      <span class="text-gold">★</span> Khu vực phát triển mới, tiềm năng tăng trưởng cao
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Section 3 -->
-              <div id="phan-khuc" class="mb-10" data-aos="fade-up">
-                <h3 class="mb-3 text-xl font-bold text-navy">
-                  3. Phân khúc văn phòng thích hợp cho từng doanh nghiệp
-                </h3>
-                <p class="mb-4 text-sm text-gray-700">
-                  <strong>An Phú Holdings</strong> khuyến nghị doanh nghiệp lựa chọn phân khúc phù hợp dựa trên quy mô
-                  và ngân sách:
-                </p>
-
-                <!-- Grade A -->
-                <div class="p-4 mb-4 border-2 rounded-xl border-gold bg-gold/5">
-                  <div class="flex items-center gap-3 mb-2">
-                    <span class="px-3 py-1 text-xs font-bold text-white rounded-full bg-gold">Hạng A</span>
-                    <h4 class="text-lg font-bold text-navy">Văn phòng cao cấp</h4>
-                  </div>
-                  <p class="mb-2 text-sm text-gray-700">
-                    <strong>Đối tượng phù hợp:</strong> Tập đoàn đa quốc ký, công ty niêm yết, doanh nghiệp có nhu cầu
-                    xây dựng hình ảnh chuyên nghiệp
-                  </p>
-                  <div class="grid grid-cols-2 gap-3 text-xs">
-                    <div>
-                      <strong class="text-navy">Giá thuê:</strong> 45-65 USD/m²<br>
-                      <strong class="text-navy">Diện tích:</strong> Từ 300-2000 m²
-                    </div>
-                    <div>
-                      <strong class="text-navy">Tiện ích:</strong> Hệ thống BMS, bãi đỗ xe, an ninh 24/7<br>
-                      <strong class="text-navy">Ví dụ:</strong> Saigon Centre, Vincom Center
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Grade B -->
-                <div class="p-4 mb-4 border-2 rounded-xl border-navy bg-navy/5">
-                  <div class="flex items-center gap-3 mb-2">
-                    <span class="px-3 py-1 text-xs font-bold text-white rounded-full bg-navy">Hạng B</span>
-                    <h4 class="text-lg font-bold text-navy">Văn phòng chất lượng</h4>
-                  </div>
-                  <p class="mb-2 text-sm text-gray-700">
-                    <strong>Đối tượng phù hợp:</strong> Doanh nghiệp vừa và nhỏ, công ty khởi nghiệp đã ổn định, chi
-                    nhánh công ty lớn
-                  </p>
-                  <div class="grid grid-cols-2 gap-3 text-xs">
-                    <div>
-                      <strong class="text-navy">Giá thuê:</strong> 20-40 USD/m²<br>
-                      <strong class="text-navy">Diện tích:</strong> Từ 100-500 m²
-                    </div>
-                    <div>
-                      <strong class="text-navy">Tiện ích:</strong> Thang máy, điều hòa trung tâm, bảo vệ<br>
-                      <strong class="text-navy">Ví dụ:</strong> AB Tower, Centec Tower
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Grade C -->
-                <div class="p-4 mb-4 border-2 border-gray-300 rounded-xl bg-gray-50">
-                  <div class="flex items-center gap-3 mb-2">
-                    <span class="px-3 py-1 text-xs font-bold text-white bg-gray-500 rounded-full">Hạng C</span>
-                    <h4 class="text-lg font-bold text-navy">Văn phòng tiết kiệm</h4>
-                  </div>
-                  <p class="mb-2 text-sm text-gray-700">
-                    <strong>Đối tượng phù hợp:</strong> Startup, doanh nghiệp nhỏ, văn phòng đại diện, công ty mới thành
-                    lập
-                  </p>
-                  <div class="grid grid-cols-2 gap-3 text-xs">
-                    <div>
-                      <strong class="text-navy">Giá thuê:</strong> 8-18 USD/m²<br>
-                      <strong class="text-navy">Diện tích:</strong> Từ 30-200 m²
-                    </div>
-                    <div>
-                      <strong class="text-navy">Tiện ích:</strong> Cơ bản, phù hợp ngân sách hạn chế<br>
-                      <strong class="text-navy">Ví dụ:</strong> Tòa nhà văn phòng truyền thống
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Section 4 -->
-              <div id="khuyen-nghi" class="p-6 mb-10 border-4 border-dashed rounded-2xl border-gold bg-gold/5"
-                data-aos="fade-up">
-                <h3 class="mb-4 text-xl font-bold text-center text-navy">
-                  💡 Khuyến nghị từ An Phú Holdings - Chuyên gia tư vấn văn phòng
-                </h3>
-                <div class="space-y-3 text-sm text-gray-700">
-                  <div class="flex items-start gap-3">
-                    <span
-                      class="flex-shrink-0 text-xs font-bold leading-7 text-center text-white rounded-full w-7 h-7 bg-navy">1</span>
-                    <p>
-                      <strong>Phân tích nhu cầu:</strong> Xác định rõ quy mô nhân sự, ngân sách và kế hoạch mở rộng
-                      trong 2-3 năm tới để chọn diện tích phù hợp
-                    </p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <span
-                      class="flex-shrink-0 text-xs font-bold leading-7 text-center text-white rounded-full w-7 h-7 bg-navy">2</span>
-                    <p>
-                      <strong>So sánh tổng chi phí:</strong> Ngoài giá thuê, tính toán thêm chi phí điện nước, phí quản
-                      lý, phí đỗ xe và chi phí nội thất
-                    </p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <span
-                      class="flex-shrink-0 text-xs font-bold leading-7 text-center text-white rounded-full w-7 h-7 bg-navy">3</span>
-                    <p>
-                      <strong>Vị trí chiến lược:</strong> Ưu tiên các tòa nhà gần trạm Metro, bãi xe công cộng và khu
-                      vực có đầy đủ tiện ích ăn uống
-                    </p>
-                  </div>
-                  <div class="flex items-start gap-3">
-                    <span
-                      class="flex-shrink-0 text-xs font-bold leading-7 text-center text-white rounded-full w-7 h-7 bg-navy">4</span>
-                    <p>
-                      <strong>Hợp đồng linh hoạt:</strong> Đàm phán điều khoản miễn giảm giá thuê trong 1-2 tháng đầu và
-                      quyền chấm dứt hợp đồng sớm nếu cần
-                    </p>
-                  </div>
-                </div>
-
-                <div class="p-4 mt-4 text-center bg-white rounded-xl">
-                  <p class="mb-3 text-base font-bold text-navy">
-                    Liên hệ <span class="text-gold">An Phú Holdings</span> để được tư vấn miễn phí
-                  </p>
-                  <div class="flex flex-wrap justify-center gap-3">
-                    <a href="tel:0987110011"
-                      class="flex items-center gap-2 px-5 py-2.5 text-sm text-white transition-all rounded-lg bg-navy hover:bg-navy-light hover:shadow-xl">
-                      <i class="fas fa-phone-alt"></i>
-                      <span class="font-semibold">0987 11 00 11</span>
-                    </a>
-                    <a href="mailto:support@anphuholdings.vn"
-                      class="flex items-center gap-2 px-5 py-2.5 text-sm text-white transition-all rounded-lg bg-gold hover:bg-gold/90 hover:shadow-xl">
-                      <i class="fas fa-envelope"></i>
-                      <span class="font-semibold">Gửi Email</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
+        <!-- Phần preview -->
+        <div id="info-preview" class="mx-auto prose prose-base max-w-none" data-aos="fade-up" data-aos-delay="100">
+          <p class="block mx-auto leading-relaxed text-gray-700">
+            <strong>Thị trường cho thuê văn phòng Quận 1</strong> luôn là điểm đến hàng đầu của các doanh nghiệp
+            trong nước và quốc tế với hơn
+            <strong>1.2 triệu m² sàn văn phòng</strong>, tỷ lệ lấp đầy đạt <strong>94%</strong> và giá thuê từ
+            <strong>10-70 USD/m²</strong>. Trong bối cảnh này, dưới góc nhìn của chuyên gia <strong>An Phú
+              Holdings</strong>,
+            chúng tôi sẽ giúp doanh nghiệp phân tích và lựa chọn phân khúc văn phòng phù hợp với nhu cầu kinh doanh
+            năm 2025.
+          </p>
         </div>
-      </section>
+
+        <!-- Nút Xem thêm -->
+        <div class="mt-6 text-center">
+          <button id="toggleInfoBtn" onclick="toggleFullInfo()"
+            class="px-8 py-3 font-semibold text-white transition-all rounded-lg shadow-md bg-navy hover:bg-navy-light hover:shadow-lg">
+            <span id="btnText">Xem thêm</span>
+            <i id="btnIcon" class="ml-2 fas fa-chevron-down"></i>
+          </button>
+        </div>
+
+        <!-- Phần full content (ẩn ban đầu) -->
+        <div id="info-full" class="hidden mx-auto mt-8 prose prose-base max-w-none">
+          <div class="p-6 my-6 border-l-4 bg-navy/5 border-navy rounded-r-xl">
+            <h3 class="mb-4 text-xl font-bold text-navy">Mục lục</h3>
+            <ol class="space-y-2 text-navy">
+              <li class="transition-colors hover:text-gold">
+                <a href="#nhu-cau-thue" class="flex items-center gap-2">
+                  <span class="font-semibold">1.</span> Nhu cầu thuê văn phòng tăng mạnh
+                </a>
+              </li>
+              <li class="transition-colors hover:text-gold">
+                <a href="#nguon-cung" class="flex items-center gap-2">
+                  <span class="font-semibold">2.</span> Nguồn cung văn phòng mới
+                </a>
+              </li>
+              <li class="transition-colors hover:text-gold">
+                <a href="#phan-khuc" class="flex items-center gap-2">
+                  <span class="font-semibold">3.</span> Phân khúc thích hợp cho doanh nghiệp
+                </a>
+              </li>
+              <li class="transition-colors hover:text-gold">
+                <a href="#khuyen-nghi" class="flex items-center gap-2">
+                  <span class="font-semibold">4.</span> Khuyến nghị từ An Phú Holdings
+                </a>
+              </li>
+            </ol>
+          </div>
+
+          <!-- Section 1 -->
+          <div id="nhu-cau-thue" class="mb-10" data-aos="fade-up">
+            <h3 class="mb-3 text-xl font-bold text-navy">
+              1. Tổng quan thị trường văn phòng cho thuê Quận 1
+            </h3>
+            <p class="mb-3 text-gray-700">
+              <strong>Thị trường cho thuê văn phòng Quận 1</strong> luôn là điểm đến hàng đầu của các doanh nghiệp
+              trong nước và quốc tế.
+              Theo báo cáo của <strong>An Phú Holdings</strong>, tỷ lệ lấp đầy tại Quận 1 đạt <strong>92%</strong>
+              và giá thuê dao động
+              từ <strong>8-65 USD/m²</strong>, tùy vào hạng văn phòng và vị trí.
+            </p>
+            <p class="text-gray-700">
+              Dưới góc nhìn của chuyên gia tư vấn <strong>An Phú Holdings</strong>, chúng tôi nhận thấy nhu cầu thuê
+              văn phòng tại khu vực này
+              tăng mạnh nhờ vào:
+            </p>
+            <ul class="my-3 space-y-2 text-sm text-gray-700">
+              <li class="flex items-start gap-2">
+                <span class="text-gold mt-1.5">●</span>
+                <span><strong>Hạ tầng giao thông hoàn thiện:</strong> Metro số 1, các tuyến xe buýt và hệ thống
+                  đường lớn kết nối toàn thành phố</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold mt-1.5">●</span>
+                <span><strong>Trung tâm tài chính:</strong> Tập trung các ngân hàng, tập đoàn lớn và doanh nghiệp
+                  FDI</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-gold mt-1.5">●</span>
+                <span><strong>Tiện ích đa dạng:</strong> Nhà hàng, khách sạn 5 sao, trung tâm thương mại và khu vui
+                  chơi giải trí</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Section 2 -->
+          <div id="nguon-cung" class="mb-10" data-aos="fade-up">
+            <h3 class="mb-3 text-xl font-bold text-navy">
+              2. Nguồn cung văn phòng theo phường tại Quận 1
+            </h3>
+            <p class="mb-4 text-sm text-gray-700">
+              Theo thống kê từ <strong>An Phú Holdings</strong>, các phường có nguồn cung văn phòng lớn nhất tại
+              Quận 1 bao gồm:
+            </p>
+            <div class="grid grid-cols-1 gap-3 my-4 md:grid-cols-2">
+              <div class="p-4 transition-all border rounded-lg border-navy/20 hover:border-navy hover:shadow-lg">
+                <h4 class="mb-2 text-lg font-bold text-navy">Phường Bến Nghé</h4>
+                <p class="text-sm text-gray-600">
+                  <strong>Diện tích:</strong> 280,000 m² | <strong>Giá:</strong> 25-65 USD/m²<br>
+                  <span class="text-gold">★</span> Trung tâm tài chính với các tòa nhà hạng A cao cấp
+                </p>
+              </div>
+              <div class="p-4 transition-all border rounded-lg border-navy/20 hover:border-navy hover:shadow-lg">
+                <h4 class="mb-2 text-lg font-bold text-navy">Phường Bến Thành</h4>
+                <p class="text-sm text-gray-600">
+                  <strong>Diện tích:</strong> 210,000 m² | <strong>Giá:</strong> 18-45 USD/m²<br>
+                  <span class="text-gold">★</span> Khu vực thương mại sầm uất với nhiều lựa chọn
+                </p>
+              </div>
+              <div class="p-4 transition-all border rounded-lg border-navy/20 hover:border-navy hover:shadow-lg">
+                <h4 class="mb-2 text-lg font-bold text-navy">Phường Nguyễn Thái Bình</h4>
+                <p class="text-sm text-gray-600">
+                  <strong>Diện tích:</strong> 180,000 m² | <strong>Giá:</strong> 15-38 USD/m²<br>
+                  <span class="text-gold">★</span> Khu vực văn phòng truyền thống, giá cả hợp lý
+                </p>
+              </div>
+              <div class="p-4 transition-all border rounded-lg border-navy/20 hover:border-navy hover:shadow-lg">
+                <h4 class="mb-2 text-lg font-bold text-navy">Phường Đa Kao</h4>
+                <p class="text-sm text-gray-600">
+                  <strong>Diện tích:</strong> 150,000 m² | <strong>Giá:</strong> 12-30 USD/m²<br>
+                  <span class="text-gold">★</span> Khu vực phát triển mới, tiềm năng tăng trưởng cao
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3 -->
+          <div id="phan-khuc" class="mb-10" data-aos="fade-up">
+            <h3 class="mb-3 text-xl font-bold text-navy">
+              3. Phân khúc văn phòng thích hợp cho từng doanh nghiệp
+            </h3>
+            <p class="mb-4 text-sm text-gray-700">
+              <strong>An Phú Holdings</strong> khuyến nghị doanh nghiệp lựa chọn phân khúc phù hợp dựa trên quy mô
+              và ngân sách:
+            </p>
+
+            <!-- Grade A -->
+            <div class="p-4 mb-4 border-2 rounded-xl border-gold bg-gold/5">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="px-3 py-1 text-xs font-bold text-white rounded-full bg-gold">Hạng A</span>
+                <h4 class="text-lg font-bold text-navy">Văn phòng cao cấp</h4>
+              </div>
+              <p class="mb-2 text-sm text-gray-700">
+                <strong>Đối tượng phù hợp:</strong> Tập đoàn đa quốc ký, công ty niêm yết, doanh nghiệp có nhu cầu
+                xây dựng hình ảnh chuyên nghiệp
+              </p>
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div>
+                  <strong class="text-navy">Giá thuê:</strong> 45-65 USD/m²<br>
+                  <strong class="text-navy">Diện tích:</strong> Từ 300-2000 m²
+                </div>
+                <div>
+                  <strong class="text-navy">Tiện ích:</strong> Hệ thống BMS, bãi đỗ xe, an ninh 24/7<br>
+                  <strong class="text-navy">Ví dụ:</strong> Saigon Centre, Vincom Center
+                </div>
+              </div>
+            </div>
+
+            <!-- Grade B -->
+            <div class="p-4 mb-4 border-2 rounded-xl border-navy bg-navy/5">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="px-3 py-1 text-xs font-bold text-white rounded-full bg-navy">Hạng B</span>
+                <h4 class="text-lg font-bold text-navy">Văn phòng chất lượng</h4>
+              </div>
+              <p class="mb-2 text-sm text-gray-700">
+                <strong>Đối tượng phù hợp:</strong> Doanh nghiệp vừa và nhỏ, công ty khởi nghiệp đã ổn định, chi
+                nhánh công ty lớn
+              </p>
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div>
+                  <strong class="text-navy">Giá thuê:</strong> 20-40 USD/m²<br>
+                  <strong class="text-navy">Diện tích:</strong> Từ 100-500 m²
+                </div>
+                <div>
+                  <strong class="text-navy">Tiện ích:</strong> Thang máy, điều hòa trung tâm, bảo vệ<br>
+                  <strong class="text-navy">Ví dụ:</strong> AB Tower, Centec Tower
+                </div>
+              </div>
+            </div>
+
+            <!-- Grade C -->
+            <div class="p-4 mb-4 border-2 border-gray-300 rounded-xl bg-gray-50">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="px-3 py-1 text-xs font-bold text-white bg-gray-500 rounded-full">Hạng C</span>
+                <h4 class="text-lg font-bold text-navy">Văn phòng tiết kiệm</h4>
+              </div>
+              <p class="mb-2 text-sm text-gray-700">
+                <strong>Đối tượng phù hợp:</strong> Startup, doanh nghiệp nhỏ, văn phòng đại diện, công ty mới thành
+                lập
+              </p>
+              <div class="grid grid-cols-2 gap-3 text-xs">
+                <div>
+                  <strong class="text-navy">Giá thuê:</strong> 8-18 USD/m²<br>
+                  <strong class="text-navy">Diện tích:</strong> Từ 30-200 m²
+                </div>
+                <div>
+                  <strong class="text-navy">Tiện ích:</strong> Cơ bản, phù hợp ngân sách hạn chế<br>
+                  <strong class="text-navy">Ví dụ:</strong> Tòa nhà văn phòng truyền thống
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4 -->
+          <div id="khuyen-nghi" class="p-6 mb-10 border-4 border-dashed rounded-2xl border-gold bg-gold/5"
+            data-aos="fade-up">
+            <h3 class="mb-4 text-xl font-bold text-center text-navy">
+              💡 Khuyến nghị từ An Phú Holdings - Chuyên gia tư vấn văn phòng
+            </h3>
+            <div class="space-y-3 text-sm text-gray-700">
+              <div class="flex items-start gap-3">
+                <span
+                  class="flex-shrink-0 text-xs font-bold leading-7 text-center text-white rounded-full w-7 h-7 bg-navy">1</span>
+                <p>
+                  <strong>Phân tích nhu cầu:</strong> Xác định rõ quy mô nhân sự, ngân sách và kế hoạch mở rộng
+                  trong 2-3 năm tới để chọn diện tích phù hợp
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span
+                  class="flex-shrink-0 text-xs font-bold leading-7 text-center text-white rounded-full w-7 h-7 bg-navy">2</span>
+                <p>
+                  <strong>So sánh tổng chi phí:</strong> Ngoài giá thuê, tính toán thêm chi phí điện nước, phí quản
+                  lý, phí đỗ xe và chi phí nội thất
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span
+                  class="flex-shrink-0 text-xs font-bold leading-7 text-center text-white rounded-full w-7 h-7 bg-navy">3</span>
+                <p>
+                  <strong>Vị trí chiến lược:</strong> Ưu tiên các tòa nhà gần trạm Metro, bãi xe công cộng và khu
+                  vực có đầy đủ tiện ích ăn uống
+                </p>
+              </div>
+              <div class="flex items-start gap-3">
+                <span
+                  class="flex-shrink-0 text-xs font-bold leading-7 text-center text-white rounded-full w-7 h-7 bg-navy">4</span>
+                <p>
+                  <strong>Hợp đồng linh hoạt:</strong> Đàm phán điều khoản miễn giảm giá thuê trong 1-2 tháng đầu và
+                  quyền chấm dứt hợp đồng sớm nếu cần
+                </p>
+              </div>
+            </div>
+
+            <div class="p-4 mt-4 text-center bg-white rounded-xl">
+              <p class="mb-3 text-base font-bold text-navy">
+                Liên hệ <span class="text-gold">An Phú Holdings</span> để được tư vấn miễn phí
+              </p>
+              <div class="flex flex-wrap justify-center gap-3">
+                <a href="tel:0987110011"
+                  class="flex items-center gap-2 px-5 py-2.5 text-sm text-white transition-all rounded-lg bg-navy hover:bg-navy-light hover:shadow-xl">
+                  <i class="fas fa-phone-alt"></i>
+                  <span class="font-semibold">0987 11 00 11</span>
+                </a>
+                <a href="mailto:support@anphuholdings.vn"
+                  class="flex items-center gap-2 px-5 py-2.5 text-sm text-white transition-all rounded-lg bg-gold hover:bg-gold/90 hover:shadow-xl">
+                  <i class="fas fa-envelope"></i>
+                  <span class="font-semibold">Gửi Email</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <script>
         function toggleFullInfo() {
@@ -1682,11 +1735,11 @@
         </div>
       </section>
 
-      <!-- Cảm năng tìm văn phòng -->
-      <section class="py-16 bg-gray-50">
-        <div class="container px-4 mx-auto">
+      <!-- Cẩm nang tìm văn phòng -->
+      <section class="py-16 ">
+        <div class="container mx-auto">
           <div class="flex items-center justify-between mb-6">
-            <h2 class="text-4xl font-bold text-navy">CẢM NANG TÌM VĂN PHÒNG</h2>
+            <h2 class="text-4xl font-bold text-navy">CẨM NANG TÌM VĂN PHÒNG</h2>
             <button class="px-6 py-3 font-semibold text-white transition rounded-lg bg-navy hover:bg-navy-light">
               Xem thêm
             </button>
@@ -1696,7 +1749,8 @@
           <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             <!-- Blog 1 -->
             <div class="overflow-hidden transition bg-white shadow-lg rounded-2xl hover:shadow-xl" data-aos="fade-up">
-              <img src="assets/images/image-40.png" alt="Blog 1" class="object-cover w-full h-48" />
+              <img src="assets/images/handbook/Can-I-get-my-deposit.jpg" alt="Blog 1"
+                class="object-cover w-full h-48" />
               <div class="p-6">
                 <p class="mb-2 text-sm text-gray-500">01/08/2024</p>
                 <h3 class="mb-3 text-lg font-bold text-navy">
@@ -1709,7 +1763,7 @@
             <!-- Blog 2 -->
             <div class="overflow-hidden transition bg-white shadow-lg rounded-2xl hover:shadow-xl" data-aos="fade-up"
               data-aos-delay="100">
-              <img src="assets/images/image-45.png" alt="Blog 2" class="object-cover w-full h-48" />
+              <img src="assets/images/handbook/how-new-office.jpg" alt="Blog 2" class="object-cover w-full h-48" />
               <div class="p-6">
                 <p class="mb-2 text-sm text-gray-500">29/07/2024</p>
                 <h3 class="mb-3 text-lg font-bold text-navy">
@@ -1721,7 +1775,8 @@
             <!-- Blog 3 -->
             <div class="overflow-hidden transition bg-white shadow-lg rounded-2xl hover:shadow-xl" data-aos="fade-up"
               data-aos-delay="200">
-              <img src="assets/images/image-50.png" alt="Blog 3" class="object-cover w-full h-48" />
+              <img src="assets/images/handbook/ideal-office-location.jpg" alt="Blog 3"
+                class="object-cover w-full h-48" />
               <div class="p-6">
                 <p class="mb-2 text-sm text-gray-500">06/10/2024</p>
                 <h3 class="mb-3 text-lg font-bold text-navy">
@@ -1733,7 +1788,8 @@
             <!-- Blog 4 -->
             <div class="overflow-hidden transition bg-white shadow-lg rounded-2xl hover:shadow-xl" data-aos="fade-up"
               data-aos-delay="300">
-              <img src="assets/images/image-55.png" alt="Blog 4" class="object-cover w-full h-48" />
+              <img src="assets/images/handbook/Important-legal-documents-when-renting-office.jpg" alt="Blog 4"
+                class="object-cover w-full h-48" />
               <div class="p-6">
                 <p class="mb-2 text-sm text-gray-500">10/12/2024</p>
                 <h3 class="mb-3 text-lg font-bold text-navy">
@@ -1744,9 +1800,10 @@
           </div>
         </div>
       </section>
+
       <!-- Gặp gỡ đội ngũ tư vấn -->
-      <section class="py-16 bg-white">
-        <div class="container px-4 mx-auto">
+      <section class="py-16 bg-white overflow-hidden">
+        <div class="container mx-auto">
           <div class="mb-12 text-center" data-aos="fade-up">
             <h2 class="mb-4 text-4xl font-bold text-navy">
               GẶP GỠ ĐỘI NGŨ TƯ VẤN
@@ -1758,15 +1815,15 @@
           </div>
 
           <!-- Team Swiper -->
-          <div class="relative overflow-hidden">
-            <div class="team-swiper">
+          <div class="relative">
+            <div class="team-swiper overflow-x-hidden">
               <div class="py-6 swiper-wrapper">
                 <!-- Member 1 -->
                 <div class="swiper-slide">
                   <div
                     class="overflow-hidden transition-all duration-500 bg-white shadow-lg group rounded-2xl hover:-translate-y-2 hover:shadow-2xl">
                     <div class="relative overflow-hidden">
-                      <img src="assets/images/custommer/custommer-1.jpg" alt="Phạm Thu Lại"
+                      <img src="assets/images/consulting-team/consulting-team-1.jpg" alt="Phạm Thu Lại"
                         class="object-cover w-full transition-transform duration-500 h-80 group-hover:scale-110" />
                       <div
                         class="absolute inset-0 transition-opacity duration-500 bg-gradient-to-t from-navy/80 to-transparent group-hover:from-navy/90">
@@ -1787,7 +1844,7 @@
                   <div
                     class="overflow-hidden transition-all duration-500 bg-white shadow-lg group rounded-2xl hover:-translate-y-2 hover:shadow-2xl">
                     <div class="relative overflow-hidden">
-                      <img src="assets/images/custommer/custommer-4.jpg" alt="Võ Thị Thu Vân"
+                      <img src="assets/images/consulting-team/consulting-team-2.jpg" alt="Võ Thị Thu Vân"
                         class="object-cover w-full transition-transform duration-500 h-80 group-hover:scale-110" />
                       <div
                         class="absolute inset-0 transition-opacity duration-500 bg-gradient-to-t from-navy/80 to-transparent group-hover:from-navy/90">
@@ -1808,7 +1865,7 @@
                   <div
                     class="overflow-hidden transition-all duration-500 bg-white shadow-lg group rounded-2xl hover:-translate-y-2 hover:shadow-2xl">
                     <div class="relative overflow-hidden">
-                      <img src="assets/images/custommer/custommer-4.jpg" alt="Võ Thị Thu Vân"
+                      <img src="assets/images/consulting-team/consulting-team-1.jpg" alt="Võ Thị Thu Vân"
                         class="object-cover w-full transition-transform duration-500 h-80 group-hover:scale-110" />
                       <div
                         class="absolute inset-0 transition-opacity duration-500 bg-gradient-to-t from-navy/80 to-transparent group-hover:from-navy/90">
@@ -1817,7 +1874,7 @@
                     <div class="p-6 text-center">
                       <h3
                         class="mb-2 text-2xl font-bold transition-colors duration-300 text-navy group-hover:text-gold">
-                        Võ Thị Thu Vân
+                        Nguyễn Mỹ Phương
                       </h3>
                       <p class="text-gray-600">Hơn 7 năm kinh nghiệm</p>
                     </div>
@@ -1829,7 +1886,7 @@
                   <div
                     class="overflow-hidden transition-all duration-500 bg-white shadow-lg group rounded-2xl hover:-translate-y-2 hover:shadow-2xl">
                     <div class="relative overflow-hidden">
-                      <img src="assets/images/custommer/custommer-4.jpg" alt="Võ Thị Thu Vân"
+                      <img src="assets/images/consulting-team/consulting-team-4.jpg" alt="Võ Thị Thu Vân"
                         class="object-cover w-full transition-transform duration-500 h-80 group-hover:scale-110" />
                       <div
                         class="absolute inset-0 transition-opacity duration-500 bg-gradient-to-t from-navy/80 to-transparent group-hover:from-navy/90">
@@ -1838,7 +1895,49 @@
                     <div class="p-6 text-center">
                       <h3
                         class="mb-2 text-2xl font-bold transition-colors duration-300 text-navy group-hover:text-gold">
-                        Võ Thị Thu Vân
+                        Nguyễn Khánh Chi
+                      </h3>
+                      <p class="text-gray-600">Hơn 7 năm kinh nghiệm</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Member 5 -->
+                <div class="swiper-slide">
+                  <div
+                    class="overflow-hidden transition-all duration-500 bg-white shadow-lg group rounded-2xl hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="relative overflow-hidden">
+                      <img src="assets/images/consulting-team/consulting-team-5.jpg" alt="Võ Thị Thu Vân"
+                        class="object-cover w-full transition-transform duration-500 h-80 group-hover:scale-110" />
+                      <div
+                        class="absolute inset-0 transition-opacity duration-500 bg-gradient-to-t from-navy/80 to-transparent group-hover:from-navy/90">
+                      </div>
+                    </div>
+                    <div class="p-6 text-center">
+                      <h3
+                        class="mb-2 text-2xl font-bold transition-colors duration-300 text-navy group-hover:text-gold">
+                        Trần Lê Phương Quỳnh
+                      </h3>
+                      <p class="text-gray-600">Hơn 7 năm kinh nghiệm</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Member 6 -->
+                <div class="swiper-slide">
+                  <div
+                    class="overflow-hidden transition-all duration-500 bg-white shadow-lg group rounded-2xl hover:-translate-y-2 hover:shadow-2xl">
+                    <div class="relative overflow-hidden">
+                      <img src="assets/images/consulting-team/consulting-team-6.jpg" alt="Võ Thị Thu Vân"
+                        class="object-cover w-full transition-transform duration-500 h-80 group-hover:scale-110" />
+                      <div
+                        class="absolute inset-0 transition-opacity duration-500 bg-gradient-to-t from-navy/80 to-transparent group-hover:from-navy/90">
+                      </div>
+                    </div>
+                    <div class="p-6 text-center">
+                      <h3
+                        class="mb-2 text-2xl font-bold transition-colors duration-300 text-navy group-hover:text-gold">
+                        Ăng Gơ Lê Na Trô Lì
                       </h3>
                       <p class="text-gray-600">Hơn 7 năm kinh nghiệm</p>
                     </div>
@@ -1930,6 +2029,8 @@
           </div>
         </div>
       </section>
+
+      <!-- FAQ Section -->
       <section class="py-16 bg-white md:py-24">
         <div class="container px-4 mx-auto md:px-6 lg:px-8">
           <div class="max-w-4xl mx-auto">
@@ -2077,9 +2178,11 @@
     </div>
   </div>
   </section>
+
+  <!-- Footer nháp -->
   <footer class="section-padding-t">
     <div
-      class="container mb-6 grid w-full max-w-[1230px] mx-auto grid-cols-6 gap-3 px-4 md:mb-10 md:grid-cols-5 lg:mb-14 lg:px-0">
+      class="container mb-6 grid w-full max-w-[100] mx-auto grid-cols-6 gap-3 px-4 md:mb-10 md:grid-cols-5 lg:mb-14 lg:px-0">
       <div data-aos="fade-up" class="col-span-4 md:col-span-2">
         <a href="/" class="flex items-center gap-x-3" aria-label="Trang chủ Homelist">
           <img src="assets/logo/anphu-holdings.jpg" alt="Logo Homelist" class="size-fit" width="120" height="40"
@@ -2173,7 +2276,7 @@
     </div>
 
     <div
-      class="container mb-3.5 mt-5 flex max-w-[1230px] mx-auto flex-col items-center justify-center gap-y-3.5 px-4 md:mb-6 md:mt-10 md:flex-row md:justify-between lg:mb-9 lg:mt-[54px] lg:px-0">
+      class="container mb-3.5 mt-5 flex max-w-[100] mx-auto flex-col items-center justify-center gap-y-3.5 px-4 md:mb-6 md:mt-10 md:flex-row md:justify-between lg:mb-9 lg:mt-[54px] lg:px-0">
       <p class="text-sm leading-[14px] text-nature-400">
         &copy;2024 An Phú Holdings Creative. All rights reserved.
       </p>
@@ -2212,6 +2315,7 @@
     </div>
   </footer>
   <!-- Footer nháp -->
+
   <!-- drawer component -->
   <div id="drawer-right-example"
     class="fixed right-0 top-0 z-[60] h-screen w-96 translate-x-full overflow-y-auto border-l bg-white p-10 transition-transform"
@@ -2450,6 +2554,63 @@
       },
     });
   </script>
+
+  <!-- filter slide range -->
+  <!-- noUiSlider CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/nouislider@15.6.1/dist/nouislider.min.js"></script>
+
+  <script>
+    // Slider diện tích
+    const areaSlider = document.getElementById('areaSlider');
+    noUiSlider.create(areaSlider, {
+      start: [100, 1000], // giá trị mặc định
+      connect: true,
+      range: {
+        min: 10,
+        max: 2000
+      },
+      step: 10,
+      tooltips: true,
+      format: {
+        to: value => Math.round(value),
+        from: value => Number(value)
+      }
+    });
+
+    const areaMinVal = document.getElementById('areaMinVal');
+    const areaMaxVal = document.getElementById('areaMaxVal');
+    areaSlider.noUiSlider.on('update', (values) => {
+      areaMinVal.textContent = values[0];
+      areaMaxVal.textContent = values[1];
+    });
+
+    // Slider giá thuê
+    const priceSlider = document.getElementById('priceSlider');
+    noUiSlider.create(priceSlider, {
+      start: [20, 50], // giá trị mặc định
+      connect: true,
+      range: {
+        min: 8,
+        max: 65
+      },
+      step: 1,
+      tooltips: true,
+      format: {
+        to: value => Math.round(value),
+        from: value => Number(value)
+      }
+    });
+
+    const priceMinVal = document.getElementById('priceMinVal');
+    const priceMaxVal = document.getElementById('priceMaxVal');
+    priceSlider.noUiSlider.on('update', (values) => {
+      priceMinVal.textContent = values[0];
+      priceMaxVal.textContent = values[1];
+    });
+  </script>
+
+
+  <!-- filter slide range -->
 </body>
 
 </html>
