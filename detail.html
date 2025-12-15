@@ -25,6 +25,8 @@
    <link rel="stylesheet" href="styles/odometer-theme-default.css" />
    <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
    <link rel="canonical" href="https://yourwebsite.com/beyond-coworking-space-saigon-finance-tower" />
+   <!-- Fancybox CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
    <!-- Google Fonts - Montserrat & Inter -->
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -167,7 +169,7 @@
 
 <body class="text-gray-800 bg-gray-100">
    <!-- Header -->
-   <header class="sticky top-0 left-0 z-50 flex items-center bg-white shadow-sm h-16">
+   <header class="sticky top-0 left-0 z-50 flex items-center h-16 bg-white shadow-sm">
       <nav class="container max-w-[1230px] mx-auto flex items-center justify-between px-4 lg:px-0">
          <div class="flex-shrink-0">
             <a href="#">
@@ -176,7 +178,7 @@
          </div>
 
          <!-- Mobile Menu Button -->
-         <button id="mobile-menu-btn" class="md:hidden text-navy text-2xl focus:outline-none">
+         <button id="mobile-menu-btn" class="text-2xl md:hidden text-navy focus:outline-none">
             <i class="fas fa-bars"></i>
          </button>
 
@@ -447,16 +449,16 @@
    <!-- Search Section -->
    <section class="py-4 border-b bg-gradient-to-br from-slate-50 to-slate-100 border-slate-200">
       <div class="container max-w-[1230px] mx-auto px-4 lg:px-0">
-         <div class="p-4 bg-white border border-navy/20 shadow-lg rounded-xl">
+         <div class="p-4 bg-white border shadow-lg border-navy/20 rounded-xl">
             <h2 class="flex items-center gap-2 mb-3 text-lg font-bold text-slate-800">
                <i class="text-navy fas fa-search"></i>
                Tìm kiếm văn phòng
             </h2>
             <form class="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
                <div>
-                  <label class="block text-xs font-medium text-slate-600 mb-1">Chọn quận/huyện</label>
+                  <label class="block mb-1 text-xs font-medium text-slate-600">Chọn quận/huyện</label>
                   <select
-                     class="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-navy bg-white">
+                     class="w-full px-3 py-2 text-sm bg-white border rounded-lg border-slate-300 focus:ring-2 focus:ring-navy focus:border-navy">
                      <option value="">Tất cả</option>
                      <option value="quan-1">Quận 1</option>
                      <option value="quan-2">Quận 2</option>
@@ -466,9 +468,9 @@
                   </select>
                </div>
                <div>
-                  <label class="block text-xs font-medium text-slate-600 mb-1">Chọn phường</label>
+                  <label class="block mb-1 text-xs font-medium text-slate-600">Chọn phường</label>
                   <select
-                     class="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-navy bg-white">
+                     class="w-full px-3 py-2 text-sm bg-white border rounded-lg border-slate-300 focus:ring-2 focus:ring-navy focus:border-navy">
                      <option value="">Tất cả</option>
                      <option value="ben-nghe">Bến Nghé</option>
                      <option value="tan-dinh">Tân Định</option>
@@ -476,9 +478,9 @@
                   </select>
                </div>
                <div>
-                  <label class="block text-xs font-medium text-slate-600 mb-1">Chọn hướng</label>
+                  <label class="block mb-1 text-xs font-medium text-slate-600">Chọn hướng</label>
                   <select
-                     class="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-navy bg-white">
+                     class="w-full px-3 py-2 text-sm bg-white border rounded-lg border-slate-300 focus:ring-2 focus:ring-navy focus:border-navy">
                      <option value="">Tất cả</option>
                      <option value="dong">Đông</option>
                      <option value="tay">Tây</option>
@@ -489,9 +491,9 @@
                   </select>
                </div>
                <div>
-                  <label class="block text-xs font-medium text-slate-600 mb-1">Tên tòa nhà</label>
+                  <label class="block mb-1 text-xs font-medium text-slate-600">Tên tòa nhà</label>
                   <input type="text" placeholder="Nhập tên tòa nhà..."
-                     class="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-navy" />
+                     class="w-full px-3 py-2 text-sm border rounded-lg border-slate-300 focus:ring-2 focus:ring-navy focus:border-navy" />
                </div>
 
                <!-- Price Range Filter -->
@@ -522,11 +524,11 @@
 
                <div class="flex flex-wrap justify-end gap-2.5 sm:col-span-2 lg:col-span-4">
                   <button type="button"
-                     class="px-5 py-2 text-sm font-medium text-slate-700 bg-white border border-slate-300 rounded-lg hover:bg-slate-50 transition-colors">
+                     class="px-5 py-2 text-sm font-medium transition-colors bg-white border rounded-lg text-slate-700 border-slate-300 hover:bg-slate-50">
                      Đặt lại
                   </button>
                   <button type="submit"
-                     class="px-6 py-2 text-sm font-bold text-white bg-gradient-to-r from-navy to-navy-light rounded-lg hover:shadow-xl transition-all shadow-md hover:scale-105">
+                     class="px-6 py-2 text-sm font-bold text-white transition-all rounded-lg shadow-md bg-gradient-to-r from-navy to-navy-light hover:shadow-xl hover:scale-105">
                      <i class="mr-2 fas fa-search"></i>Tìm kiếm
                   </button>
                </div>
@@ -571,49 +573,59 @@
       </div>
 
       <!-- Gallary -->
-      <!-- <section class="grid gap-2 lg:gap-2 lg:grid-cols-4 mb-6" data-aos="fade-up"> -->
+      <!-- <section class="grid gap-2 mb-6 lg:gap-2 lg:grid-cols-4" data-aos="fade-up"> -->
       <!-- Ảnh lớn -->
-      <!-- <figure class="overflow-hidden rounded-xl shadow-sm lg:col-span-2" style="aspect-ratio: 4/3">
+      <!-- <figure class="overflow-hidden shadow-sm rounded-xl lg:col-span-2" style="aspect-ratio: 4/3">
             <img src="./assets/images/detail/detail-1.jpg" alt="Không gian Beyond Coworking"
                class="object-cover w-full h-full" />
          </figure> -->
       <!-- 4 hình bên phải (hidden on mobile) -->
       <!-- <div class="hidden lg:!grid grid-cols-2 gap-2 lg:col-span-2">
-            <div class="overflow-hidden rounded-xl shadow-sm" style="aspect-ratio: 4/3">
+            <div class="overflow-hidden shadow-sm rounded-xl" style="aspect-ratio: 4/3">
                <img src="./assets/images/detail/detail-2.jpg" alt="" class="object-cover w-full h-full" />
             </div>
-            <div class="overflow-hidden rounded-xl shadow-sm" style="aspect-ratio: 4/3">
+            <div class="overflow-hidden shadow-sm rounded-xl" style="aspect-ratio: 4/3">
                <img src="./assets/images/detail/detail-3.jpg" alt="" class="object-cover w-full h-full" />
             </div>
-            <div class="overflow-hidden rounded-xl shadow-sm" style="aspect-ratio: 4/3">
+            <div class="overflow-hidden shadow-sm rounded-xl" style="aspect-ratio: 4/3">
                <img src="./assets/images/detail/detail-4.jpg" alt="" class="object-cover w-full h-full" />
             </div>
-            <div class="overflow-hidden rounded-xl shadow-sm" style="aspect-ratio: 4/3">
+            <div class="overflow-hidden shadow-sm rounded-xl" style="aspect-ratio: 4/3">
                <img src="./assets/images/detail/detail-5.jpg" alt="" class="object-cover w-full h-full" />
             </div>
          </div> -->
       <!-- </section> -->
 
       <!-- Galleria Test -->
-      <section class="grid gap-2 lg:gap-2 lg:grid-cols-4 mb-3" data-aos="fade-up">
+      <section class="grid gap-2 mb-3 lg:gap-2 lg:grid-cols-4" data-aos="fade-up">
          <!-- Ảnh lớn -->
-         <figure class="overflow-hidden rounded-xl shadow-sm lg:col-span-2" style="aspect-ratio: 4/3">
-            <img src="./assets/images/detail/detail-1.jpg" alt="Không gian Beyond Coworking"
-               class="object-cover w-full h-full" />
+         <figure class="overflow-hidden shadow-sm rounded-xl lg:col-span-2" style="aspect-ratio: 4/3">
+            <a href="./assets/images/detail/detail-1.jpg" data-fancybox="gallery" data-caption="Không gian Beyond Coworking">
+               <img src="./assets/images/detail/detail-1.jpg" alt="Không gian Beyond Coworking"
+                  class="object-cover w-full h-full transition-opacity cursor-pointer hover:opacity-90" />
+            </a>
          </figure>
          <!-- 4 hình bên phải (hidden on mobile) -->
          <div class="hidden lg:!grid grid-cols-2 gap-2 lg:col-span-2">
-            <div class="overflow-hidden rounded-xl shadow-sm" style="aspect-ratio: 4/3">
-               <img src="./assets/images/detail/detail-2.jpg" alt="" class="object-cover w-full h-full" />
+            <div class="overflow-hidden shadow-sm rounded-xl" style="aspect-ratio: 4/3">
+               <a href="./assets/images/detail/detail-2.jpg" data-fancybox="gallery" data-caption="Không gian văn phòng">
+                  <img src="./assets/images/detail/detail-2.jpg" alt="" class="object-cover w-full h-full transition-opacity cursor-pointer hover:opacity-90" />
+               </a>
             </div>
-            <div class="overflow-hidden rounded-xl shadow-sm" style="aspect-ratio: 4/3">
-               <img src="./assets/images/detail/detail-3.jpg" alt="" class="object-cover w-full h-full" />
+            <div class="overflow-hidden shadow-sm rounded-xl" style="aspect-ratio: 4/3">
+               <a href="./assets/images/detail/detail-3.jpg" data-fancybox="gallery" data-caption="Phòng họp chuyên nghiệp">
+                  <img src="./assets/images/detail/detail-3.jpg" alt="" class="object-cover w-full h-full transition-opacity cursor-pointer hover:opacity-90" />
+               </a>
             </div>
-            <div class="overflow-hidden rounded-xl shadow-sm" style="aspect-ratio: 4/3">
-               <img src="./assets/images/detail/detail-4.jpg" alt="" class="object-cover w-full h-full" />
+            <div class="overflow-hidden shadow-sm rounded-xl" style="aspect-ratio: 4/3">
+               <a href="./assets/images/detail/detail-4.jpg" data-fancybox="gallery" data-caption="Khu vực tiện ích">
+                  <img src="./assets/images/detail/detail-4.jpg" alt="" class="object-cover w-full h-full transition-opacity cursor-pointer hover:opacity-90" />
+               </a>
             </div>
-            <div class="overflow-hidden rounded-xl shadow-sm" style="aspect-ratio: 4/3">
-               <img src="./assets/images/detail/detail-5.jpg" alt="" class="object-cover w-full h-full" />
+            <div class="overflow-hidden shadow-sm rounded-xl" style="aspect-ratio: 4/3">
+               <a href="./assets/images/detail/detail-5.jpg" data-fancybox="gallery" data-caption="Khu vực làm việc chung">
+                  <img src="./assets/images/detail/detail-5.jpg" alt="" class="object-cover w-full h-full transition-opacity cursor-pointer hover:opacity-90" />
+               </a>
             </div>
          </div>
       </section>
@@ -840,7 +852,7 @@
                   </div>
 
                   <div class="flex items-center gap-3 border border-greey-500 rounded-[10px] p-1.5">
-                     <div class="flex items-center justify-center w-12 h-12 text-gold rounded-lg bg-blue-50 shrink-0">
+                     <div class="flex items-center justify-center w-12 h-12 rounded-lg text-gold bg-blue-50 shrink-0">
                         <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px"
                            fill="currentColor">
                            <path
@@ -973,7 +985,7 @@
                   </div>
 
                   <div class="flex items-center gap-3 border border-greey-500 rounded-[10px] p-1.5">
-                     <div class="flex items-center justify-center w-12 h-12 text-gold rounded-lg bg-blue-50 shrink-0">
+                     <div class="flex items-center justify-center w-12 h-12 rounded-lg text-gold bg-blue-50 shrink-0">
                         <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px"
                            fill="currentColor">
                            <path
@@ -1027,7 +1039,7 @@
             </section>
             <!-- nháp -->
 
-            <p class="mb-3 mt-10 text-sm leading-relaxed text-slate-700">
+            <p class="mt-10 mb-3 text-sm leading-relaxed text-slate-700">
                <strong>Beyond Coworking Space</strong> tọa lạc tại
                <strong>Saigon Finance Tower</strong> – vị trí trung tâm Quận 1,
                mang đến môi trường làm việc chuyên nghiệp, hiện đại và yên tĩnh.
@@ -1132,22 +1144,22 @@
          <aside class="space-y-6 lg:col-span-4 lg:sticky lg:top-12 lg:h-fit" data-aos="fade-up" data-aos-delay="150">
             <!-- Fixed Rental Price Banner -->
             <div
-               class="p-4 text-center bg-gradient-to-r from-navy to-navy-light rounded-xl shadow-lg sticky top-16 z-10">
-               <p class="text-xs font-semibold text-white uppercase mb-1">
+               class="sticky z-10 p-4 text-center shadow-lg bg-gradient-to-r from-navy to-navy-light rounded-xl top-16">
+               <p class="mb-1 text-xs font-semibold text-white uppercase">
                   Giá thuê
                </p>
                <p class="text-3xl font-extrabold text-gold-light">
                   20 ~ 22 USD
-                  <span class="text-white text-sm">/m² /tháng</span>
+                  <span class="text-sm text-white">/m² /tháng</span>
                </p>
             </div>
 
-            <div class="p-6 mt-6  bg-gradient-to-br from-blue-50 to-blue-100 border-2 border-navy/20 rounded-xl">
+            <div class="p-6 mt-6 border-2 bg-gradient-to-br from-blue-50 to-blue-100 border-navy/20 rounded-xl">
                <!-- Contact Buttons -->
                <div class="flex justify-between gap-3 mb-6">
                   <a href="tel:0987110011"
-                     class="inline-flex items-center w-1/2 gap-2 px-2 py-3 text-white transition-all duration-300 bg-gradient-to-r from-navy to-navy-light rounded-lg hover:shadow-xl hover:scale-105">
-                     <svg class="svg-inline--fa fa-phone text-base" aria-hidden="true" focusable="false"
+                     class="inline-flex items-center w-1/2 gap-2 px-2 py-3 text-white transition-all duration-300 rounded-lg bg-gradient-to-r from-navy to-navy-light hover:shadow-xl hover:scale-105">
+                     <svg class="text-base svg-inline--fa fa-phone" aria-hidden="true" focusable="false"
                         data-prefix="fas" data-icon="phone" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512" data-fa-i2svg="">
                         <path fill="currentColor"
@@ -1200,14 +1212,14 @@
                   </div>
 
                   <button type="submit"
-                     class="w-full py-3 text-base font-bold text-white transition-all duration-300 bg-gradient-to-r from-navy to-navy-light rounded-lg hover:shadow-xl hover:scale-105">
+                     class="w-full py-3 text-base font-bold text-white transition-all duration-300 rounded-lg bg-gradient-to-r from-navy to-navy-light hover:shadow-xl hover:scale-105">
                      Cần Tư Vấn Ngay
                   </button>
                </form>
 
                <!-- Consultant Thumbnails -->
                <div class="mt-6 text-center">
-                  <p class="mb-4 text-sm font-semibold text-navy uppercase">
+                  <p class="mb-4 text-sm font-semibold uppercase text-navy">
                      Chuyên viên tư vấn sẵn sàng hỗ trợ
                   </p>
                   <div class="flex justify-center gap-4">
@@ -1215,23 +1227,23 @@
                      <div class="flex justify-center -space-x-4">
                         <div class="w-20 h-20 rounded-full overflow-hidden border-[1px] border-navy shadow">
                            <img src="assets/images/consulting-team/consulting-team-1.jpg" alt="Tư vấn 1"
-                              class="w-full h-full object-cover" />
+                              class="object-cover w-full h-full" />
                         </div>
                         <div class="w-20 h-20 rounded-full overflow-hidden border-[1px] border-navy shadow">
                            <img src="assets/images/consulting-team/consulting-team-2.jpg" alt="Tư vấn 1"
-                              class="w-full h-full object-cover" />
+                              class="object-cover w-full h-full" />
                         </div>
                         <div class="w-20 h-20 rounded-full overflow-hidden border-[1px] border-navy shadow">
                            <img src="assets/images/consulting-team/consulting-team-3.jpg" alt="Tư vấn 1"
-                              class="w-full h-full object-cover" />
+                              class="object-cover w-full h-full" />
                         </div>
                         <div class="w-20 h-20 rounded-full overflow-hidden border-[1px] border-navy shadow">
                            <img src="assets/images/consulting-team/consulting-team-4.jpg" alt="Tư vấn 1"
-                              class="w-full h-full object-cover" />
+                              class="object-cover w-full h-full" />
                         </div>
                         <div class="w-20 h-20 rounded-full overflow-hidden border-[1px] border-navy shadow">
                            <img src="assets/images/consulting-team/consulting-team-5.jpg" alt="Tư vấn 1"
-                              class="w-full h-full object-cover" />
+                              class="object-cover w-full h-full" />
                         </div>
                      </div>
 
@@ -1243,10 +1255,10 @@
 
       <!-- Nearby Buildings Section -->
       <section class="mt-12" data-aos="fade-up" data-aos-delay="100">
-         <h2 class="text-2xl font-bold mb-2 md:text-2xl text-slate-900">
+         <h2 class="mb-2 text-2xl font-bold md:text-2xl text-slate-900">
             Gần nơi tìm kiếm
          </h2>
-         <a href="#" class="inline-flex items-center gap-1 text-sm font-medium text-gold hover:text-gold-light mb-6">
+         <a href="#" class="inline-flex items-center gap-1 mb-6 text-sm font-medium text-gold hover:text-gold-light">
             Xem tất cả <i class="text-xs fas fa-arrow-right"></i>
          </a>
 
@@ -1380,10 +1392,10 @@
 
       <!-- Same Grade Buildings Section -->
       <section class="mt-12" data-aos="fade-up" data-aos-delay="100">
-         <h2 class="text-2xl font-bold mb-2 md:text-2xl text-slate-900">
+         <h2 class="mb-2 text-2xl font-bold md:text-2xl text-slate-900">
             Toà nhà cùng hạng
          </h2>
-         <a href="#" class="inline-flex items-center gap-1 text-sm font-medium text-gold hover:text-gold-light mb-6">
+         <a href="#" class="inline-flex items-center gap-1 mb-6 text-sm font-medium text-gold hover:text-gold-light">
             Xem tất cả <i class="text-xs fas fa-arrow-right"></i>
          </a>
 
@@ -1521,7 +1533,7 @@
 
       <section class="mt-12" data-aos="fade-up" data-aos-delay="200">
          <!-- Title -->
-         <h2 class="text-2xl md:text-2xl font-bold text-slate-900 mb-6">
+         <h2 class="mb-6 text-2xl font-bold md:text-2xl text-slate-900">
             Vị trí tòa nhà Saigon Finance Tower
          </h2>
 
@@ -1547,7 +1559,7 @@
                   <p class="mt-1 text-xs leading-snug text-slate-600">
                      9 Đinh Tiên Hoàng, Phường Tân Định, Quận 1
                   </p>
-                  <p class="mt-1 text-xs leading-snug text-slate-600 font-bold">
+                  <p class="mt-1 text-xs font-bold leading-snug text-slate-600">
                      hotline: 0987 110 011
                   </p>
                </div>
@@ -1557,21 +1569,21 @@
 
       <!-- FAQ Section -->
       <section class="mt-12" data-aos="fade-up" data-aos-delay="250">
-         <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+         <h2 class="mb-6 text-2xl font-bold md:text-3xl text-slate-900">
             Những câu hỏi thường gặp tại Tòa nhà Saigon Finance Tower
          </h2>
 
          <div class="space-y-4">
             <!-- FAQ Item 1 -->
-            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <details class="overflow-hidden bg-white border shadow-sm group border-slate-200 rounded-xl">
                <summary
-                  class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-slate-50 transition-colors">
+                  class="flex items-center justify-between px-6 py-4 transition-colors cursor-pointer hover:bg-slate-50">
                   <h3 class="text-base font-semibold text-slate-900">
                      Diện tích văn phòng tối thiểu có thể thuê là bao nhiêu?
                   </h3>
-                  <i class="fas fa-chevron-down text-navy transition-transform group-open:rotate-180"></i>
+                  <i class="transition-transform fas fa-chevron-down text-navy group-open:rotate-180"></i>
                </summary>
-               <div class="px-6 pb-4 pt-2 text-sm text-slate-600 leading-relaxed">
+               <div class="px-6 pt-2 pb-4 text-sm leading-relaxed text-slate-600">
                   <p>
                      Diện tích tối thiểu tại Beyond Coworking Space là
                      <strong>20m²</strong>, phù hợp cho các startup hoặc doanh nghiệp
@@ -1582,15 +1594,15 @@
             </details>
 
             <!-- FAQ Item 2 -->
-            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <details class="overflow-hidden bg-white border shadow-sm group border-slate-200 rounded-xl">
                <summary
-                  class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-slate-50 transition-colors">
+                  class="flex items-center justify-between px-6 py-4 transition-colors cursor-pointer hover:bg-slate-50">
                   <h3 class="text-base font-semibold text-slate-900">
                      Chi phí thuê văn phòng đã bao gồm những gì?
                   </h3>
-                  <i class="fas fa-chevron-down text-navy transition-transform group-open:rotate-180"></i>
+                  <i class="transition-transform fas fa-chevron-down text-navy group-open:rotate-180"></i>
                </summary>
-               <div class="px-6 pb-4 pt-2 text-sm text-slate-600 leading-relaxed">
+               <div class="px-6 pt-2 pb-4 text-sm leading-relaxed text-slate-600">
                   <p>
                      Chi phí thuê đã bao gồm: WiFi tốc độ cao, điện lạnh, nước uống,
                      phòng họp miễn phí (6-10 chỗ), khu vực pantry, dọn vệ sinh hàng
@@ -1600,15 +1612,15 @@
             </details>
 
             <!-- FAQ Item 3 -->
-            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <details class="overflow-hidden bg-white border shadow-sm group border-slate-200 rounded-xl">
                <summary
-                  class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-slate-50 transition-colors">
+                  class="flex items-center justify-between px-6 py-4 transition-colors cursor-pointer hover:bg-slate-50">
                   <h3 class="text-base font-semibold text-slate-900">
                      Thời hạn thuê tối thiểu là bao lâu?
                   </h3>
-                  <i class="fas fa-chevron-down text-navy transition-transform group-open:rotate-180"></i>
+                  <i class="transition-transform fas fa-chevron-down text-navy group-open:rotate-180"></i>
                </summary>
-               <div class="px-6 pb-4 pt-2 text-sm text-slate-600 leading-relaxed">
+               <div class="px-6 pt-2 pb-4 text-sm leading-relaxed text-slate-600">
                   <p>
                      Thời hạn thuê tối thiểu là <strong>3 tháng</strong>. Chúng tôi
                      cũng có các gói dài hạn 6 tháng, 1 năm với mức giá ưu đãi hơn.
@@ -1617,15 +1629,15 @@
             </details>
 
             <!-- FAQ Item 4 -->
-            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <details class="overflow-hidden bg-white border shadow-sm group border-slate-200 rounded-xl">
                <summary
-                  class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-slate-50 transition-colors">
+                  class="flex items-center justify-between px-6 py-4 transition-colors cursor-pointer hover:bg-slate-50">
                   <h3 class="text-base font-semibold text-slate-900">
                      Có chỗ đỗ xe không? Chi phí như thế nào?
                   </h3>
-                  <i class="fas fa-chevron-down text-navy transition-transform group-open:rotate-180"></i>
+                  <i class="transition-transform fas fa-chevron-down text-navy group-open:rotate-180"></i>
                </summary>
-               <div class="px-6 pb-4 pt-2 text-sm text-slate-600 leading-relaxed">
+               <div class="px-6 pt-2 pb-4 text-sm leading-relaxed text-slate-600">
                   <p>
                      Tòa nhà có hầm đỗ xe rộng rãi. Chi phí đỗ ô tô là
                      <strong>6.500.000 VNĐ/tháng</strong> và xe máy là
@@ -1635,18 +1647,18 @@
             </details>
 
             <!-- FAQ Item 5 -->
-            <details class="group bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <details class="overflow-hidden bg-white border shadow-sm group border-slate-200 rounded-xl">
                <summary
-                  class="flex items-center justify-between px-6 py-4 cursor-pointer hover:bg-slate-50 transition-colors">
+                  class="flex items-center justify-between px-6 py-4 transition-colors cursor-pointer hover:bg-slate-50">
                   <h3 class="text-base font-semibold text-slate-900">
                      Làm thế nào để đặt lịch xem văn phòng?
                   </h3>
-                  <i class="fas fa-chevron-down text-navy transition-transform group-open:rotate-180"></i>
+                  <i class="transition-transform fas fa-chevron-down text-navy group-open:rotate-180"></i>
                </summary>
-               <div class="px-6 pb-4 pt-2 text-sm text-slate-600 leading-relaxed">
+               <div class="px-6 pt-2 pb-4 text-sm leading-relaxed text-slate-600">
                   <p>
                      Bạn có thể liên hệ qua hotline
-                     <a href="tel:0987110011" class="text-navy font-semibold hover:underline">0987 110 011</a>
+                     <a href="tel:0987110011" class="font-semibold text-navy hover:underline">0987 110 011</a>
                      hoặc điền form trên website. Chúng tôi sẽ sắp xếp lịch xem trong
                      vòng 24h.
                   </p>
@@ -1657,33 +1669,33 @@
 
       <!-- Team Section -->
       <!-- <section class="mt-12" data-aos="fade-up" data-aos-delay="300"> -->
-      <!-- <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+      <!-- <h2 class="mb-2 text-2xl font-bold md:text-3xl text-slate-900">
             Đội ngũ tư vấn chuyên nghiệp
          </h2>
-         <a href="#" class="inline-flex items-center gap-1 text-sm font-medium text-gold hover:text-gold-light mb-6">
+         <a href="#" class="inline-flex items-center gap-1 mb-6 text-sm font-medium text-gold hover:text-gold-light">
             Xem tất cả <i class="text-xs fas fa-arrow-right"></i>
          </a> -->
 
       <!-- <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"> -->
       <!-- Team Member 1 -->
       <!-- <div
-               class="bg-white rounded-xl shadow-sm overflow-hidden border border-slate-100 group hover:shadow-lg transition-all">
+               class="overflow-hidden transition-all bg-white border shadow-sm rounded-xl border-slate-100 group hover:shadow-lg">
                <div class="relative overflow-hidden aspect-[3/4]">
                   <img src="https://placehold.co/300x400/1e3a8a/ffffff?text=Consultant+1" alt="Tư vấn viên 1"
                      class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
                </div>
                <div class="p-4 text-center">
-                  <h3 class="text-lg font-bold text-slate-900 mb-1">
+                  <h3 class="mb-1 text-lg font-bold text-slate-900">
                      Nguyễn Văn A
                   </h3>
-                  <p class="text-sm text-slate-500 mb-3">
+                  <p class="mb-3 text-sm text-slate-500">
                      Chuyên viên tư vấn cấp cao
                   </p>
                   <div class="flex justify-center gap-3">
-                     <a href="tel:0987110011" class="text-navy hover:text-gold transition-colors">
+                     <a href="tel:0987110011" class="transition-colors text-navy hover:text-gold">
                         <i class="fas fa-phone"></i>
                      </a>
-                     <a href="mailto:consultant@example.com" class="text-navy hover:text-gold transition-colors">
+                     <a href="mailto:consultant@example.com" class="transition-colors text-navy hover:text-gold">
                         <i class="fas fa-envelope"></i>
                      </a>
                   </div>
@@ -1692,19 +1704,19 @@
 
       <!-- Team Member 2 -->
       <!-- <div
-               class="bg-white rounded-xl shadow-sm overflow-hidden border border-slate-100 group hover:shadow-lg transition-all">
+               class="overflow-hidden transition-all bg-white border shadow-sm rounded-xl border-slate-100 group hover:shadow-lg">
                <div class="relative overflow-hidden aspect-[3/4]">
                   <img src="https://placehold.co/300x400/2563eb/ffffff?text=Consultant+2" alt="Tư vấn viên 2"
                      class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
                </div>
                <div class="p-4 text-center">
-                  <h3 class="text-lg font-bold text-slate-900 mb-1">Trần Thị B</h3>
-                  <p class="text-sm text-slate-500 mb-3">Chuyên viên tư vấn</p>
+                  <h3 class="mb-1 text-lg font-bold text-slate-900">Trần Thị B</h3>
+                  <p class="mb-3 text-sm text-slate-500">Chuyên viên tư vấn</p>
                   <div class="flex justify-center gap-3">
-                     <a href="tel:0987110022" class="text-navy hover:text-gold transition-colors">
+                     <a href="tel:0987110022" class="transition-colors text-navy hover:text-gold">
                         <i class="fas fa-phone"></i>
                      </a>
-                     <a href="mailto:consultant2@example.com" class="text-navy hover:text-gold transition-colors">
+                     <a href="mailto:consultant2@example.com" class="transition-colors text-navy hover:text-gold">
                         <i class="fas fa-envelope"></i>
                      </a>
                   </div>
@@ -1713,19 +1725,19 @@
 
       <!-- Team Member 3 -->
       <!-- <div
-               class="bg-white rounded-xl shadow-sm overflow-hidden border border-slate-100 group hover:shadow-lg transition-all">
+               class="overflow-hidden transition-all bg-white border shadow-sm rounded-xl border-slate-100 group hover:shadow-lg">
                <div class="relative overflow-hidden aspect-[3/4]">
                   <img src="https://placehold.co/300x400/a78b6a/ffffff?text=Consultant+3" alt="Tư vấn viên 3"
                      class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
                </div>
                <div class="p-4 text-center">
-                  <h3 class="text-lg font-bold text-slate-900 mb-1">Lê Văn C</h3>
-                  <p class="text-sm text-slate-500 mb-3">Chuyên viên tư vấn</p>
+                  <h3 class="mb-1 text-lg font-bold text-slate-900">Lê Văn C</h3>
+                  <p class="mb-3 text-sm text-slate-500">Chuyên viên tư vấn</p>
                   <div class="flex justify-center gap-3">
-                     <a href="tel:0987110033" class="text-navy hover:text-gold transition-colors">
+                     <a href="tel:0987110033" class="transition-colors text-navy hover:text-gold">
                         <i class="fas fa-phone"></i>
                      </a>
-                     <a href="mailto:consultant3@example.com" class="text-navy hover:text-gold transition-colors">
+                     <a href="mailto:consultant3@example.com" class="transition-colors text-navy hover:text-gold">
                         <i class="fas fa-envelope"></i>
                      </a>
                   </div>
@@ -1734,19 +1746,19 @@
 
       <!-- Team Member 4 -->
       <!-- <div
-               class="bg-white rounded-xl shadow-sm overflow-hidden border border-slate-100 group hover:shadow-lg transition-all">
+               class="overflow-hidden transition-all bg-white border shadow-sm rounded-xl border-slate-100 group hover:shadow-lg">
                <div class="relative overflow-hidden aspect-[3/4]">
                   <img src="https://placehold.co/300x400/c9a876/ffffff?text=Consultant+4" alt="Tư vấn viên 4"
                      class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
                </div>
                <div class="p-4 text-center">
-                  <h3 class="text-lg font-bold text-slate-900 mb-1">Phạm Thị D</h3>
-                  <p class="text-sm text-slate-500 mb-3">Chuyên viên tư vấn</p>
+                  <h3 class="mb-1 text-lg font-bold text-slate-900">Phạm Thị D</h3>
+                  <p class="mb-3 text-sm text-slate-500">Chuyên viên tư vấn</p>
                   <div class="flex justify-center gap-3">
-                     <a href="tel:0987110044" class="text-navy hover:text-gold transition-colors">
+                     <a href="tel:0987110044" class="transition-colors text-navy hover:text-gold">
                         <i class="fas fa-phone"></i>
                      </a>
-                     <a href="mailto:consultant4@example.com" class="text-navy hover:text-gold transition-colors">
+                     <a href="mailto:consultant4@example.com" class="transition-colors text-navy hover:text-gold">
                         <i class="fas fa-envelope"></i>
                      </a>
                   </div>
@@ -1757,48 +1769,48 @@
 
       <section class="mt-12" data-aos="fade-up" data-aos-delay="250">
          <!-- Title -->
-         <h2 class="text-2xl md:text-2xl font-bold text-slate-900 mb-4">
+         <h2 class="mb-4 text-2xl font-bold md:text-2xl text-slate-900">
             Đánh giá Sản phẩm
          </h2>
 
          <!-- Rating options with stars -->
          <div class="flex flex-wrap items-center gap-4 mb-6">
-            <label class="flex items-center gap-2 cursor-pointer hover:text-gold transition-colors">
-               <input type="radio" name="rating" value="1" class="w-4 h-4 text-gold border-gray-300 focus:ring-navy" />
+            <label class="flex items-center gap-2 transition-colors cursor-pointer hover:text-gold">
+               <input type="radio" name="rating" value="1" class="w-4 h-4 border-gray-300 text-gold focus:ring-navy" />
                <span class="flex gap-0.5">
                   <i class="fas fa-star text-navy"></i>
                </span>
             </label>
 
-            <label class="flex items-center gap-2 cursor-pointer hover:text-gold transition-colors">
-               <input type="radio" name="rating" value="2" class="w-4 h-4 text-gold border-gray-300 focus:ring-navy" />
+            <label class="flex items-center gap-2 transition-colors cursor-pointer hover:text-gold">
+               <input type="radio" name="rating" value="2" class="w-4 h-4 border-gray-300 text-gold focus:ring-navy" />
                <span class="flex gap-0.5">
                   <i class="fas fa-star text-navy"></i>
                   <i class="fas fa-star text-navy"></i>
                </span>
             </label>
 
-            <label class="flex items-center gap-2 cursor-pointer hover:text-gold transition-colors">
-               <input type="radio" name="rating" value="3" class="w-4 h-4 text-gold border-gray-300 focus:ring-navy" />
+            <label class="flex items-center gap-2 transition-colors cursor-pointer hover:text-gold">
+               <input type="radio" name="rating" value="3" class="w-4 h-4 border-gray-300 text-gold focus:ring-navy" />
                <span class="flex gap-0.5">
-                  <i class="fas fa-star text-navy"></i>
-                  <i class="fas fa-star text-navy"></i>
-                  <i class="fas fa-star text-navy"></i>
-               </span>
-            </label>
-
-            <label class="flex items-center gap-2 cursor-pointer hover:text-gold transition-colors">
-               <input type="radio" name="rating" value="4" class="w-4 h-4 text-gold border-gray-300 focus:ring-navy" />
-               <span class="flex gap-0.5">
-                  <i class="fas fa-star text-navy"></i>
                   <i class="fas fa-star text-navy"></i>
                   <i class="fas fa-star text-navy"></i>
                   <i class="fas fa-star text-navy"></i>
                </span>
             </label>
 
-            <label class="flex items-center gap-2 cursor-pointer hover:text-gold transition-colors">
-               <input type="radio" name="rating" value="5" class="w-4 h-4 text-gold border-gray-300 focus:ring-navy" />
+            <label class="flex items-center gap-2 transition-colors cursor-pointer hover:text-gold">
+               <input type="radio" name="rating" value="4" class="w-4 h-4 border-gray-300 text-gold focus:ring-navy" />
+               <span class="flex gap-0.5">
+                  <i class="fas fa-star text-navy"></i>
+                  <i class="fas fa-star text-navy"></i>
+                  <i class="fas fa-star text-navy"></i>
+                  <i class="fas fa-star text-navy"></i>
+               </span>
+            </label>
+
+            <label class="flex items-center gap-2 transition-colors cursor-pointer hover:text-gold">
+               <input type="radio" name="rating" value="5" class="w-4 h-4 border-gray-300 text-gold focus:ring-navy" />
                <span class="flex gap-0.5">
                   <i class="fas fa-star text-navy"></i>
                   <i class="fas fa-star text-navy"></i>
@@ -1810,7 +1822,7 @@
          </div>
 
          <!-- Comment Box -->
-         <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-200">
+         <div class="p-6 bg-white border shadow-sm rounded-xl border-slate-200">
             <label for="comment" class="block mb-2 text-sm font-medium text-slate-700">Nội dung đánh giá</label>
             <textarea id="comment" rows="5" placeholder="Chia sẻ trải nghiệm của bạn về văn phòng này..."
                class="w-full px-4 py-3 text-sm bg-white border rounded-lg resize-none border-slate-300 focus:outline-none focus:ring-2 focus:ring-navy"></textarea>
@@ -1835,7 +1847,7 @@
             <!-- Submit -->
             <div class="flex justify-end mt-5">
                <button
-                  class="px-8 py-3 text-sm font-bold text-white transition-all bg-gradient-to-r from-navy to-navy-light rounded-lg hover:from-navy hover:to-navy-light hover:shadow-lg">
+                  class="px-8 py-3 text-sm font-bold text-white transition-all rounded-lg bg-gradient-to-r from-navy to-navy-light hover:from-navy hover:to-navy-light hover:shadow-lg">
                   <i class="mr-2 fas fa-paper-plane"></i>Gửi đánh giá
                </button>
             </div>
@@ -1844,72 +1856,72 @@
 
       <!-- Buildings by District Section -->
       <!-- <section class="mt-12" data-aos="fade-up" data-aos-delay="350"> -->
-      <!-- <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+      <!-- <h2 class="mb-6 text-2xl font-bold md:text-3xl text-slate-900">
             Văn phòng cho thuê theo quận
          </h2> -->
 
-      <!-- <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4"> -->
+      <!-- <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6"> -->
       <!-- District Item 1 -->
       <!-- <a href="/van-phong-quan-1"
-               class="group bg-white rounded-xl shadow-sm border border-slate-100 p-4 hover:shadow-lg hover:border-navy/30 transition-all">
+               class="p-4 transition-all bg-white border shadow-sm group rounded-xl border-slate-100 hover:shadow-lg hover:border-navy/30">
                <div class="flex flex-col items-center text-center">
                   <div
-                     class="w-16 h-16 bg-gradient-to-br from-navy to-navy-light rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                     <i class="fas fa-building text-2xl text-white"></i>
+                     class="flex items-center justify-center w-16 h-16 mb-3 transition-transform rounded-full bg-gradient-to-br from-navy to-navy-light group-hover:scale-110">
+                     <i class="text-2xl text-white fas fa-building"></i>
                   </div>
-                  <h3 class="text-sm font-semibold text-slate-900 mb-1">Quận 1</h3>
+                  <h3 class="mb-1 text-sm font-semibold text-slate-900">Quận 1</h3>
                   <p class="text-xs text-slate-500">120+ tòa nhà</p>
                </div>
             </a> -->
 
       <!-- District Item 2 -->
       <!-- <a href="/van-phong-quan-2"
-               class="group bg-white rounded-xl shadow-sm border border-slate-100 p-4 hover:shadow-lg hover:border-navy/30 transition-all">
+               class="p-4 transition-all bg-white border shadow-sm group rounded-xl border-slate-100 hover:shadow-lg hover:border-navy/30">
                <div class="flex flex-col items-center text-center">
                   <div
-                     class="w-16 h-16 bg-gradient-to-br from-navy to-navy-light rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                     <i class="fas fa-building text-2xl text-white"></i>
+                     class="flex items-center justify-center w-16 h-16 mb-3 transition-transform rounded-full bg-gradient-to-br from-navy to-navy-light group-hover:scale-110">
+                     <i class="text-2xl text-white fas fa-building"></i>
                   </div>
-                  <h3 class="text-sm font-semibold text-slate-900 mb-1">Quận 2</h3>
+                  <h3 class="mb-1 text-sm font-semibold text-slate-900">Quận 2</h3>
                   <p class="text-xs text-slate-500">85+ tòa nhà</p>
                </div>
             </a> -->
 
       <!-- District Item 3 -->
       <!-- <a href="/van-phong-quan-3"
-               class="group bg-white rounded-xl shadow-sm border border-slate-100 p-4 hover:shadow-lg hover:border-navy/30 transition-all">
+               class="p-4 transition-all bg-white border shadow-sm group rounded-xl border-slate-100 hover:shadow-lg hover:border-navy/30">
                <div class="flex flex-col items-center text-center">
                   <div
-                     class="w-16 h-16 bg-gradient-to-br from-navy to-navy-light rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                     <i class="fas fa-building text-2xl text-white"></i>
+                     class="flex items-center justify-center w-16 h-16 mb-3 transition-transform rounded-full bg-gradient-to-br from-navy to-navy-light group-hover:scale-110">
+                     <i class="text-2xl text-white fas fa-building"></i>
                   </div>
-                  <h3 class="text-sm font-semibold text-slate-900 mb-1">Quận 3</h3>
+                  <h3 class="mb-1 text-sm font-semibold text-slate-900">Quận 3</h3>
                   <p class="text-xs text-slate-500">95+ tòa nhà</p>
                </div>
             </a> -->
 
       <!-- District Item 4 -->
       <!-- <a href="/van-phong-quan-7"
-               class="group bg-white rounded-xl shadow-sm border border-slate-100 p-4 hover:shadow-lg hover:border-navy/30 transition-all">
+               class="p-4 transition-all bg-white border shadow-sm group rounded-xl border-slate-100 hover:shadow-lg hover:border-navy/30">
                <div class="flex flex-col items-center text-center">
                   <div
-                     class="w-16 h-16 bg-gradient-to-br from-navy to-navy-light rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                     <i class="fas fa-building text-2xl text-white"></i>
+                     class="flex items-center justify-center w-16 h-16 mb-3 transition-transform rounded-full bg-gradient-to-br from-navy to-navy-light group-hover:scale-110">
+                     <i class="text-2xl text-white fas fa-building"></i>
                   </div>
-                  <h3 class="text-sm font-semibold text-slate-900 mb-1">Quận 7</h3>
+                  <h3 class="mb-1 text-sm font-semibold text-slate-900">Quận 7</h3>
                   <p class="text-xs text-slate-500">70+ tòa nhà</p>
                </div>
             </a> -->
 
       <!-- District Item 5 -->
       <!-- <a href="/van-phong-binh-thanh"
-               class="group bg-white rounded-xl shadow-sm border border-slate-100 p-4 hover:shadow-lg hover:border-navy/30 transition-all">
+               class="p-4 transition-all bg-white border shadow-sm group rounded-xl border-slate-100 hover:shadow-lg hover:border-navy/30">
                <div class="flex flex-col items-center text-center">
                   <div
-                     class="w-16 h-16 bg-gradient-to-br from-navy to-navy-light rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                     <i class="fas fa-building text-2xl text-white"></i>
+                     class="flex items-center justify-center w-16 h-16 mb-3 transition-transform rounded-full bg-gradient-to-br from-navy to-navy-light group-hover:scale-110">
+                     <i class="text-2xl text-white fas fa-building"></i>
                   </div>
-                  <h3 class="text-sm font-semibold text-slate-900 mb-1">
+                  <h3 class="mb-1 text-sm font-semibold text-slate-900">
                      Bình Thạnh
                   </h3>
                   <p class="text-xs text-slate-500">65+ tòa nhà</p>
@@ -1918,13 +1930,13 @@
 
       <!-- District Item 6 -->
       <!-- <a href="/van-phong-tan-binh"
-               class="group bg-white rounded-xl shadow-sm border border-slate-100 p-4 hover:shadow-lg hover:border-navy/30 transition-all">
+               class="p-4 transition-all bg-white border shadow-sm group rounded-xl border-slate-100 hover:shadow-lg hover:border-navy/30">
                <div class="flex flex-col items-center text-center">
                   <div
-                     class="w-16 h-16 bg-gradient-to-br from-navy to-navy-light rounded-full flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
-                     <i class="fas fa-building text-2xl text-white"></i>
+                     class="flex items-center justify-center w-16 h-16 mb-3 transition-transform rounded-full bg-gradient-to-br from-navy to-navy-light group-hover:scale-110">
+                     <i class="text-2xl text-white fas fa-building"></i>
                   </div>
-                  <h3 class="text-sm font-semibold text-slate-900 mb-1">
+                  <h3 class="mb-1 text-sm font-semibold text-slate-900">
                      Tân Bình
                   </h3>
                   <p class="text-xs text-slate-500">80+ tòa nhà</p>
@@ -1932,9 +1944,9 @@
             </a> -->
       <!-- </div> -->
 
-      <!-- <div class="text-center mt-6">
+      <!-- <div class="mt-6 text-center">
          <a href="/van-phong-theo-quan"
-            class="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-all">
+            class="inline-flex items-center gap-2 px-6 py-3 font-semibold transition-all bg-white border-2 rounded-lg border-navy text-navy hover:bg-navy hover:text-white">
             Xem tất cả quận/huyện
             <i class="fas fa-arrow-right"></i>
          </a>
@@ -1943,17 +1955,17 @@
 
       <!-- Văn phòng cho thuê theo quận Nháp -->
       <section class="section-padding">
-         <div class="container mx-auto px-4 xl:px-0">
+         <div class="container px-4 mx-auto xl:px-0">
             <h2 class="heading-2">Văn phòng theo quận</h2>
 
             <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
                <!-- Quận 1 -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-1.jpg" alt="Quận 1"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Quận 1
                      </h3>
                      <p class="text-sm text-nature-300">343+ tòa nhà</p>
@@ -1962,11 +1974,11 @@
 
                <!-- Quận 5 -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-2.jpg" alt="Quận 5"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Quận 5
                      </h3>
                      <p class="text-sm text-nature-300">32+ tòa nhà</p>
@@ -1975,11 +1987,11 @@
 
                <!-- Quận 2 -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-3.jpg" alt="Quận 2"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Quận 2
                      </h3>
                      <p class="text-sm text-nature-300">164+ tòa nhà</p>
@@ -1988,11 +2000,11 @@
 
                <!-- Quận 7 -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-4.jpg" alt="Quận 7"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Quận 7
                      </h3>
                      <p class="text-sm text-nature-300">70+ tòa nhà</p>
@@ -2001,11 +2013,11 @@
 
                <!-- Quận 3 -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-5.jpg" alt="Quận 3"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Quận 3
                      </h3>
                      <p class="text-sm text-nature-300">218+ tòa nhà</p>
@@ -2014,11 +2026,11 @@
 
                <!-- Quận 8 -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-6.jpg" alt="Quận 8"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Quận 8
                      </h3>
                      <p class="text-sm text-nature-300">97+ tòa nhà</p>
@@ -2027,11 +2039,11 @@
 
                <!-- Quận 4 -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-7.jpg" alt="Quận 4"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Quận 4
                      </h3>
                      <p class="text-sm text-nature-300">54+ tòa nhà</p>
@@ -2040,11 +2052,11 @@
 
                <!-- Quận 10 -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-8.jpg" alt="Quận 10"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Quận 10
                      </h3>
                      <p class="text-sm text-nature-300">65+ tòa nhà</p>
@@ -2053,11 +2065,11 @@
 
                <!-- Quận 11 -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-9.jpg" alt="Quận 11"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Quận 11
                      </h3>
                      <p class="text-sm text-nature-300">98+ tòa nhà</p>
@@ -2066,11 +2078,11 @@
 
                <!-- Phú Nhuận -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-10.jpg" alt="Phú Nhuận"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Phú Nhuận
                      </h3>
                      <p class="text-sm text-nature-300">128+ tòa nhà</p>
@@ -2079,11 +2091,11 @@
 
                <!-- Quận 12 -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-11.jpg" alt="Quận 12"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Quận 12
                      </h3>
                      <p class="text-sm text-nature-300">12+ tòa nhà</p>
@@ -2092,11 +2104,11 @@
 
                <!-- Tân Phú -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-12.jpg" alt="Tân Phú"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Tân Phú
                      </h3>
                      <p class="text-sm text-nature-300">69+ tòa nhà</p>
@@ -2105,11 +2117,11 @@
 
                <!-- Bình Thạnh -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-13.jpg" alt="Bình Thạnh"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Bình Thạnh
                      </h3>
                      <p class="text-sm text-nature-300">232+ tòa nhà</p>
@@ -2118,11 +2130,11 @@
 
                <!-- Gò Vấp -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-13.jpg" alt="Gò Vấp"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Gò Vấp
                      </h3>
                      <p class="text-sm text-nature-300">17+ tòa nhà</p>
@@ -2131,11 +2143,11 @@
 
                <!-- Tân Bình -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-14.jpg" alt="Tân Bình"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         Tân Bình
                      </h3>
                      <p class="text-sm text-nature-300">265+ tòa nhà</p>
@@ -2144,11 +2156,11 @@
 
                <!-- TP. Thủ Đức -->
                <a href="#"
-                  class="group flex items-center gap-3 rounded-xl border border-nature-100 bg-white p-4 transition-all hover:shadow-lg">
+                  class="flex items-center gap-3 p-4 transition-all bg-white border group rounded-xl border-nature-100 hover:shadow-lg">
                   <img src="assets/images/thumbnails/thumbnail-15.jpg" alt="TP. Thủ Đức"
-                     class="size-16 rounded-lg object-cover">
+                     class="object-cover rounded-lg size-16">
                   <div>
-                     <h3 class="font-semibold text-nature-600 transition-colors group-hover:text-primary">
+                     <h3 class="font-semibold transition-colors text-nature-600 group-hover:text-primary">
                         TP. Thủ Đức
                      </h3>
                      <p class="text-sm text-nature-300">200+ tòa nhà</p>
@@ -2161,20 +2173,20 @@
 
       <!-- Full Package Office Section -->
       <section class="mt-12" data-aos="fade-up" data-aos-delay="400">
-         <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-6">
+         <h2 class="mb-6 text-2xl font-bold md:text-3xl text-slate-900">
             Văn phòng trọn gói theo quận
          </h2>
 
-         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <!-- Package Item 1 -->
             <a href="/van-phong-tron-goi-quan-1"
-               class="group bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-lg transition-all">
+               class="overflow-hidden transition-all bg-white border shadow-sm group rounded-xl border-slate-100 hover:shadow-lg">
                <div class="relative overflow-hidden aspect-[16/9]">
                   <img src="./assets/images/detail/detail-1.jpg" alt="Văn phòng trọn gói Quận 1"
                      class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
                   <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
                   <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                     <h3 class="text-lg font-bold mb-1">
+                     <h3 class="mb-1 text-lg font-bold">
                         Văn phòng trọn gói Quận 1
                      </h3>
                      <p class="text-sm text-white/90">Từ 260 USD/pax/tháng</p>
@@ -2190,13 +2202,13 @@
 
             <!-- Package Item 2 -->
             <a href="/van-phong-tron-goi-quan-3"
-               class="group bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-lg transition-all">
+               class="overflow-hidden transition-all bg-white border shadow-sm group rounded-xl border-slate-100 hover:shadow-lg">
                <div class="relative overflow-hidden aspect-[16/9]">
                   <img src="./assets/images/detail/detail-2.jpg" alt="Văn phòng trọn gói Quận 3"
                      class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
                   <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
                   <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                     <h3 class="text-lg font-bold mb-1">
+                     <h3 class="mb-1 text-lg font-bold">
                         Văn phòng trọn gói Quận 3
                      </h3>
                      <p class="text-sm text-white/90">Từ 220 USD/pax/tháng</p>
@@ -2212,13 +2224,13 @@
 
             <!-- Package Item 3 -->
             <a href="/van-phong-tron-goi-quan-7"
-               class="group bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-lg transition-all">
+               class="overflow-hidden transition-all bg-white border shadow-sm group rounded-xl border-slate-100 hover:shadow-lg">
                <div class="relative overflow-hidden aspect-[16/9]">
                   <img src="./assets/images/detail/detail-3.jpg" alt="Văn phòng trọn gói Quận 7"
                      class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
                   <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
                   <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                     <h3 class="text-lg font-bold mb-1">
+                     <h3 class="mb-1 text-lg font-bold">
                         Văn phòng trọn gói Quận 7
                      </h3>
                      <p class="text-sm text-white/90">Từ 200 USD/pax/tháng</p>
@@ -2234,13 +2246,13 @@
 
             <!-- Package Item 4 -->
             <a href="/van-phong-tron-goi-binh-thanh"
-               class="group bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-lg transition-all">
+               class="overflow-hidden transition-all bg-white border shadow-sm group rounded-xl border-slate-100 hover:shadow-lg">
                <div class="relative overflow-hidden aspect-[16/9]">
                   <img src="./assets/images/detail/detail-4.jpg" alt="Văn phòng trọn gói Bình Thạnh"
                      class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110" />
                   <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
                   <div class="absolute bottom-0 left-0 right-0 p-4 text-white">
-                     <h3 class="text-lg font-bold mb-1">
+                     <h3 class="mb-1 text-lg font-bold">
                         Văn phòng trọn gói Bình Thạnh
                      </h3>
                      <p class="text-sm text-white/90">Từ 180 USD/pax/tháng</p>
@@ -2255,9 +2267,9 @@
             </a>
          </div>
 
-         <div class="text-center mt-6">
+         <div class="mt-6 text-center">
             <a href="/van-phong-tron-goi"
-               class="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-all">
+               class="inline-flex items-center gap-2 px-6 py-3 font-semibold transition-all bg-white border-2 rounded-lg border-navy text-navy hover:bg-navy hover:text-white">
                Xem tất cả văn phòng trọn gói
                <i class="fas fa-arrow-right"></i>
             </a>
@@ -2266,34 +2278,34 @@
 
       <!-- CTA Banner Section -->
       <!-- <section class="mt-12 mb-12" data-aos="fade-up" data-aos-delay="450">
-         <div class="relative bg-gradient-to-r from-navy via-navy-light to-navy rounded-2xl overflow-hidden shadow-2xl">
+         <div class="relative overflow-hidden shadow-2xl bg-gradient-to-r from-navy via-navy-light to-navy rounded-2xl">
             <div class="absolute inset-0 opacity-10">
-               <div class="absolute top-0 left-0 w-64 h-64 bg-gold rounded-full -translate-x-1/2 -translate-y-1/2">
+               <div class="absolute top-0 left-0 w-64 h-64 -translate-x-1/2 -translate-y-1/2 rounded-full bg-gold">
                </div>
                <div
-                  class="absolute bottom-0 right-0 w-96 h-96 bg-gold-light rounded-full translate-x-1/2 translate-y-1/2">
+                  class="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 rounded-full w-96 h-96 bg-gold-light">
                </div>
             </div>
 
             <div class="relative px-6 py-12 md:px-12 md:py-16 lg:px-16 lg:py-20">
                <div class="max-w-3xl mx-auto text-center">
-                  <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                  <h2 class="mb-4 text-3xl font-bold text-white md:text-4xl">
                      Tìm văn phòng phù hợp với doanh nghiệp bạn
                   </h2>
-                  <p class="text-lg text-white/90 mb-8">
+                  <p class="mb-8 text-lg text-white/90">
                      Đội ngũ tư vấn chuyên nghiệp sẵn sàng hỗ trợ 24/7. Liên hệ ngay
                      để nhận báo giá tốt nhất!
                   </p>
 
-                  <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
                      <a href="tel:0987110011"
-                        class="inline-flex items-center gap-2 px-8 py-4 bg-gold text-white font-bold rounded-xl hover:bg-gold-light transition-all shadow-lg hover:shadow-xl hover:scale-105">
+                        class="inline-flex items-center gap-2 px-8 py-4 font-bold text-white transition-all shadow-lg bg-gold rounded-xl hover:bg-gold-light hover:shadow-xl hover:scale-105">
                         <i class="fas fa-phone-alt"></i>
                         <span>0987 110 011</span>
                      </a>
 
                      <button onclick="document.querySelector('form').scrollIntoView({behavior: 'smooth'})"
-                        class="inline-flex items-center gap-2 px-8 py-4 bg-white text-navy font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg">
+                        class="inline-flex items-center gap-2 px-8 py-4 font-bold transition-all bg-white shadow-lg text-navy rounded-xl hover:bg-slate-100">
                         <i class="fas fa-edit"></i>
                         <span>Đăng ký tư vấn</span>
                      </button>
@@ -2303,9 +2315,9 @@
          </div>
       </section> -->
 
-      <section class="section-padding overflow-hidden bg-primary-10">
+      <section class="overflow-hidden section-padding bg-primary-10">
          <div class="container grid gap-10 px-3 md:grid-cols-10 md:gap-12 lg:gap-16 xl:gap-20 2xl:px-2">
-            <div data-aos="flip-left" class="flex size-fit flex-col px-5 md:col-span-4 xl:px-0 aos-init aos-animate">
+            <div data-aos="flip-left" class="flex flex-col px-5 size-fit md:col-span-4 xl:px-0 aos-init aos-animate">
                <h2 class="heading-2 !mb-0 !text-start xl:!leading-[64px]">
                   Chúng tôi cung cấp những sản phẩm phù hợp và chất lượng nhất!
                </h2>
@@ -2323,99 +2335,99 @@
                   <div
                      class="mt-3.5 flex items-center gap-x-3 md:mt-5 md:gap-x-4 lg:mt-6 lg:gap-x-5 xl:mt-[30px] xl:gap-x-6">
                      <a href="#" class="text-nature-400 transition-all hover:text-[#1877f2]" target="_blank"
-                        rel="noopener noreferrer"><svg class="svg-inline--fa fa-square-facebook text-2xl"
+                        rel="noopener noreferrer"><svg class="text-2xl svg-inline--fa fa-square-facebook"
                            aria-hidden="true" focusable="false" data-prefix="fab" data-icon="square-facebook" role="img"
                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
                            <path fill="currentColor"
                               d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z">
                            </path>
-                        </svg><!-- <i class="fa-brands fa-square-facebook text-2xl"></i> Font Awesome fontawesome.com --></a>
+                        </svg><!-- <i class="text-2xl fa-brands fa-square-facebook"></i> Font Awesome fontawesome.com --></a>
                      <a href="#" class="text-nature-400 transition-all hover:text-[#c32aa3]" target="_blank"
-                        rel="noopener noreferrer"><svg class="svg-inline--fa fa-square-instagram text-2xl"
+                        rel="noopener noreferrer"><svg class="text-2xl svg-inline--fa fa-square-instagram"
                            aria-hidden="true" focusable="false" data-prefix="fab" data-icon="square-instagram"
                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
                            <path fill="currentColor"
                               d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z">
                            </path>
-                        </svg><!-- <i class="fa-brands fa-square-instagram text-2xl"></i> Font Awesome fontawesome.com --></a>
+                        </svg><!-- <i class="text-2xl fa-brands fa-square-instagram"></i> Font Awesome fontawesome.com --></a>
                      <a href="#" class="text-nature-400 transition-all hover:text-[#0a66c2]" target="_blank"
-                        rel="noopener noreferrer"><svg class="svg-inline--fa fa-linkedin text-2xl" aria-hidden="true"
+                        rel="noopener noreferrer"><svg class="text-2xl svg-inline--fa fa-linkedin" aria-hidden="true"
                            focusable="false" data-prefix="fab" data-icon="linkedin" role="img"
                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
                            <path fill="currentColor"
                               d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
                            </path>
-                        </svg><!-- <i class="fa-brands fa-linkedin text-2xl"></i> Font Awesome fontawesome.com --></a>
-                     <a href="#" class="text-nature-400 transition-all hover:text-black" target="_blank"
-                        rel="noopener noreferrer"><svg class="svg-inline--fa fa-square-x-twitter text-2xl"
+                        </svg><!-- <i class="text-2xl fa-brands fa-linkedin"></i> Font Awesome fontawesome.com --></a>
+                     <a href="#" class="transition-all text-nature-400 hover:text-black" target="_blank"
+                        rel="noopener noreferrer"><svg class="text-2xl svg-inline--fa fa-square-x-twitter"
                            aria-hidden="true" focusable="false" data-prefix="fab" data-icon="square-x-twitter"
                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
                            <path fill="currentColor"
                               d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z">
                            </path>
-                        </svg><!-- <i class="fa-brands fa-square-x-twitter text-2xl"></i> Font Awesome fontawesome.com --></a>
+                        </svg><!-- <i class="text-2xl fa-brands fa-square-x-twitter"></i> Font Awesome fontawesome.com --></a>
                   </div>
 
                   <div
                      class="mt-5 flex flex-col gap-y-4 md:mt-10 md:gap-y-5 lg:mt-14 lg:gap-y-6 xl:mt-[70px] xl:gap-y-7">
                      <div class="flex gap-x-2 lg:gap-x-3">
-                        <div class="flex size-10 items-center justify-center rounded-md bg-primary xl:size-12">
-                           <svg class="svg-inline--fa fa-phone-volume text-lg text-white xl:text-xl" aria-hidden="true"
+                        <div class="flex items-center justify-center rounded-md size-10 bg-primary xl:size-12">
+                           <svg class="text-lg text-white svg-inline--fa fa-phone-volume xl:text-xl" aria-hidden="true"
                               focusable="false" data-prefix="fas" data-icon="phone-volume" role="img"
                               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
                               <path fill="currentColor"
                                  d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z">
                               </path>
-                           </svg><!-- <i class="fa-solid fa-phone-volume text-lg text-white xl:text-xl"></i> Font Awesome fontawesome.com -->
+                           </svg><!-- <i class="text-lg text-white fa-solid fa-phone-volume xl:text-xl"></i> Font Awesome fontawesome.com -->
                         </div>
                         <div class="size-fit">
-                           <p class="font-poppins font-medium text-nature-400 lg:text-lg">
+                           <p class="font-medium font-poppins text-nature-400 lg:text-lg">
                               +84 987 11 00 11
                            </p>
-                           <span class="font-poppins text-sm font-normal text-nature-200">Hỗ trợ qua điện thoại</span>
+                           <span class="text-sm font-normal font-poppins text-nature-200">Hỗ trợ qua điện thoại</span>
                         </div>
                      </div>
 
                      <div class="flex gap-x-2 lg:gap-x-3">
-                        <div class="flex size-10 items-center justify-center rounded-md bg-primary xl:size-12">
-                           <svg class="svg-inline--fa fa-envelope text-lg text-white xl:text-xl" aria-hidden="true"
+                        <div class="flex items-center justify-center rounded-md size-10 bg-primary xl:size-12">
+                           <svg class="text-lg text-white svg-inline--fa fa-envelope xl:text-xl" aria-hidden="true"
                               focusable="false" data-prefix="fas" data-icon="envelope" role="img"
                               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
                               <path fill="currentColor"
                                  d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z">
                               </path>
-                           </svg><!-- <i class="fa-solid fa-envelope text-lg text-white xl:text-xl"></i> Font Awesome fontawesome.com -->
+                           </svg><!-- <i class="text-lg text-white fa-solid fa-envelope xl:text-xl"></i> Font Awesome fontawesome.com -->
                         </div>
                         <div class="size-fit">
-                           <p class="font-poppins font-medium text-nature-400 lg:text-lg">
+                           <p class="font-medium font-poppins text-nature-400 lg:text-lg">
                               support@anphuholdings.vn
                            </p>
-                           <span class="font-poppins text-sm font-normal text-nature-200">Hỗ trợ qua email</span>
+                           <span class="text-sm font-normal font-poppins text-nature-200">Hỗ trợ qua email</span>
                         </div>
                      </div>
 
                      <div class="flex gap-x-2 lg:gap-x-3">
-                        <div class="flex size-10 items-center justify-center rounded-md bg-primary xl:size-12">
-                           <svg class="svg-inline--fa fa-map-pin text-lg text-white xl:text-xl" aria-hidden="true"
+                        <div class="flex items-center justify-center rounded-md size-10 bg-primary xl:size-12">
+                           <svg class="text-lg text-white svg-inline--fa fa-map-pin xl:text-xl" aria-hidden="true"
                               focusable="false" data-prefix="fas" data-icon="map-pin" role="img"
                               xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
                               <path fill="currentColor"
                                  d="M16 144a144 144 0 1 1 288 0A144 144 0 1 1 16 144zM160 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM128 480l0-162.9c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9L192 480c0 17.7-14.3 32-32 32s-32-14.3-32-32z">
                               </path>
-                           </svg><!-- <i class="fa-solid fa-map-pin text-lg text-white xl:text-xl"></i> Font Awesome fontawesome.com -->
+                           </svg><!-- <i class="text-lg text-white fa-solid fa-map-pin xl:text-xl"></i> Font Awesome fontawesome.com -->
                         </div>
                         <div class="size-fit">
-                           <p class="font-poppins font-medium text-nature-400 lg:text-lg">
+                           <p class="font-medium font-poppins text-nature-400 lg:text-lg">
                               Deutsches Haus, 33 Lê Duẩn, Bến Nghé, Quận 1, TP. HCM
                            </p>
-                           <span class="font-poppins text-sm font-normal text-nature-200">Địa chỉ văn phòng</span>
+                           <span class="text-sm font-normal font-poppins text-nature-200">Địa chỉ văn phòng</span>
                         </div>
                      </div>
                   </div>
                </div>
             </div>
 
-            <div data-aos="flip-left" class="rounded-2xl bg-white p-7 pt-12 md:col-span-6 aos-init aos-animate">
+            <div data-aos="flip-left" class="pt-12 bg-white rounded-2xl p-7 md:col-span-6 aos-init aos-animate">
                <form class="grid w-full gap-2.5 md:gap-4 lg:gap-5 xl:gap-6">
                   <div class="w-full">
                      <label for="name"
@@ -2444,7 +2456,7 @@
                      <label class="mb-1.5 block font-poppins text-base font-medium text-nature-600 md:mb-2.5 lg:mb-3"
                         for="property">Loại Bất động sản</label>
                      <select name="property" id="property">
-                        <option value="" class="font-poppins text-sm text-nature-50">
+                        <option value="" class="text-sm font-poppins text-nature-50">
                            Chọn loại
                         </option>
                         <option value="property-1">Loại 1</option>
@@ -2583,25 +2595,25 @@
                <li>
                   <a href="#facebook" aria-label="Facebook Homelist">
                      <i
-                        class="fa-brands fa-facebook-f text-sm text-slate-400 transition-all hover:text-gold md:text-base lg:text-lg"></i>
+                        class="text-sm transition-all fa-brands fa-facebook-f text-slate-400 hover:text-gold md:text-base lg:text-lg"></i>
                   </a>
                </li>
                <li>
                   <a href="#twitter" aria-label="Twitter Homelist">
                      <i
-                        class="fa-brands fa-x-twitter text-sm text-slate-400 transition-all hover:text-gold md:text-base lg:text-lg"></i>
+                        class="text-sm transition-all fa-brands fa-x-twitter text-slate-400 hover:text-gold md:text-base lg:text-lg"></i>
                   </a>
                </li>
                <li>
                   <a href="#instagram" aria-label="Instagram Homelist">
                      <i
-                        class="fa-brands fa-instagram text-sm text-slate-400 transition-all hover:text-gold md:text-base lg:text-lg"></i>
+                        class="text-sm transition-all fa-brands fa-instagram text-slate-400 hover:text-gold md:text-base lg:text-lg"></i>
                   </a>
                </li>
                <li>
                   <a href="#linkedin" aria-label="LinkedIn Homelist">
                      <i
-                        class="fa-brands fa-linkedin-in text-sm text-slate-400 transition-all hover:text-gold md:text-base lg:text-lg"></i>
+                        class="text-sm transition-all fa-brands fa-linkedin-in text-slate-400 hover:text-gold md:text-base lg:text-lg"></i>
                   </a>
                </li>
             </ul>
@@ -2679,12 +2691,20 @@
          }
       });
    </script>
+   <!-- Fancybox JS -->
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
    <script src="js/fontawesome.min.js"></script>
    <script src="js/flowbite.min.js"></script>
    <script src="js/aos.js"></script>
    <script src="js/odometer.js"></script>
    <script src="js/swiper-bundle.min.js"></script>
    <script src="js/index.js"></script>
+   <script>
+      // Initialize Fancybox
+      Fancybox.bind("[data-fancybox]", {
+         // Options
+      });
+   </script>
    <script>
       // function createSnowflake() {
       //    const root = document.getElementById("snow-root");
