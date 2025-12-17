@@ -13,8 +13,11 @@
 </head>
 
 <body>
-  <!-- header -->
-  <div id="header"></div>
+
+  <!-- Header -->
+  <header id="header" class="sticky left-0 top-0 z-50 flex h-nav-2 items-center bg-white shadow-sm"></header>
+  <!-- Header -->
+
   <div class="-z-10 h-screen w-full bg-no-repeat md:h-[956px]"
     style="background-image: url('assets/banner/banner-top.jpg')">
     <div class="h-full w-full" style="background-image: url('assets/images/bg-overlay.png')">
@@ -138,6 +141,7 @@
       <!-- Hero Ended -->
     </div>
   </div>
+
   <!-- about started -->
   <section
     class="section-padding-120-t container grid gap-4 px-4 md:gap-7 lg:grid-cols-2 lg:gap-9 xl:gap-12 xl:px-0 2xl:gap-[60px]">
@@ -443,6 +447,7 @@
       </div>
     </div>
   </section>
+
   <!-- Văn phòng theo quận Section Start -->
   <section class="section-padding bg-white">
     <div class="container mx-auto px-4 xl:px-0">
@@ -647,6 +652,7 @@
     </div>
   </section>
   <!-- Văn phòng theo quận Section End -->
+
   <!-- Văn phòng theo phường mới Start -->
   <section class="section-padding bg-gray-50">
     <div class="container mx-auto px-4 xl:px-0">
@@ -899,6 +905,7 @@
       </div>
     </div>
   </section>
+
   <!-- Tòa nhà nổi bật Section Start -->
   <section class="section-padding container flex flex-col items-center justify-center overflow-hidden px-3 2xl:px-0">
     <h2 data-aos="zoom-in-up" class="heading-2">Tòa Nhà Nổi Bật</h2>
@@ -990,6 +997,7 @@
     </div>
   </section>
   <!-- Tòa nhà nổi bật Section End -->
+
   <!-- User Reviews Start -->
   <section
     class="h2-reviews-swiper section-padding container flex max-w-[1170px] flex-col items-center justify-center overflow-hidden px-3 2xl:px-0">
@@ -1194,6 +1202,9 @@
       class="h2-reviews-swiper-pagination static mx-auto mt-4 w-fit text-center md:mt-6 lg:mt-8 xl:mt-10"></div>
   </section>
   <!-- User Reviews End -->
+
+  <!-- xoá -->
+
   <section class="bg-gray-50 py-12">
     <div class="mx-auto grid max-w-screen-xl items-center gap-4 md:grid-cols-2">
       <div class="flex flex-col justify-between h-full">
@@ -1395,7 +1406,9 @@
       </div>
     </div>
   </section>
+
   <!-- Contact Us Section End  -->
+
   <!-- Awards Section -->
   <section class="bg-white py-16 md:py-24">
     <div class="container mx-auto px-4 md:px-6 lg:px-8">
@@ -1561,6 +1574,7 @@
       </div>
     </div>
   </section>
+
   <!-- Media/Press Section -->
   <section class="bg-gradient-to-br from-gray-50 to-white py-16 md:py-24">
     <div class="container mx-auto px-4 md:px-6 lg:px-8">
@@ -1607,6 +1621,7 @@
       </div>
     </div>
   </section>
+
   <!-- FAQ Section -->
   <section class="bg-white py-16 md:py-24">
     <div class="container mx-auto px-4 md:px-6 lg:px-8">
@@ -1752,86 +1767,12 @@
       </div>
     </div>
   </section>
-  <!-- footer -->
-  <div id="footer"></div>
-  <!-- include script -->
-  <script src="js/include.js"></script>
+  <footer id="footer" class="section-padding-t"></footer>
+
+  <script src="/js/include.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      includeHTML("#header", "./partials/common/header.html");
-      includeHTML("#footer", "./partials/common/footer.html");
-    });
-  </script>
-  </script>
-
-  <!-- thư viện -->
-  <!-- Scripts -->
-  <script src="js/fontawesome.min.js"></script>
-  <script src="js/flowbite.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/odometer.js"></script>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/index.js"></script>
-  <script>
-    AOS.init({
-      delay: 0,
-      duration: 1000,
-    });
-
-    // reviews
-    const swiper = new Swiper('.h2-reviews-swiper', {
-      slidesPerView: 3,
-      pagination: {
-        el: '.h2-reviews-swiper-pagination',
-        clickable: true,
-        dynamicBullets: true,
-      },
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        320: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 15,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20,
-        },
-      },
-    });
-
-    // agent
-    const agent = new Swiper('.h2-agent-swiper', {
-      slidesPerView: 3,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      breakpoints: {
-        0: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        1024: {
-          slidesPerView: 3,
-          spaceBetween: 30,
-        },
-      },
-    });
+    loadHTML("#header", "./partials/common/header.html");
+    loadHTML("#footer", "./partials/common/footer.html");
   </script>
 </body>
 
