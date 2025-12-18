@@ -39,7 +39,6 @@
 </head>
 
 <body>
-  sửa GẶP GỠ ĐỘI NGŨ TƯ VẤN // Team Swiper ở footer
   <!-- header -->
   <div id="header"></div>
 
@@ -80,8 +79,11 @@
   <div class="container max-w-screen-xl mx-auto">
     <section class="pt-8 pb-4 bg-white">
       <div class="container max-w-screen-xl px-4 mx-auto">
-        <!-- Rating start -->
-        <div id="ratingStar" class="flex items-center gap-1 mb-4 text-sm text-gray-600">
+        <div class="flex items-center gap-1 mb-4 text-sm text-gray-600">
+          <div class="flex text-lg text-yellow-400">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span class="text-yellow-400/70">★</span>
+          </div>
+          <span class="ml-2 font-medium">4.8/5: 2266 ratings - View: 84789</span>
         </div>
 
         <div class="relative mb-8">
@@ -954,7 +956,7 @@
     </div>
   </section>
 
-  <!-- Consulting team -->
+  <!-- Meet the consulting team -->
   <section class="py-16 bg-white">
     <div class="container px-4 mx-auto">
       <div class="mb-12 text-center" data-aos="fade-up">
@@ -1187,9 +1189,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       includeHTML("#header", "./partials/common/header.html");
-      includeHTML("#ratingStar", "./partials/common/rating-star.html");
       includeHTML("#pagination", "./partials/common/pagination.html");
-      includeHTML("#consultingTeam", "./partials/common/consulting-team.html");
       includeHTML("#footer", "./partials/common/footer.html");
     });
   </script>
@@ -1351,71 +1351,42 @@
     });
 
     // Team Swiper
-    // const teamSwiper = new Swiper('.team-swiper', {
-    //   slidesPerView: 4,
-    //   spaceBetween: 24,
-    //   loop: true,
-    //   speed: 800,
-    //   effect: 'slide',
-    //   grabCursor: true,
-    //   centeredSlides: false,
-    //   navigation: {
-    //     nextEl: '.team-swiper-button-next',
-    //     prevEl: '.team-swiper-button-prev',
-    //   },
-    //   autoplay: {
-    //     delay: 3500,
-    //     disableOnInteraction: false,
-    //     pauseOnMouseEnter: true,
-    //   },
-    //   breakpoints: {
-    //     0: {
-    //       slidesPerView: 1,
-    //       spaceBetween: 16,
-    //     },
-    //     640: {
-    //       slidesPerView: 2,
-    //       spaceBetween: 20,
-    //     },
-    //     1024: {
-    //       slidesPerView: 3,
-    //       spaceBetween: 24,
-    //     },
-    //     1280: {
-    //       slidesPerView: 4,
-    //       spaceBetween: 24,
-    //     },
-    //   },
-    // });
-
-    // Team Swiper
-    const teamEl = document.querySelector('.team-swiper');
-    if (teamEl) {
-      new Swiper(teamEl, {
-        slidesPerView: 4,
-        spaceBetween: 24,
-        loop: true,
-        speed: 800,
-        effect: 'slide',
-        grabCursor: true,
-        centeredSlides: false,
-        navigation: {
-          nextEl: '.team-swiper-button-next',
-          prevEl: '.team-swiper-button-prev',
+    const teamSwiper = new Swiper('.team-swiper', {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      loop: true,
+      speed: 800,
+      effect: 'slide',
+      grabCursor: true,
+      centeredSlides: false,
+      navigation: {
+        nextEl: '.team-swiper-button-next',
+        prevEl: '.team-swiper-button-prev',
+      },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 16,
         },
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
-        breakpoints: {
-          0: { slidesPerView: 1, spaceBetween: 16 },
-          640: { slidesPerView: 2, spaceBetween: 20 },
-          1024: { slidesPerView: 3, spaceBetween: 24 },
-          1280: { slidesPerView: 4, spaceBetween: 24 },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
         },
-      });
-    }
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        },
+      },
+    });
   </script>
 
   <!-- filter slide range -->
