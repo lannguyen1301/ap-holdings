@@ -179,7 +179,6 @@
       </div>
     </div>
   </section>
-
   <!-- counter started -->
   <section id="h4-counter"
     class="section-padding-120 container grid grid-cols-2 gap-5 px-4 sm:gap-6 md:grid-cols-4 md:gap-8 lg:gap-12 xl:gap-16 xl:px-0 2xl:gap-20">
@@ -251,7 +250,6 @@
       </div>
     </div>
   </section>
-
   <section class="bg-white py-12 md:py-16 lg:py-20">
     <div class="container mx-auto px-4 xl:px-0">
       <!-- Intro Text -->
@@ -308,8 +306,8 @@
         </div>
       </div>
 
-      <!-- our services -->
-      <div id="ourServices" class="mb-16" data-aos="fade-up" data-aos-delay="200">
+      <!-- Services Section -->
+      <div class="mb-16" data-aos="fade-up" data-aos-delay="200">
         <h3 class="mb-8 text-center text-2xl font-bold text-navy md:text-3xl">
           DỊCH VỤ CỦA CHÚNG TÔI
         </h3>
@@ -374,8 +372,76 @@
         </div>
       </div>
 
-      <!-- office search process -->
-      <div id="officeSearchProcess" data-aos="fade-up" data-aos-delay="300"></div>
+      <!-- Process Section -->
+      <div data-aos="fade-up" data-aos-delay="300">
+        <h3 class="mb-12 text-center text-2xl font-bold text-navy md:text-3xl">
+          QUY TRÌNH TÌM VĂN PHÒNG
+        </h3>
+
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Step 1 -->
+          <div class="group rounded-2xl border border-nature-100 bg-white p-6 transition-all hover:shadow-lg">
+            <h4 class="mb-2 text-lg font-bold text-navy group-hover:text-primary">
+              1. Nhận nhu cầu thuê
+            </h4>
+            <p class="text-sm leading-relaxed text-nature-300">
+              Khách hàng cung cấp diện tích – ngân sách – vị trí mong muốn.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="group rounded-2xl border border-nature-100 bg-white p-6 transition-all hover:shadow-lg">
+            <h4 class="mb-2 text-lg font-bold text-navy group-hover:text-secondary">
+              2. Gửi báo giá phù hợp
+            </h4>
+            <p class="text-sm leading-relaxed text-nature-300">
+              Chọn lọc tòa nhà phù hợp và gửi danh sách báo giá chi tiết.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="group rounded-2xl border border-nature-100 bg-white p-6 transition-all hover:shadow-lg">
+            <h4 class="mb-2 text-lg font-bold text-navy group-hover:text-primary">
+              3. Khảo sát thực tế
+            </h4>
+            <p class="text-sm leading-relaxed text-nature-300">
+              Sắp xếp khảo sát trực tiếp từng văn phòng để khách hàng đánh
+              giá.
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="group rounded-2xl border border-nature-100 bg-white p-6 transition-all hover:shadow-lg">
+            <h4 class="mb-2 text-lg font-bold text-navy group-hover:text-secondary">
+              4. Tư vấn chuyên sâu
+            </h4>
+            <p class="text-sm leading-relaxed text-nature-300">
+              Phân tích ưu – nhược điểm từng tòa nhà và đề xuất lựa chọn tối
+              ưu.
+            </p>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="group rounded-2xl border border-nature-100 bg-white p-6 transition-all hover:shadow-lg">
+            <h4 class="mb-2 text-lg font-bold text-navy group-hover:text-primary">
+              5. Đàm phán
+            </h4>
+            <p class="text-sm leading-relaxed text-nature-300">
+              Hỗ trợ đàm phán mức giá và điều khoản hợp đồng tốt nhất.
+            </p>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="group rounded-2xl border border-nature-100 bg-white p-6 transition-all hover:shadow-lg">
+            <h4 class="mb-2 text-lg font-bold text-navy group-hover:text-secondary">
+              6. Ký hợp đồng & bàn giao
+            </h4>
+            <p class="text-sm leading-relaxed text-nature-300">
+              Hỗ trợ ký hợp đồng thuê và chuẩn bị chuyển vào văn phòng mới.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -911,7 +977,6 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       includeHTML("#header", "./partials/common/header.html");
-      includeHTML("#officeSearchProcess", "./partials/common/office-search-process.html");
       includeHTML("#officesByDistrict", "./partials/common/office-by-district.html");
       includeHTML("#newWardOffice", "./partials/common/new-ward-office.html");
       includeHTML("#outstandingBuilding", "./partials/common/outstanding-building.html");
