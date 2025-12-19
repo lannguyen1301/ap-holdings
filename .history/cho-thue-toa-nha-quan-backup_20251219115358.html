@@ -36,45 +36,6 @@
       border-radius: 9999px;
     }
   </style>
-  <style>
-    /* Bubble hover effect – áp cho thẻ a */
-    .hover-bubble {
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      transition: color 0.4s ease-in-out;
-    }
-
-    .hover-bubble::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      right: 100%;
-      bottom: 100%;
-      /* width: 40px; */
-      /* height: 25px; */
-
-      width: 200vmax;
-      height: 100vmax;
-
-      border-radius: 50%;
-      background-color: #ec4899;
-      /* pink-500 */
-      transform-origin: center;
-      /* transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0); */
-      transform: translate3d(50%, 50%, 0) scale(0);
-      transition: transform 0.45s ease-in-out;
-    }
-
-    /* .hover-bubble:hover::before {
-      transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
-
-    } */
-
-    .hover-bubble:hover::before {
-      transform: translate3d(50%, 50%, 0) scale(1);
-    }
-  </style>
 </head>
 
 <body>
@@ -93,38 +54,43 @@
            transition-all duration-500 ease-out
            group-hover:left-0"></div>
 
-      <div class="w-full h-auto bg-center bg-no-repeat bg-cover"
-        style="background-image: url('assets/images/layer.svg')">
-        <div
-          class="container flex h-[225px] flex-col items-center justify-center sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[450px]">
-          <h1 data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"
-            data-aos-delay="300" class="common-hero-heading">Tòa nhà nguyên căn cho thuê Quận 1 giá rẻ 2025
-          </h1>
+      <!-- content -->
+      <span class="relative z-10">
+        Hover me
+      </span>
+    </div>
 
-          <!-- Breadcrumb -->
-          <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"
-            class="flex" aria-label="Breadcrumb">
-            <ol class="inline-flex items-center space-x-1 md:space-x-2">
-              <li class="inline-flex items-center">
-                <a href="#"
-                  class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary dark:text-gray-400 dark:hover:text-white">
-                  <i class="fa-solid fa-house me-2.5 h-3 w-3"></i>
-                  Home
-                </a>
-              </li>
+    <div class="w-full h-auto bg-center bg-no-repeat bg-cover" style="background-image: url('assets/images/layer.svg')">
+      <div
+        class="container flex h-[225px] flex-col items-center justify-center sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[450px]">
+        <h1 data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"
+          data-aos-delay="300" class="common-hero-heading">Tòa nhà nguyên căn cho thuê Quận 1 giá rẻ 2025
+        </h1>
 
-              <li aria-current="page">
-                <div class="flex items-center">
-                  <i class="w-3 h-3 mx-1 text-gray-400 fa-solid fa-chevron-right"></i>
-                  <span class="text-sm font-medium text-gray-500 ms-1 dark:text-gray-400 md:ms-2">Tòa nhà nguyên căn cho
-                    thuê Quận 1 giá rẻ 2025
-                  </span>
-                </div>
-              </li>
-            </ol>
-          </div>
+        <!-- Breadcrumb -->
+        <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"
+          class="flex" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-2">
+            <li class="inline-flex items-center">
+              <a href="#"
+                class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-primary dark:text-gray-400 dark:hover:text-white">
+                <i class="fa-solid fa-house me-2.5 h-3 w-3"></i>
+                Home
+              </a>
+            </li>
+
+            <li aria-current="page">
+              <div class="flex items-center">
+                <i class="w-3 h-3 mx-1 text-gray-400 fa-solid fa-chevron-right"></i>
+                <span class="text-sm font-medium text-gray-500 ms-1 dark:text-gray-400 md:ms-2">Tòa nhà nguyên căn cho
+                  thuê Quận 1 giá rẻ 2025
+                </span>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
+    </div>
   </section>
 
   <!-- Content Started -->

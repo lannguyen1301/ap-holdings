@@ -36,45 +36,6 @@
       border-radius: 9999px;
     }
   </style>
-  <style>
-    /* Bubble hover effect – áp cho thẻ a */
-    .hover-bubble {
-      position: relative;
-      overflow: hidden;
-      z-index: 1;
-      transition: color 0.4s ease-in-out;
-    }
-
-    .hover-bubble::before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      right: 100%;
-      bottom: 100%;
-      /* width: 40px; */
-      /* height: 25px; */
-
-      width: 200vmax;
-      height: 100vmax;
-
-      border-radius: 50%;
-      background-color: #ec4899;
-      /* pink-500 */
-      transform-origin: center;
-      /* transform: translate3d(50%, 50%, 0) scale3d(0, 0, 0); */
-      transform: translate3d(50%, 50%, 0) scale(0);
-      transition: transform 0.45s ease-in-out;
-    }
-
-    /* .hover-bubble:hover::before {
-      transform: translate3d(50%, 50%, 0) scale3d(15, 15, 15);
-
-    } */
-
-    .hover-bubble:hover::before {
-      transform: translate3d(50%, 50%, 0) scale(1);
-    }
-  </style>
 </head>
 
 <body>
@@ -92,6 +53,9 @@
            bg-pink-400
            transition-all duration-500 ease-out
            group-hover:left-0"></div>
+
+      <!-- nháp -->
+      <button>Hover me</button>
 
       <div class="w-full h-auto bg-center bg-no-repeat bg-cover"
         style="background-image: url('assets/images/layer.svg')">
