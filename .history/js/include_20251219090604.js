@@ -56,7 +56,7 @@ function initAfterInclude() {
     initFlowbite();
   }
 
-  //
+  // ✅ Swiper
   if (window.Swiper) {
     initTeamSwiper();
   }
