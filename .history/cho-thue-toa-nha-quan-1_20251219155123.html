@@ -99,9 +99,8 @@
         style="background-image: url('assets/images/layer.svg')">
         <div
           class="container flex h-[225px] flex-col items-center justify-center sm:h-[250px] md:h-[300px] lg:h-[350px] xl:h-[400px] 2xl:h-[450px]">
-          <h1 id="pageTitle" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
-            data-aos-duration="500" data-aos-delay="300" class="common-hero-heading">Tòa nhà nguyên căn cho thuê Quận 1
-            giá rẻ 2025
+          <h1 data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"
+            data-aos-delay="300" class="common-hero-heading">Tòa nhà nguyên căn cho thuê Quận 1 giá rẻ 2025
           </h1>
 
           <!-- Breadcrumb -->
@@ -1002,12 +1001,11 @@
   <div id="footer"></div>
 
   <!-- include script -->
-  <script src="./js/breadcrumb.js"></script>
   <script src="js/include.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       includeHTML("#header", "./partials/common/header.html");
-      includeHTML("#breadCrumb", "./partials/common/bread-crumb.html", initBreadcrumb);
+      includeHTML("#breadCrumb", "./partials/common/bread-crumb.html");
       includeHTML("#ratingStar", "./partials/common/rating-star.html");
       includeHTML("#buildingRental", "./partials/buildingRental/building-rental.html");
       includeHTML("#pagination", "./partials/common/pagination.html");
@@ -1079,7 +1077,6 @@
   <script src="js/odometer.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
-
   <script>
     AOS.init({
       delay: 0,
@@ -1175,6 +1172,8 @@
     });
 
     // Team Swiper
+
+
     function initTeamSwiper() {
       const el = document.querySelector('.team-swiper');
 
@@ -1204,18 +1203,6 @@
         },
       });
     }
-
-    // xoá nó
-    // // init BreadCrumb
-    // function initBreadcrumb() {
-    //   const pageTitle = document.getElementById("pageTitle");
-    //   const breadcrumbTitle = document.getElementById("breadCrumbTitle");
-
-    //   if (pageTitle && breadcrumbTitle) {
-    //     breadcrumbTitle.textContent = pageTitle.textContent;
-    //   }
-    // }
-
 
   </script>
 

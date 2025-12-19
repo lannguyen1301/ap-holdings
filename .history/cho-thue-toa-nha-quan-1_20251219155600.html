@@ -1002,12 +1002,11 @@
   <div id="footer"></div>
 
   <!-- include script -->
-  <script src="./js/breadcrumb.js"></script>
   <script src="js/include.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       includeHTML("#header", "./partials/common/header.html");
-      includeHTML("#breadCrumb", "./partials/common/bread-crumb.html", initBreadcrumb);
+      includeHTML("#breadCrumb", "./partials/common/bread-crumb.html, initBreadcrumb");
       includeHTML("#ratingStar", "./partials/common/rating-star.html");
       includeHTML("#buildingRental", "./partials/buildingRental/building-rental.html");
       includeHTML("#pagination", "./partials/common/pagination.html");
@@ -1079,7 +1078,6 @@
   <script src="js/odometer.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/index.js"></script>
-
   <script>
     AOS.init({
       delay: 0,
@@ -1205,16 +1203,15 @@
       });
     }
 
-    // xoá nó
-    // // init BreadCrumb
-    // function initBreadcrumb() {
-    //   const pageTitle = document.getElementById("pageTitle");
-    //   const breadcrumbTitle = document.getElementById("breadCrumbTitle");
+    // init BreadCrumb
+    function initBreadcrumb() {
+      const pageTitle = document.getElementById("page-title");
+      const breadcrumbTitle = document.getElementById("breadcrumb-title");
 
-    //   if (pageTitle && breadcrumbTitle) {
-    //     breadcrumbTitle.textContent = pageTitle.textContent;
-    //   }
-    // }
+      if (pageTitle && breadcrumbTitle) {
+        breadcrumbTitle.textContent = pageTitle.textContent;
+      }
+    }
 
 
   </script>

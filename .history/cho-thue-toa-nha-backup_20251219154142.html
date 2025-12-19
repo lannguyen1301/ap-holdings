@@ -2458,7 +2458,7 @@
       includeHTML("#breadCrumb", "./partials/common/bread-crumb.html");
       includeHTML("#ratingStar", "./partials/common/rating-star.html");
       includeHTML("#buildingRental", "./partials/buildingRental/building-rental.html");
-      // includeHTML("#pagination", "./partials/common/pagination.html");
+      includeHTML("#pagination", "./partials/common/pagination.html");
       includeHTML("#consultingTeam", "./partials/common/consulting-team.html");
       includeHTML("#generalInformation", "./partials/common/general-information.html");
       includeHTML("#footer", "./partials/common/footer.html");
@@ -2490,7 +2490,6 @@
     }
   </script>
 
-  <!--  -->
   <script>
     function toggleFullInfo() {
       const fullContent = document.getElementById('info-full');
@@ -2621,38 +2620,42 @@
     });
 
     // Team Swiper
-
-
-    function initTeamSwiper() {
-      const el = document.querySelector('.team-swiper');
-
-      if (!el) return;
-
-      // chống init trùng
-      if (el.classList.contains('swiper-initialized')) return;
-
-      new Swiper(el, {
-        slidesPerView: 4,
-        spaceBetween: 24,
-        loop: true,
-        speed: 800,
-        grabCursor: true,
-
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true,
+    const teamSwiper = new Swiper('.team-swiper', {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      loop: true,
+      speed: 800,
+      effect: 'slide',
+      grabCursor: true,
+      centeredSlides: false,
+      navigation: {
+        nextEl: '.team-swiper-button-next',
+        prevEl: '.team-swiper-button-prev',
+      },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 16,
         },
-
-        breakpoints: {
-          0: { slidesPerView: 1, spaceBetween: 16 },
-          640: { slidesPerView: 2, spaceBetween: 20 },
-          1024: { slidesPerView: 3, spaceBetween: 24 },
-          1280: { slidesPerView: 4, spaceBetween: 24 },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
         },
-      });
-    }
-
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 24,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        },
+      },
+    });
   </script>
 
   <!-- filter slide range -->
@@ -2710,35 +2713,6 @@
   </script>
 
 
-  <script>
-    function toggleSeoContent() {
-      const content = document.getElementById('seo-content');
-      const gradient = document.getElementById('seo-gradient');
-      const btnText = document.getElementById('seo-btn-text');
-      const btnIcon = document.getElementById('seo-btn-icon');
-
-      // Kiểm tra trạng thái hiện tại dựa trên class max-h
-      if (content.classList.contains('max-h-24')) {
-        // MỞ RA
-        content.classList.remove('max-h-24'); // Xóa giới hạn chiều cao
-        content.classList.add('max-h-[1000px]'); // Đặt chiều cao tối đa lớn để animation chạy
-        gradient.classList.add('hidden'); // Ẩn lớp mờ
-
-        btnText.textContent = 'Thu gọn';
-        btnIcon.classList.remove('fa-chevron-down');
-        btnIcon.classList.add('fa-chevron-up');
-      } else {
-        // THU LẠI
-        content.classList.remove('max-h-[1000px]');
-        content.classList.add('max-h-24');
-        gradient.classList.remove('hidden');
-
-        btnText.textContent = 'Xem thêm';
-        btnIcon.classList.remove('fa-chevron-up');
-        btnIcon.classList.add('fa-chevron-down');
-      }
-    }
-  </script>
   <!-- filter slide range -->
 </body>
 

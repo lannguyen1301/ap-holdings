@@ -1002,7 +1002,6 @@
   <div id="footer"></div>
 
   <!-- include script -->
-  <script src="./js/breadcrumb.js"></script>
   <script src="js/include.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
@@ -1205,16 +1204,15 @@
       });
     }
 
-    // xoá nó
-    // // init BreadCrumb
-    // function initBreadcrumb() {
-    //   const pageTitle = document.getElementById("pageTitle");
-    //   const breadcrumbTitle = document.getElementById("breadCrumbTitle");
+    // init BreadCrumb
+    function initBreadcrumb() {
+      const pageTitle = document.getElementById("pageTitle");
+      const breadcrumbTitle = document.getElementById("breadCrumbTitle");
 
-    //   if (pageTitle && breadcrumbTitle) {
-    //     breadcrumbTitle.textContent = pageTitle.textContent;
-    //   }
-    // }
+      if (pageTitle && breadcrumbTitle) {
+        breadcrumbTitle.textContent = pageTitle.textContent;
+      }
+    }
 
 
   </script>
