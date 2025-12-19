@@ -120,14 +120,51 @@
 
         <!-- building rental -->
         <div id="buildingRental"></div>
+
+        <!-- <div class="relative mb-8">
+          <h2 class="text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
+            <span class="relative inline-block">
+              Bạn đang tìm kiếm
+              <span class="absolute left-0 w-full h-1 bg-green-700 rounded-full -bottom-2"></span>
+            </span>
+            <span class="relative ml-2 text-blue-500">
+              toà nhà văn phòng nguyên căn tại Tp Hồ Chí Minh?
+            </span>
+          </h2>
+        </div> -->
+
+        <!-- <div class="grid grid-cols-2 gap-4 md:grid-cols-6">
+          <button
+            class="px-4 py-3 font-semibold text-blue-700 transition-colors border border-blue-500 rounded-full shadow-sm bg-blue-50">
+            Quận 1
+          </button>
+          <button
+            class="px-4 py-3 font-semibold text-blue-700 transition-colors border border-blue-500 rounded-full shadow-sm bg-blue-50">
+            Quận 2
+          </button>
+          <button
+            class="px-4 py-3 font-semibold text-blue-700 transition-colors border border-blue-500 rounded-full shadow-sm bg-blue-50">
+            Quận 3
+          </button>
+          <button
+            class="px-4 py-3 font-semibold text-blue-700 transition-colors border border-blue-500 rounded-full shadow-sm bg-blue-50">
+            Quận 4
+          </button>
+          <button
+            class="px-4 py-3 font-semibold text-blue-700 transition-colors border border-blue-500 rounded-full shadow-sm bg-blue-50">
+            Quận 5
+          </button>
+          <button
+            class="px-4 py-3 font-semibold text-blue-700 transition-colors border border-blue-500 rounded-full shadow-sm bg-blue-50">
+            Quận 6
+          </button>
+        </div> -->
       </div>
     </section>
 
     <!-- content started -->
     <div class="py-8 mx-auto max-w-screen-2xl">
-      <h1 data-aos="fade-right" data-aos-duration="500" data-aos-delay="100"
-        class="mb-8 text-3xl font-bold text-gray-900 uppercase">Danh sách tòa nhà văn phòng cho
-        thuê nguyên căn Quận 1
+      <h1 class="mb-8 text-3xl font-bold text-gray-900 uppercase">Danh sách tòa nhà văn phòng cho thuê nguyên căn Quận 1
       </h1>
       <div class="w-full">
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -906,7 +943,52 @@
   </section>
 
   <!-- General information -->
-  <section id="generalInformation" class="py-12 bg-white">
+  <section id="" class="py-12 bg-white">
+    <div class="container max-w-screen-xl px-4 mx-auto">
+
+      <div class="mb-8 text-center" data-aos="fade-up">
+        <h2 class="mb-3 text-2xl font-bold text-blue-900 uppercase md:text-3xl">Thông tin chung</h2>
+        <div class="w-24 h-1 mx-auto bg-yellow-500 rounded"></div>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div id="seo-content"
+          class="relative overflow-hidden text-justify text-gray-700 transition-all duration-500 max-h-24">
+
+          <p class="leading-relaxed">
+            <a href="../toa-nha-cho-thue-quan-1.html" target="_blank" title="Cho thuê tòa nhà tại quận 1"
+              class="font-bold text-blue-900 transition-colors hover:text-yellow-600">Cho thuê tòa nhà văn phòng tại
+              quận 1</a>
+            là sự lựa chọn hàng đầu của mọi doanh nghiệp có nhu cầu thuê nguyên tòa, nguyên căn.
+            Tại sao nhu cầu thuê các <a href="../toa-nha-cho-thue-quan-1.html"
+              class="font-semibold text-blue-700 hover:underline" title="tòa nhà building nguyên căn tại quận 1">tòa
+              nhà nguyên căn tại quận 1</a>
+            lại "HOT" đến như vậy? Bởi vì Quận 1 là trung tâm của TP.HCM, nơi tập trung các tập đoàn kinh tế lớn,
+            các tập đoàn đa quốc gia. Bên cạnh đó là các dịch vụ, tiện ích phát triển mạnh như: nhà hàng,
+            trung tâm giải trí, trung tâm mua sắm...
+            <br><br>
+            Đặc biệt, giá các <strong>cao ốc văn phòng nguyên căn tại quận 1</strong> cũng khá hợp lý khi chia ra
+            từng khu vực vị trí đắc địa khác nhau.
+            Mời quý khách hàng tham khảo những sản phẩm bên dưới, hoặc liên hệ ngay đến Hotline:
+            <strong class="text-red-600">0987.11.00.11</strong> của <strong>Office Saigon</strong> để được tư vấn
+            trực tiếp.
+          </p>
+
+          <div id="seo-gradient"
+            class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white via-white/80 to-transparent">
+          </div>
+        </div>
+
+        <div class="mt-6 text-center">
+          <button id="seo-btn" onclick="toggleSeoContent()"
+            class="inline-flex items-center px-8 py-2.5 text-sm font-bold text-blue-900 transition-all bg-gray-100 rounded-full hover:bg-blue-900 hover:text-white hover:shadow-md group">
+            <span id="seo-btn-text">Xem thêm</span>
+            <i id="seo-btn-icon"
+              class="ml-2 transition-transform duration-300 fa-solid fa-chevron-down group-hover:translate-y-0.5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Consulting team -->
@@ -1009,7 +1091,6 @@
       includeHTML("#buildingRental", "./partials/buildingRental/building-rental.html");
       includeHTML("#pagination", "./partials/common/pagination.html");
       includeHTML("#consultingTeam", "./partials/common/consulting-team.html");
-      includeHTML("#generalInformation", "./partials/common/general-information.html");
       includeHTML("#footer", "./partials/common/footer.html");
     });
   </script>
