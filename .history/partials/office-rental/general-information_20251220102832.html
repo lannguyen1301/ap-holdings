@@ -1,0 +1,30 @@
+<div class="max-w-5xl mx-auto mt-8">
+    <h2 class="mb-6 text-2xl font-bold text-center text-navy md:text-3xl" data-aos="fade-up">
+        THÔNG TIN CHUNG
+    </h2>
+
+    <!-- CONTENT GỘP – dùng cơ chế A -->
+    <div id="info-content"
+        class="relative overflow-hidden transition-all duration-500 max-h-40 prose prose-base max-w-none mx-auto text-gray-700">
+
+        <!-- Toàn bộ nội dung B giữ nguyên, KHÔNG hidden -->
+        <!-- (từ đoạn preview → tới hết section 4 của bạn) -->
+
+        <!-- Gradient giống code A -->
+        <div id="info-gradient"
+            class="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+    </div>
+
+    <!-- BUTTON – LUÔN NẰM DƯỚI CONTENT -->
+    <div class="mt-6 text-center">
+        <button id="info-btn" onclick="toggleInfoContent()"
+            class="inline-flex items-center px-8 py-3 font-semibold transition-all rounded-lg shadow-md bg-navy text-white hover:bg-navy-light hover:shadow-lg">
+            <span id="info-btn-text">Xem thêm</span>
+            <svg id="info-btn-icon" class="ml-2 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512" width="14" height="14" fill="currentColor">
+                <path
+                    d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+            </svg>
+        </button>
+    </div>
+</div>

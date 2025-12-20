@@ -3704,25 +3704,6 @@
       </div>
     </section>
 
-    <!-- maps -->
-    <section class="mt-12" data-aos="fade-up" data-aos-delay="200">
-      <h2 class="text-3xl font-bold text-navy uppercase mt-12 mb-5">
-        Bản đồ các tòa nhà cho thuê văn phòng tại tp.HCM
-      </h2>
-      <div id="map"></div>
-    </section>
-
-    <!-- General information -->
-    <section id="generalInformation" class="py-12 bg-white">
-    </section>
-
-    <!-- General information -->
-    <section id="generalInformation2" class="py-12 bg-white">
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="bg-white py-16 md:py-24"></section>
-
     <!-- Tìm thuê văn phòng theo phường mới -->
     <section class="bg-white py-16">
       <div class="container mx-auto overflow-x-hidden">
@@ -4290,12 +4271,10 @@
         includeHTML("#header", "./partials/common/header.html");
         includeHTML("#breadCrumb", "./partials/common/bread-crumb.html", initBreadcrumb);
         includeHTML("#ratingStar", "./partials/common/rating-star.html");
-        includeHTML("#map", "./partials/maps/map-1.html");
+        includeHTML("#buildingRental", "./partials/buildingRental/building-rental.html");
         includeHTML("#pagination", "./partials/common/pagination.html");
         includeHTML("#consultingTeam", "./partials/common/consulting-team.html");
         includeHTML("#generalInformation", "./partials/common/general-information.html");
-        includeHTML("#generalInformation2", "./partials/office-rental/general-information.html");
-        includeHTML("#faq", "./partials/common/faq.html");
         includeHTML("#footer", "./partials/common/footer.html");
       });
     </script>
@@ -4346,6 +4325,28 @@
         }
       }
     </script>
+
+    <script>
+      function toggleSeoContent() {
+        const content = document.getElementById('seo-content');
+        const gradient = document.getElementById('seo-gradient');
+        const btnText = document.getElementById('seo-btn-text');
+        const btnIcon = document.getElementById('seo-btn-icon');
+
+        if (content.classList.contains('max-h-24')) {
+          content.classList.replace('max-h-24', 'max-h-[1000px]');
+          gradient.classList.add('hidden');
+          btnText.textContent = 'Thu gọn';
+          btnIcon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+        } else {
+          content.classList.replace('max-h-[1000px]', 'max-h-24');
+          gradient.classList.remove('hidden');
+          btnText.textContent = 'Xem thêm';
+          btnIcon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+        }
+      }
+    </script>
+
 
     <!-- Scripts -->
     <script src="js/fontawesome.min.js"></script>
@@ -4531,27 +4532,6 @@
         priceMinVal.textContent = values[0];
         priceMaxVal.textContent = values[1];
       });
-    </script>
-
-    <script>
-      function toggleSeoContent() {
-        const content = document.getElementById('seo-content');
-        const gradient = document.getElementById('seo-gradient');
-        const btnText = document.getElementById('seo-btn-text');
-        const btnIcon = document.getElementById('seo-btn-icon');
-
-        if (content.classList.contains('max-h-24')) {
-          content.classList.replace('max-h-24', 'max-h-[1000px]');
-          gradient.classList.add('hidden');
-          btnText.textContent = 'Thu gọn';
-          btnIcon.classList.replace('fa-chevron-down', 'fa-chevron-up');
-        } else {
-          content.classList.replace('max-h-[1000px]', 'max-h-24');
-          gradient.classList.remove('hidden');
-          btnText.textContent = 'Xem thêm';
-          btnIcon.classList.replace('fa-chevron-up', 'fa-chevron-down');
-        }
-      }
     </script>
 </body>
 
